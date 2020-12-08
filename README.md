@@ -1,2 +1,2 @@
-# a-straube.gibhub.io
+# a-straube.github.io
 Portfolio and project hub
