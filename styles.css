@@ -1,3 +1,25 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  background: url('img/tim-mossholder--vONZo9HhdA-unsplash.jpg') center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section {
+  padding: 100px 120px;
+}
 h2 {
   text-transform: uppercase;
+}
+h3 {
+  text-transform: uppercase;
+}
+#topSection {
+  min-height: 500px;
+}
+#aboutMeSection {
+  background-color: #eef5dc;
 }
