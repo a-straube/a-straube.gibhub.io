@@ -11,27 +11,31 @@ body {
 }
 
 section {
+    min-height: 500px;
     padding: 100px 120px;
     position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
 }
 
 h1 {
-    background: linear-gradient(90deg, rgba(10,120,252,0.5) 0%, rgba(10,120,252,0.25) 55%, rgba(10,120,252,0.01) 100%);
-    border-top: 1px solid rgba(0,0,0,0.25);
-    border-bottom: 1px solid rgba(0,0,0,0.25);
+    background: linear-gradient(90deg, rgb(4 48 110 / 85%) 0%, rgba(10, 110, 98, 0.75) 55%, rgba(10, 120, 252, 0.1) 100%);
+    border-top: 1px solid rgba(0,0,5,0.25);
+    border-bottom: 1px solid rgba(0,0,5,0.25);
     font-size: 100px;
     font-weight: 300;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     margin: 0;
     padding-left: 100px;
+    text-shadow: 0px 1px 1px rgba(255,255,255,0.9);
     text-transform: uppercase;
 }
 
 h2 {
-    background-color: rgba(255,118,0,0.65);
-    border-top: 1px solid rgba(0,0,0,0.25);
-    border-bottom: 1px solid rgba(0,0,0,0.25);
-    font-size: 48px;
+    background-color: rgba(255,118,0,0.7);
+    border-top: 1px solid rgba(0,0,5,0.25);
+    border-bottom: 1px solid rgba(0,0,5,0.25);
+    font-size: 44px;
     font-weight: 300;
     line-height: 2;
     margin: 15px 0 0;
@@ -43,6 +47,14 @@ h3 {
     text-transform: uppercase;
 }
 
+.parallax {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+}
+
 #topSection {
     background-color: rgba(220,220,240,0.15);
     min-height: 100%;
@@ -51,21 +63,29 @@ h3 {
         position: absolute;
             top: 33%;
             left: 0;
-        transform: translateY(-33%);
+        transform: translateZ(0) translateY(-33%);
         width: 100%;
+        z-index: 1;
     }
 }
 
 .palm-right {
+    -webkit-transform: translateZ(100px);
+    transform: translateZ(100px);
     position: absolute;
-        bottom: 0;
+        bottom: -60px;
         right: 0;
+    width: 68%;
+    z-index: 2;
 }
 
 #aboutMeSection {
+    background-color: rgba(220,220,240,0.15);
+    padding: 150px 120px;
     &:after {
         content: '';
         background-color: rgb(238, 245, 220);
+        box-shadow: 0 0 12px #000000;
         height: 100%;
             width: 100%;
         position: absolute;
@@ -79,7 +99,16 @@ h3 {
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
+        transform: translateZ(0);
     }
+}
+
+.plant-left {
+    -webkit-transform: translateZ(90px) scale(0.35) scaleX(-1);
+    transform: translateZ(90px) scale(0.35) scaleX(-1);
+    position: absolute;
+        top: -410px;
+        left: -240px;
 }
 
 .about-me__img-frame {
@@ -104,4 +133,48 @@ h3 {
     .fa-brands {
         font-size: 30px;
     }
+}
+
+#projectExamplesSection {
+    background: url('img/markus-spiske-MzHF7OTkRJM-unsplash.jpg');
+    background-color: red;
+}
+
+#connectSection {
+    &:after {
+        content: '';
+        background-color: rgb(238, 245, 220);
+        box-shadow: 0 0 12px #000000;
+        height: 100%;
+            width: 100%;
+        position: absolute;
+            top: 0;
+            left: 0;
+        transform: skewY(355deg);
+        z-index: -1;
+    }
+}
+
+footer {
+    background: rgba(50,50,50,0.95);
+    border-top: 1px solid rgba(0,0,0,0.75);
+    border-bottom: 1px solid rgba(0,0,0,0.75);
+    color: #ffffff;
+    margin-bottom: 55px;
+    min-height: 50px;
+    padding-left: 100px;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+}
+
+#footerPlant {
+    -webkit-transform: translateZ(200px);
+    transform: translateZ(200px);
+    position: absolute;
+        bottom: 186px;
+        right: 501px;
+    width: 11%;
+    z-index: 2;
 }
