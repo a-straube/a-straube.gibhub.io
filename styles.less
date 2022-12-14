@@ -11,7 +11,7 @@ body {
 }
 
 section {
-    min-height: 500px;
+    min-height: 300px;
     padding: 100px 120px;
     position: relative;
     -webkit-transform-style: preserve-3d;
@@ -153,8 +153,38 @@ h3 {
 }
 
 #projectExamplesSection {
-    background: url('img/markus-spiske-MzHF7OTkRJM-unsplash.jpg');
-    background-color: red;
+    background-color: #939393;
+    border-top: 3px solid #202020;
+    border-bottom: 9px solid #202020;
+    box-shadow: 0 0 12px rgba(0,1,2,0.9);
+    margin: 60px 0;
+
+    &:before {
+        content: '';
+        border-top: 2px solid rgb(238, 245, 220);
+        border-bottom: 2px solid rgb(238, 245, 220);
+        height: 100%;
+            width: 100%;
+        position: absolute;
+            top: 0;
+            left: 0;
+    }
+
+    &:after {
+        content: '';
+        -webkit-transform: translateZ(-100px);
+        transform: translateZ(-100px);
+        background: url('img/markus-spiske-MzHF7OTkRJM-unsplash.jpg');
+        
+        height: 100%;
+            width: 100%;
+        opacity: 0.85;
+        position: absolute;
+            top: 0;
+            left: 0;
+        z-index: -1;
+        filter: contrast(.65) hue-rotate(341deg);
+    }
 }
 
 #connectSection {
