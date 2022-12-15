@@ -10,7 +10,7 @@ body {
   background-size: cover;
 }
 section {
-  min-height: 300px;
+  min-height: 200px;
   padding: 100px 120px;
   position: relative;
   -webkit-transform-style: preserve-3d;
