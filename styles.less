@@ -203,6 +203,25 @@ h3 {
     }
 }
 
+#connectList {
+    display: flex;
+    flex-direction: row;
+    font-size: 48px;
+    list-style: none;
+    padding-left: 0;
+
+    a {
+        color: darkslateblue;
+        margin-right: 40px;
+        position: relative;
+            top: 0;
+        &:hover, &:focus, &:active {
+            color: #5440d9;
+            top: -1px;
+        }
+    }
+}
+
 footer {
     background: rgba(50,50,50,0.95);
     border-top: 1px solid rgba(0,0,0,0.75);
