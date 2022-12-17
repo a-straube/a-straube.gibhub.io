@@ -75,13 +75,23 @@ h3 {
     }
 }
 
+.top-palms {
+    position: absolute;
+        top: 0;
+    &--left { left: 0; }
+    &--right {
+        right: 0;
+        z-index: 2;
+    }
+}
+
 .palm-right {
     -webkit-transform: translateZ(100px);
-    transform: translateZ(100px);
+    transform: translateZ(100px) rotate(90deg);
+    filter: drop-shadow(-5px 23px 2px rgba(22,44,68,0.25));
     position: absolute;
-        bottom: -60px;
-        right: 0;
-    width: 68%;
+        bottom: -178px;
+        right: 385px;
     z-index: 2;
 }
 
