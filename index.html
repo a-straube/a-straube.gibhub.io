@@ -69,9 +69,17 @@
             </ul>
         </section>
         <footer>
-            <span>Copyright 2022</span>
+            <span>&copy; <span id="copyrightYear"></span> Axel Straube | All rights reserved</span>
             <img id="footerPlant" src="img/kiki-siepel-rZPk8H4v1d0-unsplash.png" alt="Footer plant">
         </footer>
     </div>
+
 </body>
+
+<script>
+    let year = new Date().getFullYear();
+    const copyrightYear = document.getElementById('copyrightYear');
+    copyrightYear.innerHTML = year;
+</script>
+
 </html>
