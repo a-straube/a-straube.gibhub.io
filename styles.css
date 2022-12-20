@@ -79,9 +79,16 @@ h3 {
   right: 0;
   z-index: 2;
 }
+.dark-leaves-right {
+  -webkit-transform: translateZ(-135px) scale(1.53);
+  transform: translateZ(-135px) scale(1.53);
+  position: absolute;
+  bottom: 49px;
+  right: -276px;
+}
 .palm-right {
   -webkit-transform: translateZ(100px);
-  transform: translateZ(100px) rotate(90deg);
+  transform: translateZ(100px);
   filter: drop-shadow(-5px 23px 2px rgba(22, 44, 68, 0.25));
   position: absolute;
   bottom: -178px;
@@ -115,8 +122,16 @@ h3 {
   -webkit-transform: translateZ(90px) scale(0.35) scaleX(-1);
   transform: translateZ(90px) scale(0.35) scaleX(-1);
   position: absolute;
-  top: -410px;
+  bottom: 80px;
   left: -240px;
+}
+.about-me-section-plant-right {
+  -webkit-transform: translateZ(40px) scale(0.35);
+  transform: translateZ(40px) scale(0.35);
+  filter: hue-rotate(347deg);
+  position: absolute;
+  bottom: 80px;
+  right: -354px;
 }
 .about-me__img-frame {
   background-color: #ebe7db;
