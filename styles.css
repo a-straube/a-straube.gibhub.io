@@ -5,9 +5,8 @@ body {
   margin: 0;
 }
 body {
-  background: url('img/tim-mossholder--vONZo9HhdA-unsplash.jpg') center no-repeat;
+  background: beige url('img/pexels-arina-krasnikova-7002678.jpg') no-repeat;
   background-attachment: fixed;
-  background-size: cover;
 }
 section {
   min-height: 200px;
@@ -48,6 +47,63 @@ h2 {
 h3 {
   text-transform: uppercase;
 }
+@-webkit-keyframes palmLeafSwing1 {
+  20% {
+    -webkit-transform: rotate(15deg);
+  }
+  40% {
+    -webkit-transform: rotate(-10deg);
+  }
+  60% {
+    -webkit-transform: rotate(5deg);
+  }
+  80% {
+    -webkit-transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+@keyframes palmLeafSwing1 {
+  0% {
+    transform: translateZ(-5px) perspective(300px) rotateY(-2deg) rotateX(8deg);
+  }
+  20% {
+    transform: translateZ(-5px) perspective(300px) rotateY(-5deg) rotateX(12deg);
+  }
+  40% {
+    transform: translateZ(-5px) perspective(300px) rotateY(2deg) rotateX(7deg);
+  }
+  60% {
+    transform: translateZ(-5px) perspective(300px) rotateY(-3deg) rotateX(0deg);
+  }
+  80% {
+    transform: translateZ(-5px) perspective(300px) rotateY(0deg) rotateX(5deg);
+  }
+  100% {
+    transform: translateZ(-5px) perspective(300px) rotateY(-2deg) rotateX(7deg);
+  }
+}
+@keyframes topRightPalmSwing {
+  0% {
+    transform: skewX(1deg);
+  }
+  20% {
+    transform: skewX(-1deg);
+  }
+  40% {
+    transform: skewX(0deg);
+  }
+  60% {
+    transform: skewX(3deg);
+  }
+  80% {
+    transform: skewX(1deg);
+  }
+  100% {
+    transform: skewX(-1deg);
+  }
+}
 .parallax {
   height: 100vh;
   overflow-x: hidden;
@@ -78,13 +134,23 @@ h3 {
 .top-palms--right {
   right: 0;
   z-index: 2;
+  animation-name: topRightPalmSwing;
+  transform-origin: top right;
+  animation-duration: 10s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 .dark-leaves-right {
-  -webkit-transform: translateZ(-135px) scale(1.53);
-  transform: translateZ(-135px) scale(1.53);
   position: absolute;
   bottom: 49px;
   right: -276px;
+  animation-name: palmLeafSwing1;
+  transform-origin: bottom right;
+  animation-duration: 18s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 .palm-right {
   -webkit-transform: translateZ(100px);
