@@ -2,7 +2,7 @@
   width: 26px;
 }
 ::-webkit-scrollbar-track {
-  background: linear-gradient(0deg, #401f0c 0%, #3a7e47 100%);
+  background: linear-gradient(0deg, #eef5dc 8%, #789970 20%, #462b1b 50%, #eef5dc 58%, #3a7e47 100%);
 }
 ::-webkit-scrollbar-thumb {
   background: transparent;
@@ -177,7 +177,7 @@ h3 {
 #aboutMeSection:after {
   content: '';
   background-color: #eef5dc;
-  background: linear-gradient(185deg, #eef5dc 55%, brown 45%);
+  background: linear-gradient(185deg, #eef5dc 55%, #462b1b 45%);
   box-shadow: 0 0 12px #000000;
   height: 100%;
   width: 100%;
@@ -248,7 +248,7 @@ h3 {
   border-bottom: 9px solid #202020;
   box-shadow: 0 0 12px rgba(0, 1, 2, 0.9);
   margin: 60px 0;
-  min-height: 600px;
+  min-height: 500px;
 }
 #projectExamplesSection:before {
   content: '';
@@ -264,10 +264,9 @@ h3 {
   content: '';
   background: url(img/pexels-allec-gomes-5403485.jpg) top center;
   background-attachment: fixed;
-  filter: hue-rotate(133deg);
+  filter: contrast(0.4) hue-rotate(32deg);
   height: 100%;
   width: 100%;
-  opacity: 0.5;
   position: absolute;
   top: 0;
   left: 0;
