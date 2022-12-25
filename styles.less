@@ -92,11 +92,19 @@ h3 {
     100% { transform: translateZ(-5px) perspective(300px) rotateY(-2deg) rotateX(7deg); }
 }
 
-@keyframes topRightPalmSwing {
+@keyframes topLeftPalmSwing {
     0% { transform: skewX(0deg); }
-    33% { transform: skewX(3deg); }
-    66% { transform: skewX(0deg); }
-    100% { transform: skewX(-2deg); }
+    20% { transform: skewX(-3deg); }
+    60% { transform: skewX(1deg); }
+    80% { transform: skewX(-2deg); }
+    100% { transform: skewX(1deg); }
+}
+
+@keyframes topRightPalmSwing {
+    0% { transform: scale(0.8) skewX(0deg); }
+    33% { transform: scale(0.8) skewX(3deg); }
+    66% { transform: scale(0.8) skewX(0deg); }
+    100% { transform: scale(0.8) skewX(-2deg); }
 }
 
 .parallax {
@@ -121,21 +129,26 @@ h3 {
 }
 
 .top-palms {
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
     position: absolute;
-        top: 0;
-    &--left { left: 0; }
+        top: -20px;
+    
+    &--left {
+        animation-name: topLeftPalmSwing;
+        filter: drop-shadow(4px 20px 3px rgba(0, 0, 0, 0.75));
+        left: -4px;
+        transform-origin: top left;
+    }
+
     &--right {
-        filter: drop-shadow(-2px 32px 1px rgba(10, 11, 20, 0.25));
-        right: 0;
-        z-index: 2;
         animation-name: topRightPalmSwing;
-        opacity: 0.85;
+        filter: drop-shadow(-2px 20px 3px rgba(0, 1, 2, 0.75));
+        right: -10px;
         transform-origin: top right;
-        animation-duration: 5s;
-        animation-direction: alternate;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-        transition: filter 3s ease-in-out;
+        z-index: 2;
     }
 }
 
