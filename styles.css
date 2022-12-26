@@ -128,6 +128,26 @@ h3 {
     transform: scale(0.8) skewX(-2deg);
   }
 }
+@keyframes thinShadowPalmSwing {
+  0% {
+    transform: translateZ(-230px) perspective(300px) rotateY(2deg) rotateX(8deg);
+  }
+  20% {
+    transform: translateZ(-230px) perspective(300px) rotateY(3deg) rotateX(5deg);
+  }
+  40% {
+    transform: translateZ(-230px) perspective(300px) rotateY(2deg) rotateX(7deg);
+  }
+  60% {
+    transform: translateZ(-230px) perspective(300px) rotateY(3deg) rotateX(6deg);
+  }
+  80% {
+    transform: translateZ(-230px) perspective(300px) rotateY(0deg) rotateX(5deg);
+  }
+  100% {
+    transform: translateZ(-230px) perspective(300px) rotateY(2deg) rotateX(7deg);
+  }
+}
 .parallax {
   height: 100vh;
   overflow-x: hidden;
@@ -167,6 +187,18 @@ h3 {
   right: -10px;
   transform-origin: top right;
   z-index: 2;
+}
+.top-thin-palms {
+  animation-name: thinShadowPalmSwing;
+  animation-duration: 14s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  filter: drop-shadow(0px 0px 0px black);
+  position: absolute;
+  bottom: -380px;
+  right: 0;
+  transform-origin: bottom;
 }
 .dark-leaves-right {
   position: absolute;
