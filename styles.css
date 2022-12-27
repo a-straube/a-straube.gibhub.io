@@ -27,19 +27,22 @@ section {
   transform-style: preserve-3d;
 }
 h1 {
-  filter: drop-shadow(1px 1px 2px white) invert(100%) sepia(1);
+  filter: drop-shadow(5px 5px 4px white) invert(100%) sepia(1);
   font-family: 'Comforter Brush', cursive;
   font-size: 24vw;
   font-weight: 400;
   margin: 0;
+  position: absolute;
+  top: 9%;
   text-align: center;
-  transform: translateZ(-5px);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: url('img/pexels-arina-krasnikova-7002678.jpg');
   background-size: auto;
   background-attachment: unset;
   background-position: 0%;
+  width: 100%;
+  z-index: 1;
 }
 h2 {
   background-color: rgba(40, 17, 2, 0.75);
@@ -51,7 +54,9 @@ h2 {
   letter-spacing: 1.5vw;
   line-height: 1.5;
   margin: 15px 0 0;
-  padding: 35px 55px 35px 24%;
+  padding: 55px 55px 55px 24%;
+  position: absolute;
+  top: 52%;
   text-align: right;
   text-shadow: 1px 1px 1px #0c0c0c;
   text-transform: uppercase;
@@ -177,14 +182,6 @@ h3 {
 #topSection {
   min-height: 100%;
   padding: 0;
-}
-#topSection > div {
-  position: absolute;
-  top: 36%;
-  left: 0;
-  transform: translateZ(0) translateY(-33%);
-  width: 100%;
-  z-index: 1;
 }
 .top-palms {
   animation-duration: 8s;
