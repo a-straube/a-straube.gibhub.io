@@ -19,7 +19,6 @@ body {
   background-attachment: fixed;
 }
 section {
-  background: linear-gradient(0deg, rgba(34, 34, 34, 0.25) 0%, rgba(238, 245, 220, 0.05) 50%, rgba(34, 34, 34, 0.25) 100%);
   min-height: 200px;
   padding: 100px 120px;
   position: relative;
@@ -33,7 +32,7 @@ h1 {
   font-weight: 400;
   margin: 0;
   position: absolute;
-  top: 9%;
+  top: 14%;
   text-align: center;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -48,6 +47,7 @@ h2 {
   background-color: rgba(40, 17, 2, 0.75);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0px -22px 86px rgba(255, 235, 183, 0.7);
   color: #ffffff;
   font-size: 2vw;
   font-weight: 400;
@@ -56,7 +56,7 @@ h2 {
   margin: 15px 0 0;
   padding: 78px 172px 60px 25%;
   position: absolute;
-  top: 43.5%;
+  top: 45%;
   text-align: right;
   text-shadow: 1px 1px 1px #0c0c0c;
   text-transform: uppercase;
@@ -172,26 +172,6 @@ h3 {
     transform: scale(0.8) skewX(-2deg);
   }
 }
-@keyframes thinShadowPalmSwing {
-  0% {
-    transform: translateZ(-230px) perspective(300px) rotateY(2deg) rotateX(8deg);
-  }
-  20% {
-    transform: translateZ(-230px) perspective(300px) rotateY(3deg) rotateX(5deg);
-  }
-  40% {
-    transform: translateZ(-230px) perspective(300px) rotateY(2deg) rotateX(7deg);
-  }
-  60% {
-    transform: translateZ(-230px) perspective(300px) rotateY(3deg) rotateX(6deg);
-  }
-  80% {
-    transform: translateZ(-230px) perspective(300px) rotateY(0deg) rotateX(5deg);
-  }
-  100% {
-    transform: translateZ(-230px) perspective(300px) rotateY(2deg) rotateX(7deg);
-  }
-}
 .parallax {
   height: 100vh;
   overflow-x: hidden;
@@ -213,28 +193,16 @@ h3 {
 }
 .top-palms--left {
   animation-name: topLeftPalmSwing;
-  filter: drop-shadow(4px 20px 3px rgba(0, 0, 0, 0.75));
+  filter: drop-shadow(4px 20px 3px rgba(0, 0, 0, 0.75)) hue-rotate(330deg);
   left: -4px;
   transform-origin: top left;
 }
 .top-palms--right {
   animation-name: topRightPalmSwing;
-  filter: drop-shadow(-2px 20px 3px rgba(0, 1, 2, 0.75));
+  filter: drop-shadow(-2px 20px 3px rgba(0, 1, 2, 0.75)) hue-rotate(340deg);
   right: -10px;
   transform-origin: top right;
   z-index: 2;
-}
-.top-thin-palms {
-  animation-name: thinShadowPalmSwing;
-  animation-duration: 14s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  filter: drop-shadow(0px 0px 0px black);
-  position: absolute;
-  bottom: -380px;
-  right: 0;
-  transform-origin: bottom;
 }
 .dark-leaves-left {
   animation-name: darkPalmLeafFlipSwing;
@@ -291,14 +259,14 @@ h3 {
 #aboutMeSection:after {
   content: '';
   background-color: #eef5dc;
-  background: linear-gradient(190deg, #eef5dc 55%, #462b1b 45%);
+  background: linear-gradient(186deg, #fffec6 55%, #462b1b 45%);
   box-shadow: 0 0 12px #000000;
   height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  transform: skewY(350deg);
+  transform: skewY(354deg);
   z-index: -1;
 }
 #aboutMeSection .section-content {
