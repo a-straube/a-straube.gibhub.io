@@ -19,6 +19,7 @@ body {
   background-attachment: fixed;
 }
 section {
+  background: rgba(255, 255, 255, 0.06);
   min-height: 200px;
   padding: 100px 120px;
   position: relative;
