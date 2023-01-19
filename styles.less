@@ -12,8 +12,7 @@
 
 ::-webkit-scrollbar-thumb {
     background: transparent;
-    // border: 1px solid #dddbd5;
-    // border-radius: 9px;
+    border-radius: 9px;
     box-shadow: 0px 0px 0px 100vh #212124;
 }
 
@@ -25,11 +24,12 @@ html, body {
 
 body {
     background: beige url('img/pexels-arina-krasnikova-7002678.jpg') no-repeat;
+    background: beige url('img/wesley-tingey-_0sEjWfAK3Q-unsplash.jpg') no-repeat;
     background-attachment: fixed;
 }
 
 section {
-    background: rgba(255,255,255,0.06);
+    background: rgb(163 129 87 / 56%);
     min-height: 200px;
     padding: 100px 120px;
     position: relative;
@@ -38,27 +38,42 @@ section {
 }
 
 h1 {
-    filter: drop-shadow(5px 5px 4px white) invert(100%) sepia(1);
-    font-family: 'Comforter Brush', cursive;
-    font-size: 20vw;
-    font-weight: 400;
-    margin: 0;
-    position: absolute;
-        top: 14%;
-    text-align: center;
+    -webkit-animation-name: clouds;
+    -webkit-animation-duration: 180s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
     -webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;	
-	background-image: url('img/pexels-arina-krasnikova-7002678.jpg' );
-	background-size: auto;
+    background-image: url('img/david-von-diemar-BMIigmNxx6I-unsplash.jpg');
+    background-image: url('img/imageedit_1_3661914806.jpg');
+	background-size: auto 100%;
 	background-attachment: unset;
 	background-position: 0%;
+    filter: drop-shadow(3px 3px 3px black) brightness(1.3);
+    font-family: 'Barrio';
+    font-size: 16vw;
+    letter-spacing: -12px;
+    line-height: 0.85;
+    margin: 0;
+    position: absolute;
+        top: 50%;
+        left: 100px;
+    text-align: left;
+    transform: translateY(-50%);
     width: 100%;
     z-index: 1;
-
+    >span { display: block; }
+    >span:first-child {
+        font-size: 28vw;
+    }
 }
 
 h2 {
-    background-color: rgb(40 17 2 / 75%);
+    background-color: rgb(2 40 36 / 75%);
+    background-image: url('img/12505_topography-lines-png.png');
+    background-attachment: unset;
+    background-repeat: repeat;
+    background-position: 0%;
     border-top: 1px solid rgba(255,255,255,0.5);
     border-bottom: 1px solid rgba(255,255,255,0.5);
     color: #ffffff;
@@ -67,16 +82,25 @@ h2 {
     letter-spacing: 1.25vw;
     line-height: 1.5;
     margin: 15px 0 0;
-    padding: 78px 172px 60px 25%;
+    padding: 80px 100px 80px 140vh;
     position: absolute;
-        top: 45%;
-    text-align: right;
+        top: 50%;
+    text-align: left;
     text-shadow: 1px 1px 1px #0c0c0c;
     text-transform: uppercase;
+    transform: translateY(-50%);
+    width: 100%;
+    >span {
+        display: block;
+    }
 }
 
-h3 {
-    text-transform: uppercase;
+h3 { text-transform: uppercase;
+}
+
+@keyframes clouds {
+    from { background-position: 0% }
+    to { background-position: -1000% }
 }
 
 @keyframes introDarkPalmTop {
@@ -88,8 +112,17 @@ h3 {
     100% { transform: scaleX(-1.3) scaleY(-1.3) translateZ(-150px) perspective(500px) rotateY(-2deg) rotateX(7deg) rotate(45deg); }
 }
 
+@keyframes introPalmBottomLeft {
+    0% { transform: scale(0.55) scaleX(-1) translateZ(55px)  rotateX(1deg) skewX(0deg) rotate(-7deg); }
+    20% { transform: scale(0.55) scaleX(-1) translateZ(55px) rotateX(0deg) skewX(1deg) rotate(-7deg); }
+    40% { transform: scale(0.55) scaleX(-1) translateZ(55px)  rotateX(-1deg) skewX(-1deg) rotate(-7deg); }
+    60% { transform: scale(0.55) scaleX(-1) translateZ(55px)  rotateX(0deg) skewX(1deg) rotate(-7deg); }
+    80% { transform: scale(0.55) scaleX(-1) translateZ(55px) rotateX(-1deg) skewX(0deg) rotate(-7deg); }
+    100% { transform: scale(0.55) scaleX(-1) translateZ(55px)  rotateX(1deg) skewX(1deg) rotate(-7deg); }
+}
+
 @-webkit-keyframes palmLeafSwing1 {
-    20% { -webkit-transform: rotate(15deg); }
+    20% { -webkit-transform: rotate(15deg); }   
     40% { -webkit-transform: rotate(-10deg); }
     60% { -webkit-transform: rotate(5deg); }
     80% { -webkit-transform: rotate(-5deg); }
@@ -151,6 +184,12 @@ h3 {
     padding: 0;
 }
 
+.intro-top-front-palms {
+    position: absolute;
+        top: 0;
+        left: 0;
+}
+
 .top-palms {
     animation-duration: 8s;
     animation-direction: alternate;
@@ -161,14 +200,14 @@ h3 {
     
     &--left {
         animation-name: topLeftPalmSwing;
-        filter: drop-shadow(4px 20px 3px rgba(0, 0, 0, 0.75)) hue-rotate(330deg);
+        filter: hue-rotate(346deg) brightness(0.35);
         left: -4px;
         transform-origin: top left;
     }
 
     &--right {
         animation-name: topRightPalmSwing;
-        filter: drop-shadow(-2px 20px 3px rgba(0, 1, 2, 0.75)) hue-rotate(340deg);
+        filter: hue-rotate(340deg) brightness(0.5);
         right: -10px;
         transform-origin: top right;
         z-index: 2;
@@ -190,12 +229,12 @@ h3 {
 
 .dark-leaves-left {
     animation-name: darkPalmLeafFlipSwing;
-    animation-duration: 20s;
+    animation-duration: 14s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     position: absolute;
-        top: 0;
+        top: -30vh;
         left: 520px;
     transform-origin: left;
 }
@@ -224,13 +263,17 @@ h3 {
     transform-origin: bottom;
 }
 
-.palm-right {
-    -webkit-transform: translateZ(100px);
-    transform: translateZ(100px);
-    filter: drop-shadow(-5px 23px 2px rgba(22,44,68,0.25));
+.intro-palm-bottom-left {
+    animation-name: introPalmBottomLeft;
+    animation-duration: 14s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    filter: hue-rotate(336deg) brightness(0.35);
     position: absolute;
-        bottom: -178px;
-        right: 385px;
+        bottom: 1vh;
+        left: -27px;
+    transform-origin: bottom;
     z-index: 2;
 }
 
@@ -285,6 +328,21 @@ h3 {
         right: -354px;
 }
 
+#book {
+}
+
+#bookText {
+    background: url('img/Pngtree-8910691-book.png') center no-repeat;
+    display: flex;
+    flex-direction: row;
+    width: 590px;
+}
+
+.book-page {
+    padding: 60px;
+    transform: rotate(-6deg);
+}
+
 .about-me__img-frame {
     background-color: #ebe7db;
     border: 11px solid #42342f;
@@ -318,6 +376,14 @@ h3 {
 
     >li { padding: 0 10px; }
     .fa-brands { font-size: 30px; }
+}
+
+#lamp {
+    position: absolute;
+        bottom: -10px;
+        left: 50px;
+    transform: scaleX(-1);
+    z-index: -1;
 }
 
 #projectExamplesSection {
