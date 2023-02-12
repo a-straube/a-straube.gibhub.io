@@ -7,21 +7,22 @@
     <title>Axel Straube - Front-End Web Development and Design</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barrio&family=Bebas+Neue&family=Comforter+Brush&family=Red+Hat+Display:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barrio&family=Red+Hat+Display:wght@300;400;500;700&family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/f72e5241bb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <video autoplay muted loop id="projectExamplesBGVid" src="img/pexels-kindel-media-8214976.mp4"></video>
     <div class="parallax">
         <section id="topSection">
             <img src="img/top-left-palms.png" alt="Palm leaves" class="top-palms top-palms--left">
             <img src="img/top-right-palms.png" alt="Palm leaves" class="top-palms top-palms--right">
             <h1><span>Axel </span><span>Straube</span></h1>
             <h2>
-                <span>Front End</span>
-                <span>Web</span>
+                <span>Front-End</span>
                 <span>Development</span>
                 <span>&amp; Design</span>
             </h2>
@@ -37,58 +38,75 @@
             <img src="img/chris-lee-70l1tDAI6rM-unsplash-min.png" alt="Plant leaves" class="about-me-section-plant-right">
             <div class="section-content">
                 <div>
-                    <div id="book">
-                        <div id="bookText">
-                            <div class="book-page">
-                                <h3>About Me</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus proin nibh nisl condimentum id venenatis a condimentum. Dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc.</p>
+                    <div id="window">
+                        <img src="img/Pngtree-5615760.png" alt="">
+                    </div>
+                    <div id="book" class="carousel slide" data-bs-interval="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="book-page">
+                                    <h3>About Me</h3>
+                                    <p>Hello, world! Thanks for checking out my <strike>paralllax plant party</strike> website. </p>
+                                </div>
+                                <div class="book-page">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus proin nibh nisl condimentum id venenatis a condimentum. Dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc.</p>
+                                </div>
                             </div>
-                            <div class="book-page">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus proin nibh nisl condimentum id venenatis a condimentum. Dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc.</p>
+
+                            <div class="carousel-item">
+                                <div class="book-page">
+                                    <h4>Some of my favorite languages/frameworks/tools include:</h4>
+                                    <ul class="language-list">
+                                        <li><i class="fa-brands fa-square-js"></i></li>
+                                        <li><i class="fa-brands fa-react"></i></li>
+                                        <li><i class="fa-brands fa-html5"></i></li>
+                                        <li><i class="fa-brands fa-css3"></i></li>
+                                        <li><i class="fa-brands fa-bootstrap"></i></li>
+                                        <li><i class="fa-brands fa-git"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="book-page">
+                                    <h3>Hello</h3>
+                                </div>
                             </div>
                         </div>
-                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img class="d-block w-100" src="..." alt="First slide">
-                              </div>
-                              <div class="carousel-item">
-                                <img class="d-block w-100" src="..." alt="Second slide">
-                              </div>
-                              <div class="carousel-item">
-                                <img class="d-block w-100" src="..." alt="Third slide">
-                              </div>
-                            </div>
-                          </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#book" data-bs-slide="prev">
+                            <i class="fa-solid fa-reply"></i>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#book" data-bs-slide="next">
+                            <i class="fa-solid fa-share"></i>
+                            <span class="visually-hidden">Next</span>
+                          </button>
                     </div>
-                    <h4>Some of my favorite languages/frameworks/tools include:</h4>
-                    <ul class="language-list">
-                        <li><i class="fa-brands fa-square-js"></i></li>
-                        <li><i class="fa-brands fa-react"></i></li>
-                        <li><i class="fa-brands fa-html5"></i></li>
-                        <li><i class="fa-brands fa-css3"></i></li>
-                        <li><i class="fa-brands fa-git"></i></li>
-                    </ul>
 
                     <div id="lamp">
                         <img src="img/Pngtree-8910691-lamp.png" alt="">
                     </div>
                 </div>
-                <div>
+                <div id="imgFrameContainer">
                     <span class="about-me__img-frame"><img src="img/index-axel-piano.jpg" alt=""></span>
                 </div>
             </div>
         </section>
         <section id="projectExamplesSection">
-            <h3>Project Examples</h3>
-            <p>Coming soon...</p>
-            <!-- <div>
+            <h3 id="fruitsOfMyLaborH3">
+                <span>Fruits</span>
+                <span>of my</span>
+                <span>Labor</span>
+            </h3>
+            <div>
                 <h3>Trello Project Management Dashboard</h3>
             </div>
-            <div>
+            <div id="mahindraProject">
                 <h3>Mahindra Build-Your-Own</h3>
                 <h4>Built for <span>Dealer Spike LLC</span></h4>
-            </div> -->
+                <img src="https://www.mahindrausa.com/images/pages/category-tractor/category-tractor-1600.png" alt="">
+            </div>
         </section>
         <section id="connectSection">
             <h3>Connect</h3>
@@ -105,13 +123,12 @@
             </ul>
         </section>
         <footer>
-            <span>&copy; <span id="copyrightYear"></span> Axel Straube | All rights reserved</span>
+            <span>&copy; <span id="copyrightYear"></span> Axel Straube | All rights reserved | No pineapples were harmed in the making of this website</span>
             <img id="footerPlant" src="img/kiki-siepel-rZPk8H4v1d0-unsplash.png" alt="Footer plant">
         </footer>
     </div>
 
 </body>
-
 <script>
     let year = new Date().getFullYear();
     const copyrightYear = document.getElementById('copyrightYear');
