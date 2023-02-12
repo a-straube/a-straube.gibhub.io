@@ -3,11 +3,11 @@
 @screen-lg: 1200px;
 
 ::-webkit-scrollbar {
-    width: 15px; 
+    width: 20px; 
 }
   
 ::-webkit-scrollbar-track {
-    background: linear-gradient(0deg, rgba(58,126,71,1) 0%, rgba(238,245,220,1) 50%, rgba(58,126,71,1) 100%);
+    background: linear-gradient(0deg, #018899 0%, rgba(238,245,220,1) 50%, #018899 100%);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -22,24 +22,30 @@ html, body {
     margin: 0;
 }
 
-body {
-    background: beige url('img/pexels-arina-krasnikova-7002678.jpg') no-repeat;
-    background: beige url('img/wesley-tingey-_0sEjWfAK3Q-unsplash.jpg') no-repeat;
-    background-attachment: fixed;
-}
-
 section {
-    background: rgb(163 129 87 / 56%);
-    min-height: 200px;
+    background: beige url('img/wesley-tingey-ZdOW9Qd8mQo-unsplash.jpg') no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
     padding: 100px 120px;
     position: relative;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
+    
+    &:after {
+        content: '';
+        background-color: rgba(193,177,105,0.56);
+        height: 100%;
+            width: 100%;
+        position: absolute;
+            top: 0;
+            left: 0;
+        z-index: -1;
+    }
 }
 
 h1 {
     -webkit-animation-name: clouds;
-    -webkit-animation-duration: 180s;
+    -webkit-animation-duration: 700s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
     -webkit-background-clip: text;
@@ -52,7 +58,7 @@ h1 {
     filter: drop-shadow(3px 3px 3px black) brightness(1.3);
     font-family: 'Barrio';
     font-size: 16vw;
-    letter-spacing: -12px;
+    letter-spacing: -1.35vw;
     line-height: 0.85;
     margin: 0;
     position: absolute;
@@ -65,12 +71,14 @@ h1 {
     >span { display: block; }
     >span:first-child {
         font-size: 28vw;
+        letter-spacing: -2vw;
+        line-height: 0.7;
     }
 }
 
 h2 {
-    background-color: rgb(2 40 36 / 75%);
-    background-image: url('img/12505_topography-lines-png.png');
+    background-color: rgb(2 31 40 / 85%);
+    // background-image: url('img/12505_topography-lines-png.png');
     background-attachment: unset;
     background-repeat: repeat;
     background-position: 0%;
@@ -78,11 +86,10 @@ h2 {
     border-bottom: 1px solid rgba(255,255,255,0.5);
     color: #ffffff;
     font-size: 2vw;
-    font-weight: 400;
-    letter-spacing: 1.25vw;
-    line-height: 1.5;
-    margin: 15px 0 0;
-    padding: 80px 100px 80px 140vh;
+    font-weight: 100;
+    letter-spacing: 1.1vw;
+    line-height: 2.3;
+    padding: 80px 50px 80px 66vw;
     position: absolute;
         top: 50%;
     text-align: left;
@@ -191,7 +198,7 @@ h3 { text-transform: uppercase;
 }
 
 .top-palms {
-    animation-duration: 8s;
+    animation-duration: 10s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
@@ -201,7 +208,7 @@ h3 { text-transform: uppercase;
     &--left {
         animation-name: topLeftPalmSwing;
         filter: hue-rotate(346deg) brightness(0.35);
-        left: -4px;
+        left: -10px;
         transform-origin: top left;
     }
 
@@ -278,7 +285,7 @@ h3 { text-transform: uppercase;
 }
 
 #aboutMeSection {
-    padding: 150px 120px;
+    padding: 280px 120px;
     
     &:before {
         content: url(img/wood.png);
@@ -316,7 +323,7 @@ h3 { text-transform: uppercase;
     filter: blur(2px);
     position: absolute;
         bottom: 0;
-        left: -78px;
+        left: -156px;
 }
 
 .about-me-section-plant-right {
@@ -328,20 +335,60 @@ h3 { text-transform: uppercase;
         right: -354px;
 }
 
-#book {
+#window {
+    -webkit-animation-name: clouds;
+    -webkit-animation-duration: 680s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+  	-webkit-text-fill-color: transparent;	
+    background-image: url('img/david-von-diemar-BMIigmNxx6I-unsplash.jpg');
+    background-image: url('img/imageedit_1_3661914806.jpg');
+	background-size: auto 100%;
+	background-attachment: unset;
+	background-position: 0%;
+    height: 350px;
+        width: 350px;
+    position: absolute;
+        top: -20%;
+        right: 20%;
+    img {
+        width: 100%;
+    }
 }
 
-#bookText {
+#book {
     background: url('img/Pngtree-8910691-book.png') center no-repeat;
-    display: flex;
-    flex-direction: row;
-    width: 590px;
+    background-size: 104% 104%;
+    height: 105%;
+        width: 44vw;
+    padding: 0 3vw;
+    position: absolute;
+        top: 7vh;
+        left: 9vw;
+}
+
+.fa-reply, .fa-share {
+    color: orange;
+    font-size: 100px;
+    transform: rotate(-6deg);
 }
 
 .book-page {
-    padding: 60px;
+    float: left;
+    font-family: 'Waiting for the Sunrise', cursive;
+    font-size: 1vw;
+    font-weight: 700;
+    line-height: 1.1;
+    padding: 7vh 0 13vh;
     transform: rotate(-6deg);
+    width: 50%;
+    h3, h4, p {
+        font-weight: 700;
+        padding: 0.1vw 1vw;
+    }
 }
+
+#imgFrameContainer { width: 37%; }
 
 .about-me__img-frame {
     background-color: #ebe7db;
@@ -365,6 +412,7 @@ h3 { text-transform: uppercase;
     img {
         border: 20px solid #ebe7db;
         border-radius: 24px;
+        width: 100%;
     }
 }
 
@@ -379,19 +427,24 @@ h3 { text-transform: uppercase;
 }
 
 #lamp {
+    height: 140%;
     position: absolute;
-        bottom: -10px;
-        left: 50px;
+        bottom: -15px;
+        left: -50px;
     transform: scaleX(-1);
     z-index: -1;
+    >img { height: 100%; }
 }
 
 #projectExamplesSection {
-    background-color: #999999;
+    background: url(img/Pngtree-3917103-texture.png) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     border-top: 3px solid #202020;
     border-bottom: 9px solid #202020;
     box-shadow: 0 0 12px rgba(0,1,2,0.9);
-    min-height: 500px;
+    min-height: 105vh;
+    overflow: hidden;
     
     &:before {
         content: '';
@@ -405,20 +458,56 @@ h3 { text-transform: uppercase;
     }
 
     &:after {
-        content: '';
-        background: url(img/pexels-allec-gomes-5403485.jpg) top center;
         background-attachment: fixed;
-        filter: contrast(0.4) hue-rotate(32deg);
+        filter: contrast(0.4) hue-rotate(32deg) opacity(0.75);
         height: 100%;
             width: 100%;
         position: absolute;
             top: 0;
             left: 0;
-        z-index: -1;
+        z-index: -2;
+    }
+
+    >div {
+        display: inline-block;
+        max-width: 500px;
+        position: relative;
     }
 }
 
-#connectSection {
+#fruitsOfMyLaborH3 {
+    color: orange;
+    font-family: 'Barrio';
+    font-size: 72px;
+    max-width: 300px;
+    position: relative;
+    text-shadow: 1px 2px #000000;
+    &:after {
+        content: url(img/pexels-shvets-production-7194820.png);
+        position: absolute;
+            top: -120px;
+            left: -120px;
+        z-index: -1;
+    }
+    >span { display: block; }
+}
+
+#projectExamplesBGVid {
+    position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#mahindraProject {
+    position: absolute;
+        right: 0;
+        top: 5px;
+}
+
+section#connectSection {
+    min-height: 0;
     &:after {
         content: '';
         background-color: rgb(238, 245, 220);
