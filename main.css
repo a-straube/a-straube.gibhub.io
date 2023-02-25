@@ -163,16 +163,6 @@ section {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
-section:after {
-  content: '';
-  background-color: rgba(193, 177, 105, 0.56);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
 h1 {
   -webkit-animation-name: clouds;
   -webkit-animation-duration: 200s;
