@@ -1,4 +1,4 @@
-@import 'styling/keyframes.less';
+@import 'styling/keyframes.css';
 
 @screen-sm: 760px;
 @screen-md: 992px;
@@ -32,6 +32,9 @@ section {
     position: relative;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
+    &.buffer-section {
+        min-height: 10vh;
+    }
 }
 
 h1 {
@@ -53,10 +56,9 @@ h1 {
     margin: 0;
     position: absolute;
         top: 50%;
-        left: 100px;
+        left: -12vw;
     text-align: left;
-    transform: translateY(-50%);
-    width: 100%;
+    transform: translateY(-50%) translateZ(-14px) scale(2);
     z-index: 1;
     >span { display: block; }
     >span:first-child {
@@ -67,7 +69,7 @@ h1 {
 }
 
 h2 {
-    background-color: rgb(2 31 40 / 85%);
+    background-color: rgb(2 31 40 / 94%);
     background-attachment: unset;
     background-repeat: repeat;
     background-position: 0%;
@@ -98,7 +100,7 @@ h3 { text-transform: uppercase; }
     overflow-x: hidden;
     overflow-y: auto;
     -webkit-perspective: 300px;
-    perspective: 150px;
+    perspective: 15px;
 }
 
 #topSection {
@@ -138,96 +140,96 @@ h3 { text-transform: uppercase; }
 
 
 .dark-leaves-top {
-    animation-name: introDarkPalmTop;
+    // animation-name: introDarkPalmTop;
     animation-duration: 20s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    transform: rotate(139deg) scaleX(-1);
     position: absolute;
-        top: 30px;
-        left: 50%;
-    transform-origin: top;
+        top: -75px;
+        left: 48%;
 }
 
 .dark-leaves-left {
-    animation-name: darkPalmLeafFlipSwing;
+    // animation-name: darkPalmLeafFlipSwing;
     animation-duration: 14s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     position: absolute;
+    transform: translateZ(-1px);
         top: -30vh;
         left: 520px;
     transform-origin: left;
+    z-index: 1;
 }
 
 .dark-leaves-right {
     position: absolute;
         bottom: 49px;
         right: -276px;
-    animation-name: palmLeafSwing1;
+    // animation-name: palmLeafSwing1;
     transform-origin: bottom right;
     animation-duration: 18s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    transform: translateZ(-1px);
+    z-index: 1;
 }
 
 .dark-leaves-bottom {
-    animation-name: darkPalmLeafSwingBottom;
-    animation-duration: 24s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+    // animation-name: darkPalmLeafSwingBottom;
+    // animation-duration: 24s;
+    // animation-direction: alternate;
+    // animation-iteration-count: infinite;
+    // animation-timing-function: ease-in-out;
+    filter: hue-rotate(336deg) brightness(0.35);
     position: absolute;
-        bottom: 0;
-        right: 204px;
-    transform-origin: bottom;
+        bottom: -9vh;
+        right: -19vw;
+    // transform-origin: bottom;
+    transform: rotate(-8deg) translateZ(-2px) scale(1.1);
+    z-index: 1;
 }
 
 .intro-palm-bottom-left {
-    animation-name: introPalmBottomLeft;
+    // animation-name: introPalmBottomLeft;
     animation-duration: 14s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    filter: hue-rotate(336deg) brightness(0.35);
+    
     position: absolute;
-        bottom: 1vh;
-        left: -27px;
-    transform-origin: bottom;
-    z-index: 2;
+        top: -7vh;
+        left: -17vw;
+    transform: scaleX(-1) scale(1.2) translateZ(-2px) rotate(-14deg);
 }
 
 #aboutMeSection {
+    background: none;
     padding: 280px 120px;
+    position: absolute;
+        top: 63vh;
+    transform: translateZ(4px) scale(0.74);
+    width: 100vw;
+    z-index: 1;
     
     &:before {
-        content: url(img/wood.png);
-        opacity: 0.06;
+        content: url(img/wood.jpg);
         position: absolute;
-            top: 37%;
+            top: 67%;
             left: 0;
-    }
-    
-    &:after {
-        content: '';
-        background-color: rgb(238, 245, 220);
-        background: linear-gradient(186deg, #fffec6 55%, #462b1b 45%);
-        box-shadow: 0 0 12px #000000;
-        height: 100%;
-            width: 100%;
-        position: absolute;
-            top: 0;
-            left: 0;
-        transform: skewY(354deg);
-        z-index: -1;
+        filter: brightness(0.25) contrast(0.9);
     }
 
     .section-content {
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
+        position: relative;
+            top: 13vh;
         transform: translateZ(0);
     }
 }
@@ -300,7 +302,11 @@ h3 { text-transform: uppercase; }
     }
 }
 
-#imgFrameContainer { width: 37%; }
+#imgFrameContainer {
+    position: relative;
+        right: -1vw;
+    width: 37%;
+}
 
 .about-me__img-frame {
     background-color: #ebe7db;
@@ -355,7 +361,7 @@ h3 { text-transform: uppercase; }
     border-top: 3px solid #202020;
     border-bottom: 9px solid #202020;
     box-shadow: 0 0 12px rgba(0,1,2,0.9);
-    min-height: 105vh;
+    min-height: 150vh;
     overflow: hidden;
     
     &:before {
@@ -370,13 +376,10 @@ h3 { text-transform: uppercase; }
     }
 
     &:after {
-        filter: contrast(0.4) hue-rotate(32deg) opacity(0.75);
-        height: 100%;
-            width: 100%;
-        position: absolute;
-            top: 0;
-            left: 0;
-        z-index: -2;
+        content: '';
+        position: relative;
+        top: 0;
+        height: 100px;
     }
 
     >div {
@@ -459,7 +462,6 @@ footer {
     border-bottom: 1px solid rgba(252,252,252,0.75);
     color: #ffffff;
     display: flex;
-    margin-bottom: 55px;
     min-height: 50px;
     padding-left: 100px;
     position: relative;
