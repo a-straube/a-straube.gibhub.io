@@ -12,25 +12,23 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/f72e5241bb.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <video autoplay muted loop id="projectExamplesBGVid" src="img/pexels-kindel-media-8214976-min.mp4"></video>
     <div class="parallax">
-        <!-- <img src="img/dark-palm-leaves.png" alt="" class="dark-leaves-right">
-        <img src="img/dark-palm-leaves.png" alt="" class="dark-leaves-left"> -->
         <img src="img/pawel-czerwinski-E2tGOeS4Ijc-unsplash.png" alt="" class="dark-leaves-bottom">
         <section id="topSection">
             <img src="img/top-left-palms.png" alt="Palm leaves" class="top-palms top-palms--left">
             <img src="img/dark-palm-leaves.png" alt="" class="dark-leaves-top">
             <img src="img/top-right-palms.png" alt="Palm leaves" class="top-palms top-palms--right">
             <h2>
-                <span>Front-End</span>
-                <span>Development</span>
-                <span>&amp; Design</span>
+                <span>Front.End</span>
+                <span>Developer</span>
             </h2>
         </section>
-        <h1><span>Axel </span><span>Straube</span></h1>
+        <h1 id="h1Name"><span>Axel </span><span>Straube</span></h1>
         <img src="img/chris-lee-70l1tDAI6rM-unsplash-min.png" alt="Plant leaves" class="plant-left">
         <img src="img/chris-lee-70l1tDAI6rM-unsplash-min.png" alt="Plant leaves" class="about-me-section-plant-right">
         <section id="aboutMeSection">
@@ -61,6 +59,7 @@
                                         <li><i class="fa-brands fa-html5"></i></li>
                                         <li><i class="fa-brands fa-css3"></i></li>
                                         <li><i class="fa-brands fa-bootstrap"></i></li>
+                                        <li><i class="fa-brands fa-aws"></i></li>
                                         <li><i class="fa-brands fa-git"></i></li>
                                     </ul>
                                 </div>
@@ -100,13 +99,31 @@
                 <span>of my</span>
                 <span>Labor</span>
             </h3>
-            <div>
-                <h3>Trello Project Management Dashboard</h3>
+            <div id="trelloProject">
+                <div class="fruit">
+                    <img src="img/pexels-cottonbro-studio-4631073-left.png" alt="">
+                    <img src="img/pexels-cottonbro-studio-4631073-right.png" alt="">
+                </div>
+                <div class="inside-fruit">
+                    <h3>Trello Project Management Dashboard</h3>
+                </div>
             </div>
             <div id="mahindraProject">
-                <h3>Mahindra Build-Your-Own</h3>
-                <h4>Built for <span>Dealer Spike LLC</span></h4>
-                <img src="https://www.mahindrausa.com/images/pages/category-tractor/category-tractor-1600.png" alt="">
+                <div class="fruit fruit--right">
+                    <img src="img/pexels-anna-shvets-11124886-top.png" alt="">
+                    <img src="img/pexels-anna-shvets-11124886-bottom.png" alt="">
+                </div>
+                <div class="inside-fruit">
+                    <h3>Mahindra Build-Your-Own</h3>
+                    <h4>Built for <span>Dealer Spike LLC</span></h4>
+                    <img src="https://www.mahindrausa.com/images/pages/category-tractor/category-tractor-1600.png" alt="">
+                </div>
+            </div>
+            <div id="codeSchoolProjects">
+                <div class="fruit">
+                    <img src="img/pexels-shvets-production-7194810-left.png" alt="">
+                    <img src="img/pexels-shvets-production-7194810-right.png" alt="">
+                </div>
             </div>
         </section>
         <section id="connectSection">
@@ -131,12 +148,24 @@
     </div>
 
 </body>
+
 <script>
+    // Hide h1 when scrolling to 'Fruits of my Labor' section
+    const parallaxBody = document.querySelector('.parallax');
+    parallaxBody.onscroll = function() {
+        let parallaxBodyScrollTop = this.scrollTop;
+        if (parallaxBodyScrollTop > 1100) {
+            document.getElementById('h1Name').style.display = "none";
+        } else {
+            document.getElementById('h1Name').style.display = "block";
+        }
+    };
+    // Slow down bg vid playback for 'Fruits of my Labor' section
+    document.querySelector('video').playbackRate = 0.4;
+    // Add year to copyright
     let year = new Date().getFullYear();
     const copyrightYear = document.getElementById('copyrightYear');
     copyrightYear.innerHTML = year;
-
-    document.querySelector('video').playbackRate = 0.4;
 </script>
 
 </html>
