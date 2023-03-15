@@ -56,9 +56,9 @@ h1 {
     margin: 0;
     position: absolute;
         top: 50%;
-        left: -12vw;
+        left: -105vw;
     text-align: left;
-    transform: translateY(-50%) translateZ(-100px) scale(5);
+    transform: translateY(-50%) translateZ(-100px) scale(8);
     z-index: 1;
     >span { display: block; }
     >span:first-child {
@@ -73,7 +73,19 @@ h1 {
 
 h2 {
     background: rgb(2,31,40);
-    background: linear-gradient(180deg, rgba(2,40,60,0.82) 0%, rgba(2,20,35,0.9) 10%, rgba(2,15,30,0.98) 35%, rgba(2,35,42,0.75) 65%, rgba(237, 175, 17, 0.5) 90%, rgba(22,50,75,0) 100%);
+    background: linear-gradient(180deg, 
+        rgba(2,40,60,0.82) 0%, 
+        rgba(2,20,35,0.9) 10%,
+        rgba(2,20,35,0.9) 20%, 
+        rgba(2,15,30,0.98) 30%, 
+        rgba(2,15,30,0.98) 40%, 
+        rgba(2,15,30,0.9) 50%, 
+        rgba(2,35,42,0.8) 60%, 
+        rgba(2,35,42,0.75) 70%, 
+        rgba(205,164,59,0.5) 80%, 
+        rgba(205,164,59,0.5) 90%, 
+        rgba(22,50,75,0) 100%
+    );
     background-attachment: unset;
     background-repeat: repeat;
     background-position: 0%;
@@ -141,17 +153,21 @@ h3 { text-transform: uppercase; }
     }
 }
 
-
-.dark-leaves-top {
-    // animation-name: introDarkPalmTop;
-    animation-duration: 20s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    transform: rotate(139deg) scaleX(-1);
+.leaf-wrapper {
+    perspective: 780px;
+    perspective-origin: top;
     position: absolute;
         top: -75px;
         left: 48%;
+
+}
+
+.dark-leaves-top {
+    animation-name: introDarkPalmTop;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
 .dark-leaves-left {
@@ -183,18 +199,18 @@ h3 { text-transform: uppercase; }
 }
 
 .dark-leaves-bottom {
-    // animation-name: darkPalmLeafSwingBottom;
-    // animation-duration: 24s;
-    // animation-direction: alternate;
-    // animation-iteration-count: infinite;
-    // animation-timing-function: ease-in-out;
-    filter: hue-rotate(336deg) brightness(0.35);
+    animation-name: darkPalmLeafSwingBottom;
+    animation-duration: 20s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    filter: brightness(0.75) hue-rotate(11deg) blur(1px);
     position: absolute;
-        bottom: -9vh;
-        right: -19vw;
-    // transform-origin: bottom;
-    transform: rotate(-8deg) translateZ(-2px) scale(1.1);
+        top: 44vh;
+        right: -100vw;
+    transform-origin: top;
     z-index: 1;
+    // transform: rotate(150deg) translateZ(-4px);
 }
 
 .intro-palm-bottom-left {

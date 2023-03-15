@@ -18,10 +18,13 @@
 <body>
     <video autoplay muted loop id="projectExamplesBGVid" src="img/pexels-kindel-media-8214976-min.mp4"></video>
     <div class="parallax">
-        <img src="img/pawel-czerwinski-E2tGOeS4Ijc-unsplash.png" alt="" class="dark-leaves-bottom">
+        <!-- <img src="img/pawel-czerwinski-E2tGOeS4Ijc-unsplash.png" alt="" class="dark-leaves-bottom"> -->
+        <img src="img/pexels-daian-gan-1581363.png" alt="" class="dark-leaves-bottom">
         <section id="topSection">
             <img src="img/top-left-palms.png" alt="Palm leaves" class="top-palms top-palms--left">
-            <img src="img/dark-palm-leaves.png" alt="" class="dark-leaves-top">
+            <div class="leaf-wrapper">
+                <img src="img/dark-palm-leaves.png" alt="" class="dark-leaves-top">
+            </div>
             <img src="img/top-right-palms.png" alt="Palm leaves" class="top-palms top-palms--right">
             <h2>
                 <span>Front.End</span>
@@ -154,7 +157,7 @@
     const parallaxBody = document.querySelector('.parallax');
     parallaxBody.onscroll = function() {
         let parallaxBodyScrollTop = this.scrollTop;
-        if (parallaxBodyScrollTop > 1100) {
+        if (parallaxBodyScrollTop > 1050) {
             document.getElementById('h1Name').style.display = "none";
         } else {
             document.getElementById('h1Name').style.display = "block";
