@@ -21,7 +21,7 @@
     <video autoplay muted loop id="projectExamplesBGVid" src="img/pexels-kindel-media-8214976-min.mp4"></video>
     <div class="parallax">
         <!-- <img src="img/pawel-czerwinski-E2tGOeS4Ijc-unsplash.png" alt="" class="dark-leaves-bottom"> -->
-        <img src="img/pexels-daian-gan-1581363.png" alt="" class="dark-leaves-bottom">
+        <img id="introSectionBottomRightLeaves" src="img/pexels-daian-gan-1581363.png" alt="" class="dark-leaves-bottom">
         <section id="topSection">
             <img src="img/top-left-palms.png" alt="Palm leaves" class="top-palms top-palms--left">
             <div class="leaf-wrapper">
@@ -29,8 +29,11 @@
             </div>
             <img src="img/top-right-palms.png" alt="Palm leaves" class="top-palms top-palms--right">
             <h2>
-                <span>Front.End</span>
-                <span>Developer</span>
+                <span>
+                    <span>Front</span>
+                    <span>End</span>
+                    <span>Developer</span>
+                </span>
             </h2>
         </section>
         <!-- <h1 id="h1Name"><span>Axel </span><span>Straube</span></h1> -->
@@ -156,12 +159,13 @@
 </body>
 
 <script>
-    // Hide h1 when scrolling to 'Fruits of my Labor' section
+    // Fade out h1 when scrolling to 'Fruits of my Labor' section
     const parallaxBody = document.querySelector('.parallax');
     parallaxBody.onscroll = function() {
         let parallaxBodyScrollTop = this.scrollTop;
-        console.log(parallaxBodyScrollTop);
-        if(parallaxBodyScrollTop >= 850) {
+        if(parallaxBodyScrollTop >= 950) {
+            document.getElementById('introSectionBottomRightLeaves').style.opacity = "0";
+        } else if(parallaxBodyScrollTop >= 850) {
             document.getElementById('h1Name').style.opacity = "0";
         } else if(parallaxBodyScrollTop < 850 && parallaxBodyScrollTop > 800) { 
             document.getElementById('h1Name').style.opacity = "0.5";
@@ -175,6 +179,7 @@
             document.getElementById('h1Name').style.opacity = "0.9";
         } else {
             document.getElementById('h1Name').style.opacity = "1";
+            document.getElementById('introSectionBottomRightLeaves').style.opacity = "1";
         }
     };
     // Slow down bg vid playback for 'Fruits of my Labor' section
