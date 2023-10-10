@@ -69,14 +69,9 @@ h1.hide {
 }
 h2 {
   background: #021f28;
-  background: linear-gradient(180deg, rgba(2, 40, 60, 0.82) 0%, rgba(2, 20, 35, 0.9) 10%, rgba(2, 20, 35, 0.9) 20%, rgba(2, 15, 30, 0.98) 30%, rgba(2, 15, 30, 0.98) 40%, rgba(2, 15, 30, 0.9) 50%, rgba(2, 35, 42, 0.8) 60%, rgba(2, 35, 42, 0.75) 70%, rgba(205, 164, 59, 0.5) 80%, rgba(205, 164, 59, 0.5) 90%, rgba(22, 50, 75, 0) 100%);
-  background: linear-gradient(180deg, rgba(161, 111, 4, 0.75) 0%, rgba(235, 207, 80, 0.95) 50%, rgba(235, 163, 8, 0.5) 75%, rgba(235, 163, 8, 0.01) 100%);
-  background: linear-gradient(180deg, rgba(80, 228, 235, 0.55) 0%, rgba(169, 91, 10, 0.95) 30%, rgba(235, 163, 8, 0.45) 75%, rgba(235, 163, 8, 0.01) 100%);
-  background-attachment: unset;
-  background-repeat: repeat;
-  background-position: 0%;
+  background: linear-gradient(180deg, rgba(3, 94, 98, 0.85) 0%, rgba(169, 91, 10, 0.8) 30%, rgba(235, 163, 8, 0.55) 75%, rgba(235, 163, 8, 0.01) 100%);
   border-top: 2px solid rgba(255, 255, 255, 0.9);
-  color: #02041a;
+  color: #ffffff;
   font-size: 3.6vw;
   font-weight: 100;
   letter-spacing: 1.7vw;
@@ -91,6 +86,9 @@ h2 {
   width: 100%;
 }
 h2 > span {
+  display: block;
+  border: 3px solid #ffffff;
+  padding: 5px 10px;
   transform: translateZ(-10px);
 }
 h2 > span > span {
