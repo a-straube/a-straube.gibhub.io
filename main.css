@@ -346,17 +346,6 @@ h3 {
   border-bottom: 9px solid #202020;
   box-shadow: 0 0 12px rgba(0, 1, 2, 0.9);
   min-height: 150vh;
-  overflow: hidden;
-}
-#projectExamplesSection:before {
-  content: '';
-  border-top: 2px solid #eef5dc;
-  border-bottom: 2px solid #eef5dc;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 #projectExamplesSection:after {
   content: '';
@@ -408,6 +397,7 @@ h3 {
 .fruit > img {
   transition: all 1s ease-in-out;
   position: absolute;
+  left: 0vw;
 }
 .inside-fruit {
   left: -25%;
@@ -433,6 +423,19 @@ h3 {
 .fruit:active .inside-fruit {
   opacity: 1;
   z-index: 1;
+}
+.inside-fruit:after {
+  content: '';
+  background-color: rgba(197, 227, 227, 0.85);
+  border-radius: 49%;
+  box-shadow: 0 6px 18px #4f4b42;
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  z-index: -1;
 }
 #mahindraProject {
   height: 70vh;
@@ -466,19 +469,6 @@ h3 {
   top: 57vh;
   left: -32px;
 }
-#mahindraProject .inside-fruit:after {
-  content: '';
-  background-color: rgba(197, 227, 227, 0.85);
-  border-radius: 49%;
-  box-shadow: 0 6px 18px #4f4b42;
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: -5px;
-  left: 0;
-  z-index: -1;
-}
 #trelloProject {
   bottom: 0;
   left: 32vw;
@@ -491,8 +481,20 @@ h3 {
   max-height: 69vh;
 }
 #codeSchoolProjects .fruit > img {
-  position: absolute;
-  top: 0;
+  top: -52vh;
+}
+#codeSchoolProjects .fruit > img:first-child {
+  z-index: 1;
+}
+#codeSchoolProjects .fruit:hover > img:first-child,
+#codeSchoolProjects .fruit:focus > img:first-child,
+#codeSchoolProjects .fruit:active > img:first-child {
+  left: -10vw;
+}
+#codeSchoolProjects .fruit:hover > img:last-child,
+#codeSchoolProjects .fruit:focus > img:last-child,
+#codeSchoolProjects .fruit:active > img:last-child {
+  left: 5vw;
 }
 section#connectSection {
   min-height: 0;

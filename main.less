@@ -376,18 +376,6 @@ h3 { text-transform: uppercase; }
     border-bottom: 9px solid #202020;
     box-shadow: 0 0 12px rgba(0,1,2,0.9);
     min-height: 150vh;
-    overflow: hidden;
-    
-    &:before {
-        content: '';
-        border-top: 2px solid rgb(238, 245, 220);
-        border-bottom: 2px solid rgb(238, 245, 220);
-        height: 100%;
-            width: 100%;
-        position: absolute;
-            top: 0;
-            left: 0;
-    }
 
     &:after {
         content: '';
@@ -439,6 +427,7 @@ h3 { text-transform: uppercase; }
     >img {
         transition: all 1s ease-in-out;
         position: absolute;
+            left: 0vw;
     }
 }
 
@@ -471,6 +460,20 @@ h3 { text-transform: uppercase; }
     }
 }
 
+.inside-fruit:after {
+    content: '';
+    background-color: rgba(197,227,227,0.85);
+    border-radius: 49%;
+    box-shadow: 0 6px 18px #4f4b42;
+    display: block;
+    height: 100%;
+        width: 100%;
+    position: absolute;
+        top: -5px;
+        left: 0;
+    z-index: -1;
+}
+
 #mahindraProject {
     height: 70vh;
     position: absolute;
@@ -500,19 +503,6 @@ h3 { text-transform: uppercase; }
         position: relative;
             top: 57vh;
             left: -32px;
-        &:after {
-            content: '';
-            background-color: rgba(197,227,227,0.85);
-            border-radius: 49%;
-            box-shadow: 0 6px 18px #4f4b42;
-            display: block;
-            height: 100%;
-                width: 100%;
-            position: absolute;
-                top: -5px;
-                left: 0;
-            z-index: -1;
-        }
     }
 }
 
@@ -530,14 +520,15 @@ h3 { text-transform: uppercase; }
 
     .fruit {
         >img {
-            position: absolute;
-                top: 0;
+            top: -52vh;
             &:first-child {
+                z-index: 1;
+            }
+        }
 
-            }
-            &:last-child {
-                
-            }
+        &:hover, &:focus, &:active {
+            >img:first-child { left: -10vw; }
+            >img:last-child { left: 5vw; }
         }
     }
 }
