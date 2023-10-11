@@ -48,6 +48,7 @@ h1 {
   letter-spacing: -1.2vw;
   line-height: 0.8;
   margin: 0;
+  pointer-events: none;
   position: absolute;
   top: 50%;
   left: -105vw;
@@ -207,7 +208,7 @@ h3 {
 #aboutMeSection:before {
   content: url(img/wood.jpg);
   position: absolute;
-  top: 67%;
+  top: 50%;
   left: 0;
   filter: brightness(0.25) contrast(0.9);
 }
@@ -363,23 +364,31 @@ h3 {
   top: 0;
   height: 100px;
 }
-#projectExamplesSection > div {
+.fruit-project-container {
   display: inline-block;
+  height: 30vh;
+  width: 30vw;
   max-width: 500px;
   position: absolute;
 }
 #fruitsOfMyLaborH3 {
-  color: orange;
+  color: #505f37;
   font-family: 'Barrio';
-  font-size: 72px;
-  max-width: 300px;
+  font-size: 66px;
+  line-height: 1;
   position: relative;
-  text-shadow: 1px 2px #000000;
+  text-shadow: 1px 2px 3px #000000;
+}
+@media (min-width: 760px) {
+  #fruitsOfMyLaborH3 {
+    max-width: 400px;
+    padding: 205px 0 0 134px;
+  }
 }
 #fruitsOfMyLaborH3:after {
   content: url(img/pexels-shvets-production-7194820.png);
   position: absolute;
-  top: -120px;
+  top: -275px;
   left: -120px;
   z-index: -1;
 }
@@ -394,23 +403,81 @@ h3 {
   min-height: 100%;
 }
 .fruit {
-  display: flex;
-  flex-wrap: nowrap;
   position: relative;
 }
-.fruit--right {
-  flex-wrap: wrap;
-}
-.fruit img {
-  max-height: 75vh;
+.fruit > img {
+  transition: all 1s ease-in-out;
+  position: absolute;
 }
 .inside-fruit {
-  display: none;
+  left: -25%;
+  max-width: 300px;
+  text-align: center;
+}
+.inside-fruit img {
+  width: 70%;
+}
+.inside-fruit h3 {
+  margin-bottom: 0;
+}
+.inside-fruit h4 {
+  font-weight: 100;
+}
+.fruit .inside-fruit {
+  transition: 1s all ease-in-out;
+  opacity: 0;
+  z-index: -5;
+}
+.fruit:hover .inside-fruit,
+.fruit:focus .inside-fruit,
+.fruit:active .inside-fruit {
+  opacity: 1;
+  z-index: 1;
 }
 #mahindraProject {
+  height: 70vh;
   position: absolute;
   right: 0;
   top: 5px;
+}
+#mahindraProject .fruit > img {
+  width: 100%;
+}
+#mahindraProject .fruit > img:first-child {
+  top: 9vh;
+  z-index: 1;
+}
+#mahindraProject .fruit > img:last-child {
+  top: 70vh;
+  left: 3px;
+}
+#mahindraProject .fruit:hover > img:first-child,
+#mahindraProject .fruit:focus > img:first-child,
+#mahindraProject .fruit:active > img:first-child {
+  top: -15vh;
+}
+#mahindraProject .fruit:hover > img:last-child,
+#mahindraProject .fruit:focus > img:last-child,
+#mahindraProject .fruit:active > img:last-child {
+  top: 80vh;
+}
+#mahindraProject .inside-fruit {
+  position: relative;
+  top: 57vh;
+  left: -32px;
+}
+#mahindraProject .inside-fruit:after {
+  content: '';
+  background-color: rgba(197, 227, 227, 0.85);
+  border-radius: 49%;
+  box-shadow: 0 6px 18px #4f4b42;
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  z-index: -1;
 }
 #trelloProject {
   bottom: 0;
@@ -422,6 +489,10 @@ h3 {
 }
 #codeSchoolProjects img {
   max-height: 69vh;
+}
+#codeSchoolProjects .fruit > img {
+  position: absolute;
+  top: 0;
 }
 section#connectSection {
   min-height: 0;
