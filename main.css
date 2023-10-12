@@ -39,21 +39,18 @@ h1 {
   background-size: auto 100%;
   background-attachment: unset;
   background-position: 0%;
-  filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.7));
-  font-family: 'Barrio';
-  font-family: 'Finger Paint', cursive;
-  font-family: 'Bayon', sans-serif;
-  font-size: 16vw;
-  letter-spacing: -1.35vw;
+  filter: drop-shadow(3px 3px 0px rgba(210, 250, 252, 0.7));
+  font-family: 'Beth Ellen', sans-serif;
+  font-size: 35vw;
   letter-spacing: -1.2vw;
-  line-height: 0.8;
   margin: 0;
+  padding: 4vh 4vw;
   pointer-events: none;
   position: absolute;
-  top: 50%;
-  left: -105vw;
+  top: 0;
+  left: -165vw;
   text-align: left;
-  transform: translateY(-50%) translateZ(-100px) scale(10);
+  transform: translateY(-50%) translateZ(-100px) scale(3);
   transition: 0.1s opacity ease-in-out;
   z-index: 1;
 }
@@ -61,35 +58,36 @@ h1 > span {
   display: block;
 }
 h1 > span:first-child {
-  font-size: 31vw;
-  letter-spacing: -3vw;
-  line-height: 0.7;
+  font-size: 64vw;
+}
+h1 > span:last-child {
+  margin-top: -6vh;
 }
 h1.hide {
   display: none;
 }
 h2 {
-  background: #021f28;
-  background: linear-gradient(180deg, rgba(3, 94, 98, 0.85) 0%, rgba(169, 91, 10, 0.8) 30%, rgba(235, 163, 8, 0.55) 75%, rgba(235, 163, 8, 0.01) 100%);
-  border-top: 2px solid rgba(255, 255, 255, 0.9);
+  background: linear-gradient(180deg, rgba(3, 44, 80, 0.9) 0%, rgba(255, 255, 255, 0.01) 100%);
+  border-top: 2px solid rgba(255, 255, 255, 0.75);
   color: #ffffff;
-  font-size: 3.6vw;
+  font-size: 2.5vw;
   font-weight: 100;
-  letter-spacing: 1.7vw;
+  letter-spacing: 1vw;
   line-height: 1.4;
-  padding: 34vh 50px 0 63vw;
+  padding: 10vh 50px 35vh 67vw;
   position: absolute;
   top: 41%;
   text-align: left;
-  text-shadow: 1px 1px 1px #f2f2f2;
+  text-shadow: 1px 2px #27282d;
   text-transform: lowercase;
   transform: translateY(-20%);
   width: 100%;
 }
 h2 > span {
+  background-color: rgba(55, 97, 147, 0.6);
   display: block;
-  border: 3px solid #ffffff;
-  padding: 5px 10px;
+  border: 1px solid #ffffff;
+  padding: 25px 30px;
   transform: translateZ(-10px);
 }
 h2 > span > span {
@@ -200,7 +198,7 @@ h3 {
   background: none;
   padding: 280px 120px;
   position: absolute;
-  top: 63vh;
+  top: 92vh;
   transform: translateZ(4px) scale(0.74);
   width: 100vw;
   z-index: 1;
@@ -347,6 +345,13 @@ h3 {
   box-shadow: 0 0 12px rgba(0, 1, 2, 0.9);
   min-height: 150vh;
 }
+#projectExamplesSection h3 {
+  color: #07074f;
+  font-family: 'Barrio';
+  font-size: 34px;
+  line-height: 1;
+  text-shadow: 1px 2px 3px #e3dddd;
+}
 #projectExamplesSection:after {
   content: '';
   position: relative;
@@ -360,7 +365,7 @@ h3 {
   max-width: 500px;
   position: absolute;
 }
-#fruitsOfMyLaborH3 {
+h3#fruitsOfMyLaborH3 {
   color: #505f37;
   font-family: 'Barrio';
   font-size: 66px;
@@ -369,19 +374,20 @@ h3 {
   text-shadow: 1px 2px 3px #000000;
 }
 @media (min-width: 760px) {
-  #fruitsOfMyLaborH3 {
+  h3#fruitsOfMyLaborH3 {
     max-width: 400px;
     padding: 205px 0 0 134px;
   }
 }
-#fruitsOfMyLaborH3:after {
+h3#fruitsOfMyLaborH3:after {
   content: url(img/pexels-shvets-production-7194820.png);
+  filter: drop-shadow(5px 5px 7px rgba(83, 82, 79, 0.7));
   position: absolute;
   top: -275px;
   left: -120px;
   z-index: -1;
 }
-#fruitsOfMyLaborH3 > span {
+h3#fruitsOfMyLaborH3 > span {
   display: block;
 }
 #projectExamplesBGVid {
