@@ -17,7 +17,7 @@
     <video autoplay muted loop id="projectExamplesBGVid" src="img/pexels-kindel-media-8214976-min.mp4"></video>
     <div class="parallax">
         <!-- <img src="img/pawel-czerwinski-E2tGOeS4Ijc-unsplash.png" alt="" class="dark-leaves-bottom"> -->
-        <img id="introSectionBottomRightLeaves" src="img/pexels-daian-gan-1581363.png" alt="" class="dark-leaves-bottom">
+        
         <section id="topSection">
             <img src="img/top-left-palms.png" alt="Palm leaves" class="top-palms top-palms--left">
             <div class="leaf-wrapper">
@@ -26,23 +26,43 @@
             <img src="img/top-right-palms.png" alt="Palm leaves" class="top-palms top-palms--right">
             <h2>
                 <span>
-                    <span>Front</span>
-                    <span>End</span>
-                    <span>Developer</span>
+                    <span>
+                        <span>F</span>
+                        <span>r</span>
+                        <span>o</span>
+                        <span>n</span>
+                        <span>t</span>
+                        <span>.</span>
+                        <span>e</span>
+                        <span>n</span>
+                        <span>d</span>
+                    </span>
+                    <span>
+                        <span>d</span>
+                        <span>e</span>
+                        <span>v</span>
+                        <span>e</span>
+                        <span>l</span>
+                        <span>o</span>
+                        <span>p</span>
+                        <span>e</span>
+                        <span>r</span>
+                    </span>
                 </span>
             </h2>
         </section>
-        <h1 id="h1Name"><span>axel </span><span>Straube</span></h1>
+        <h1 id="h1Name"><span><span id="h1LetterA">a</span>xel </span><span>Straube</span></h1>
         <img src="img/chris-lee-70l1tDAI6rM-unsplash-min.png" alt="Plant leaves" class="plant-left">
         <img src="img/chris-lee-70l1tDAI6rM-unsplash-min.png" alt="Plant leaves" class="about-me-section-plant-right">
         <section class="buffer-section"></section>
+        <section class="buffer-section"></section>
+        <div id="window">
+            <img src="img/Pngtree-5615760.png" alt="">
+        </div>
         <section id="aboutMeSection">
             <img src="img/dark-palm-leaves-2.png" alt="Palm leaves" class="intro-palm-bottom-left">
             <div class="section-content">
                 <div>
-                    <!-- <div id="window">
-                        <img src="img/Pngtree-5615760.png" alt="">
-                    </div> -->
                     <div id="book" class="carousel slide" data-bs-interval="false">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -96,6 +116,7 @@
                 </div>
             </div>
         </section>
+        <img id="introSectionBottomRightLeaves" src="img/pexels-daian-gan-1581363.png" alt="" class="dark-leaves-bottom">
         <section class="buffer-section"></section>
         <section class="buffer-section"></section>
         <section id="projectExamplesSection">
@@ -166,7 +187,7 @@
     parallaxBody.onscroll = function() {
         let parallaxBodyScrollTop = this.scrollTop;
         if(parallaxBodyScrollTop >= 950) {
-            document.getElementById('introSectionBottomRightLeaves').style.opacity = "0";
+            // document.getElementById('introSectionBottomRightLeaves').style.opacity = "0";
         } else if(parallaxBodyScrollTop >= 850) {
             document.getElementById('h1Name').style.opacity = "0";
         } else if(parallaxBodyScrollTop < 850 && parallaxBodyScrollTop > 800) { 
@@ -181,7 +202,7 @@
             document.getElementById('h1Name').style.opacity = "0.9";
         } else {
             document.getElementById('h1Name').style.opacity = "1";
-            document.getElementById('introSectionBottomRightLeaves').style.opacity = "1";
+            // document.getElementById('introSectionBottomRightLeaves').style.opacity = "1";
         }
     };
     // Slow down bg vid playback for 'Fruits of my Labor' section

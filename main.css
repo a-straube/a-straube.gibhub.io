@@ -26,7 +26,8 @@ section {
   transform-style: preserve-3d;
 }
 section.buffer-section {
-  min-height: 10vh;
+  background: #fffec6;
+  min-height: 20vh;
 }
 h1 {
   -webkit-animation-name: clouds;
@@ -39,18 +40,18 @@ h1 {
   background-size: auto 100%;
   background-attachment: unset;
   background-position: 0%;
-  filter: drop-shadow(3px 3px 0px rgba(210, 250, 252, 0.7));
+  filter: drop-shadow(3px 3px 5px rgba(0, 2, 5, 0.99));
   font-family: 'Beth Ellen', sans-serif;
-  font-size: 35vw;
+  font-size: 26vw;
   letter-spacing: -1.2vw;
   margin: 0;
-  padding: 4vh 4vw;
+  padding: 4vh 9vw;
   pointer-events: none;
   position: absolute;
   top: 0;
   left: -165vw;
-  text-align: left;
-  transform: translateY(-50%) translateZ(-100px) scale(3);
+  text-align: right;
+  transform: translateY(-60%) translateZ(-100px) scale(3);
   transition: 0.1s opacity ease-in-out;
   z-index: 1;
 }
@@ -58,26 +59,29 @@ h1 > span {
   display: block;
 }
 h1 > span:first-child {
-  font-size: 64vw;
+  font-size: 78vw;
 }
 h1 > span:last-child {
-  margin-top: -6vh;
+  margin-top: -9vh;
 }
 h1.hide {
   display: none;
 }
+#h1LetterA {
+  letter-spacing: -15vw;
+}
 h2 {
-  background: linear-gradient(180deg, rgba(3, 44, 80, 0.9) 0%, rgba(255, 255, 255, 0.01) 100%);
+  background: linear-gradient(180deg, #032c50 0%, rgba(255, 255, 255, 0.01) 100%);
+  background: linear-gradient(180deg, rgba(3, 44, 80, 0.8) 0%, #fffec6 70%, #fffec6 100%);
   border-top: 2px solid rgba(255, 255, 255, 0.75);
   color: #ffffff;
-  font-size: 2.5vw;
+  font-size: 2vw;
   font-weight: 100;
-  letter-spacing: 1vw;
-  line-height: 1.4;
-  padding: 10vh 50px 35vh 67vw;
+  letter-spacing: 0.5vw;
+  line-height: 1.5;
+  padding: 14vh 50px 50vh 67vw;
   position: absolute;
   top: 41%;
-  text-align: left;
   text-shadow: 1px 2px #27282d;
   text-transform: lowercase;
   transform: translateY(-20%);
@@ -85,13 +89,19 @@ h2 {
 }
 h2 > span {
   background-color: rgba(55, 97, 147, 0.6);
-  display: block;
   border: 1px solid #ffffff;
-  padding: 25px 30px;
+  display: block;
+  padding: 30px;
   transform: translateZ(-10px);
 }
 h2 > span > span {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+}
+h2 > span > span > span {
+  display: inline-block;
+  text-align: center;
+  width: 50px;
 }
 h3 {
   text-transform: uppercase;
@@ -190,12 +200,13 @@ h3 {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   position: absolute;
-  top: -7vh;
+  top: -30vh;
   left: -17vw;
   transform: scaleX(-1) scale(1.2) translateZ(-2px) rotate(-14deg);
 }
 #aboutMeSection {
-  background: none;
+  background: #fffec6;
+  background: linear-gradient(180deg, rgba(255, 254, 198, 0.01) 0%, #fffec6 48%, #fffec6 100%);
   padding: 280px 120px;
   position: absolute;
   top: 92vh;
@@ -208,7 +219,7 @@ h3 {
   position: absolute;
   top: 50%;
   left: 0;
-  filter: brightness(0.25) contrast(0.9);
+  filter: brightness(0.44) contrast(0.95);
 }
 #aboutMeSection .section-content {
   display: flex;
@@ -240,15 +251,14 @@ h3 {
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   -webkit-text-fill-color: transparent;
-  background-image: url('img/david-von-diemar-BMIigmNxx6I-unsplash-min.jpg');
-  background-size: auto 100%;
+  background-image: url('img/pexels-iconcom-479333.jpg');
   background-attachment: unset;
   background-position: 0%;
-  height: 350px;
-  width: 350px;
+  height: 296px;
+  width: 384px;
   position: absolute;
-  top: -20%;
-  right: 20%;
+  top: 101vh;
+  right: 5%;
 }
 #window img {
   width: 100%;
@@ -256,11 +266,11 @@ h3 {
 #book {
   background: url('img/Pngtree-8910691-book.png') center no-repeat;
   background-size: 104% 104%;
-  height: 105%;
+  height: 116%;
   width: 44vw;
   padding: 0 3vw;
   position: absolute;
-  top: 7vh;
+  top: -3vh;
   left: 9vw;
 }
 .fa-reply,
@@ -287,8 +297,9 @@ h3 {
 }
 #imgFrameContainer {
   position: relative;
-  right: -1vw;
-  width: 37%;
+  bottom: 5vh;
+  right: 5vw;
+  width: 27%;
 }
 .about-me__img-frame {
   background-color: #ebe7db;
@@ -296,7 +307,7 @@ h3 {
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.75);
   display: block;
   position: relative;
-  transform: perspective(828px) rotateY(-25deg) rotateX(12deg);
+  transform: perspective(100vh) rotateY(-32deg) rotateX(9deg);
 }
 .about-me__img-frame:after {
   content: '';
@@ -328,7 +339,7 @@ h3 {
 #lamp {
   height: 140%;
   position: absolute;
-  bottom: -15px;
+  bottom: 8vh;
   left: -50px;
   transform: scaleX(-1);
   z-index: -1;
