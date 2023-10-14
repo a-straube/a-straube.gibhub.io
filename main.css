@@ -266,18 +266,38 @@ h3 {
 #book {
   background: url('img/Pngtree-8910691-book.png') center no-repeat;
   background-size: 104% 104%;
-  height: 116%;
-  width: 44vw;
+  height: 151%;
+  width: 43vw;
   padding: 0 3vw;
   position: absolute;
   top: -3vh;
-  left: 9vw;
+  left: 14vw;
+}
+.carousel-control-prev {
+  top: -6%;
+  left: -8%;
+}
+.carousel-control-prev:hover {
+  opacity: 1;
+  top: -7%;
+}
+.carousel-control-next {
+  top: -15%;
+  right: -3%;
+}
+.carousel-control-next:hover {
+  opacity: 1;
+  top: -16%;
 }
 .fa-reply,
 .fa-share {
   color: orange;
+  filter: drop-shadow(2px 3px 2px black);
   font-size: 100px;
-  transform: rotate(-6deg);
+  transform: rotate(-38deg);
+}
+.fa-share {
+  transform: rotate(35deg);
 }
 .book-page {
   float: left;
@@ -294,6 +314,9 @@ h3 {
 .book-page p {
   font-weight: 700;
   padding: 0.1vw 1vw;
+}
+#calbert {
+  max-width: 182px;
 }
 #imgFrameContainer {
   position: relative;
@@ -326,26 +349,35 @@ h3 {
 }
 .language-list {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   list-style: none;
   padding-left: 0;
 }
 .language-list > li {
-  padding: 0 10px;
+  padding: 6px 12px;
 }
 .language-list .fa-brands {
   font-size: 30px;
 }
 #lamp {
-  height: 140%;
+  height: 182%;
   position: absolute;
-  bottom: 8vh;
-  left: -50px;
+  bottom: 2vh;
+  left: 0;
   transform: scaleX(-1);
   z-index: -1;
 }
 #lamp > img {
   height: 100%;
+}
+#lampLight {
+  position: absolute;
+  top: 25%;
+  left: -7%;
+  width: 40%;
+}
+#lampLight > img {
+  width: 100%;
 }
 #projectExamplesSection {
   background: url(img/Pngtree-3917103-texture.png) no-repeat;
