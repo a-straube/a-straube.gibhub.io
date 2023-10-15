@@ -106,6 +106,26 @@
     transform: scale(0.6) rotate(72deg) translateZ(-4px) rotateX(0.1deg) rotateY(-0.1deg);
   }
 }
+@keyframes darkPalmLeafSwingBottomLeft {
+  0% {
+    transform: scaleX(-1) scale(1.8) translateZ(-8px) rotate(-14deg) rotateX(-0.2deg) rotateY(0.1deg);
+  }
+  20% {
+    transform: scaleX(-1) scale(1.8) translateZ(-8px) rotate(-14deg) rotateX(0.3deg) rotateY(-0.1deg);
+  }
+  40% {
+    transform: scaleX(-1) scale(1.8) translateZ(-8px) rotate(-14deg) rotateX(-0.1deg) rotateY(0deg);
+  }
+  60% {
+    transform: scaleX(-1) scale(1.8) translateZ(-8px) rotate(-14deg) rotateX(0.3deg) rotateY(-0.1deg);
+  }
+  80% {
+    transform: scaleX(-1) scale(1.8) translateZ(-8px) rotate(-14deg) rotateX(-0.2deg) rotateY(0.1deg);
+  }
+  100% {
+    transform: scaleX(-1) scale(1.8) translateZ(-8px) rotate(-14deg) rotateX(0.1deg) rotateY(-0.1deg);
+  }
+}
 @keyframes topLeftPalmSwing {
   0% {
     transform: skewX(0deg);

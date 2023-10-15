@@ -49,9 +49,9 @@ h1 {
   pointer-events: none;
   position: absolute;
   top: 0;
-  left: -165vw;
+  left: -75vw;
   text-align: right;
-  transform: translateY(-60%) translateZ(-100px) scale(3);
+  transform: translateY(-34%) translateZ(-20px) scale(0.9);
   transition: 0.1s opacity ease-in-out;
   z-index: 1;
 }
@@ -73,13 +73,13 @@ h1.hide {
 h2 {
   background: linear-gradient(180deg, #032c50 0%, rgba(255, 255, 255, 0.01) 100%);
   background: linear-gradient(180deg, rgba(3, 44, 80, 0.8) 0%, #fffec6 70%, #fffec6 100%);
-  border-top: 2px solid rgba(255, 255, 255, 0.75);
+  border-top: 2px solid rgba(244, 244, 244, 0.72);
   color: #ffffff;
   font-size: 2vw;
   font-weight: 100;
   letter-spacing: 0.5vw;
   line-height: 1.5;
-  padding: 14vh 50px 50vh 67vw;
+  padding: 21vh 50px 44vh 67vw;
   position: absolute;
   top: 41%;
   text-shadow: 1px 2px #27282d;
@@ -89,7 +89,7 @@ h2 {
 }
 h2 > span {
   background-color: rgba(55, 97, 147, 0.6);
-  border: 1px solid #ffffff;
+  border: 1px solid #dfdfdf;
   display: block;
   padding: 30px;
   transform: translateZ(-10px);
@@ -195,14 +195,15 @@ h3 {
   z-index: 1;
 }
 .intro-palm-bottom-left {
-  animation-duration: 14s;
+  animation-name: darkPalmLeafSwingBottomLeft;
+  animation-duration: 24s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   position: absolute;
-  top: -30vh;
-  left: -17vw;
-  transform: scaleX(-1) scale(1.2) translateZ(-2px) rotate(-14deg);
+  top: 0;
+  left: -41vw;
+  transform-origin: bottom;
 }
 #aboutMeSection {
   background: #fffec6;
