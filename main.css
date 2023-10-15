@@ -530,6 +530,12 @@ h3#fruitsOfMyLaborH3 > span {
 #codeSchoolProjects img {
   max-height: 69vh;
 }
+#codeSchoolProjects h3 {
+  font-size: 26px;
+}
+#codeSchoolProjects h3 > span {
+  font-size: 18px;
+}
 #codeSchoolProjects .fruit > img:first-child {
   top: -52vh;
   z-index: 1;
@@ -538,7 +544,6 @@ h3#fruitsOfMyLaborH3 > span {
   transition: all 1s ease-in-out;
   top: -54vh;
   left: 2vw;
-  width: 70%;
 }
 #codeSchoolProjects .fruit:hover > img:first-child,
 #codeSchoolProjects .fruit:focus > img:first-child,
@@ -551,12 +556,11 @@ h3#fruitsOfMyLaborH3 > span {
 #codeSchoolProjects .fruit:active > img:last-child {
   left: 3vw;
   transform: rotate3d(3, 11, 4, 22deg);
-  width: 88%;
 }
 #codeSchoolProjects .inside-fruit {
   top: -27vh;
   left: 32%;
-  max-width: 240px;
+  max-width: 170px;
 }
 section#connectSection {
   min-height: 0;
