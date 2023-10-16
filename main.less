@@ -57,7 +57,7 @@ h1 {
     padding: 4vh 9vw;
     pointer-events: none;
     position: absolute;
-        top: 0;
+        top: -11vh;
         left: -75vw;
     text-align: right;
     transform: translateY(-34%) translateZ(-20px) scale(.9);
@@ -152,6 +152,19 @@ h3 { text-transform: uppercase; }
     }
 }
 
+#bottomPalmsLeft {
+    // animation-duration: 10s;
+    // animation-direction: alternate;
+    // animation-iteration-count: infinite;
+    // animation-timing-function: ease-in-out;
+    // animation-name: topLeftPalmSwing;
+    position: absolute;
+        bottom: 2vh;
+        left: -10px;
+    transform: rotate(168deg);
+    width: 44vw;
+}
+
 .leaf-wrapper {
     perspective: 780px;
     perspective-origin: top;
@@ -195,6 +208,19 @@ h3 { text-transform: uppercase; }
     animation-timing-function: ease-in-out;
     transform: translateZ(-1px);
     z-index: 1;
+}
+
+#introSectionTopLeaves {
+    animation-name: introSectionTopLeaves;
+    animation-duration: 15s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    filter: brightness(0.85) hue-rotate(24deg);
+    position: absolute;
+        top: -38vh;
+        left: 18vw;
+    transform-origin: top;
 }
 
 .dark-leaves-bottom {
