@@ -617,17 +617,30 @@ section#connectSection:after {
   top: -1px;
 }
 footer {
-  align-items: center;
   background: rgba(50, 50, 50, 0.95);
   border-top: 1px solid rgba(252, 252, 252, 0.75);
   border-bottom: 1px solid rgba(252, 252, 252, 0.75);
   color: #ffffff;
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   min-height: 50px;
-  padding-left: 100px;
+  padding: 5px 10px;
   position: relative;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
+}
+footer > span {
+  padding-top: 8px;
+}
+@media (min-width: 760px) {
+  footer {
+    padding: 15px 100px;
+  }
+}
+#creditContainer > p {
+  margin: 0;
 }
 #footerPlant {
   -webkit-transform: translateZ(200px);
