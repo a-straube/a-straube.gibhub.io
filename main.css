@@ -633,14 +633,38 @@ footer {
 }
 footer > span {
   padding-top: 8px;
+  position: absolute;
+  right: 10px;
+}
+@media (min-width: 760px) {
+  footer > span {
+    right: 100px;
+  }
 }
 @media (min-width: 760px) {
   footer {
     padding: 15px 100px;
   }
 }
+#creditContainer {
+  width: 100%;
+}
 #creditContainer > p {
   margin: 0;
+}
+#creditsCardBody video,
+#creditsCardBody img {
+  max-height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+#credits {
+  font-size: 14px;
+  list-style: none;
+  padding: 25px 0 5px;
+}
+#credits li {
+  line-height: 30px;
 }
 #footerPlant {
   -webkit-transform: translateZ(200px);
