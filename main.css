@@ -465,7 +465,7 @@ h3#fruitsOfMyLaborH3 > span {
   position: relative;
 }
 .fruit > img {
-  transition: all 1s ease-in-out;
+  transition: all 0.8s ease-in-out;
   position: absolute;
   left: 0vw;
 }
@@ -485,7 +485,7 @@ h3#fruitsOfMyLaborH3 > span {
   font-weight: 100;
 }
 .fruit .inside-fruit {
-  transition: 1s all ease-in-out;
+  transition: 0.6s all ease-in-out;
   opacity: 0;
   z-index: -5;
 }
@@ -536,13 +536,41 @@ h3#fruitsOfMyLaborH3 > span {
   top: 80vh;
 }
 #mahindraProject .inside-fruit {
-  position: relative;
   top: 57vh;
   left: -32px;
 }
 #trelloProject {
   bottom: 0;
   left: 32vw;
+  height: 42vh;
+}
+#trelloProject .fruit {
+  height: 100%;
+}
+#trelloProject .fruit > img {
+  bottom: 0;
+  width: 50%;
+}
+#trelloProject .fruit > img:first-child {
+  left: 1%;
+}
+#trelloProject .fruit > img:last-child {
+  left: 48%;
+}
+#trelloProject .fruit:hover > img:first-child,
+#trelloProject .fruit:focus > img:first-child,
+#trelloProject .fruit:active > img:first-child {
+  left: -10%;
+}
+#trelloProject .fruit:hover > img:last-child,
+#trelloProject .fruit:focus > img:last-child,
+#trelloProject .fruit:active > img:last-child {
+  left: 59%;
+}
+#trelloProject .inside-fruit {
+  position: absolute;
+  top: 0;
+  left: 18%;
 }
 #codeSchoolProjects {
   bottom: 12vh;

@@ -496,7 +496,7 @@ h3#fruitsOfMyLaborH3 {
 .fruit {
     position: relative;
     >img {
-        transition: all 1s ease-in-out;
+        transition: all 0.8s ease-in-out;
         position: absolute;
             left: 0vw;
     }
@@ -520,7 +520,7 @@ h3#fruitsOfMyLaborH3 {
 
 .fruit {
     .inside-fruit { 
-        transition: 1s all ease-in-out;
+        transition: .6s all ease-in-out;
         opacity: 0;
         z-index: -5;
     }
@@ -572,15 +572,39 @@ h3#fruitsOfMyLaborH3 {
     }
 
     .inside-fruit {
-        position: relative;
-            top: 57vh;
-            left: -32px;
+        top: 57vh;
+        left: -32px;
     }
 }
 
 #trelloProject {
     bottom: 0;
     left: 32vw;
+    height: 42vh;
+
+    .fruit {
+        height: 100%;
+        >img {
+            bottom: 0;
+            width: 50%;
+            &:first-child {
+                left: 1%;
+            }
+            &:last-child {
+                left: 48%;
+            }
+        }
+        &:hover, &:focus, &:active {
+            >img:first-child { left: -10%; }
+            >img:last-child { left: 59%; }
+        }
+    }
+
+    .inside-fruit {
+        position: absolute;
+        top: 0;
+        left: 18%;
+    }
 }
 
 #codeSchoolProjects {
