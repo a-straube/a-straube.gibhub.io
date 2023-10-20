@@ -41,6 +41,11 @@ h1 {
   -webkit-animation-iteration-count: infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation-name: clouds;
+  animation-duration: 400s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  background-clip: text;
   background-image: url('img/pexels-iconcom-479333.jpg');
   background-size: auto 100%;
   background-attachment: unset;
@@ -276,6 +281,10 @@ h3 {
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   -webkit-text-fill-color: transparent;
+  animation-name: clouds;
+  animation-duration: 680s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
   background-image: url('img/pexels-iconcom-479333.jpg');
   background-attachment: unset;
   background-position: 0%;
