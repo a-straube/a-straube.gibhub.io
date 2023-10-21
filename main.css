@@ -174,30 +174,6 @@ h3 {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
-.dark-leaves-left {
-  animation-duration: 14s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  position: absolute;
-  transform: translateZ(-1px);
-  top: -30vh;
-  left: 520px;
-  transform-origin: left;
-  z-index: 1;
-}
-.dark-leaves-right {
-  position: absolute;
-  bottom: 49px;
-  right: -276px;
-  transform-origin: bottom right;
-  animation-duration: 18s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  transform: translateZ(-1px);
-  z-index: 1;
-}
 #introSectionTopLeaves {
   animation-name: introSectionTopLeaves;
   animation-duration: 15s;
