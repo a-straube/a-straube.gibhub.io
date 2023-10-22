@@ -673,22 +673,36 @@ footer {
     position: relative;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
+    @media(min-width: @screen-sm) { padding: 15px 100px; }
+
     >span {
-        padding-top: 8px;
+        padding-top: 5px;
         position: absolute;
             right: 10px;
         @media(min-width: @screen-sm) {
             right: 100px;
         }
     }
-    @media(min-width: @screen-sm) {
-        padding: 15px 100px;
-    }
 }
 
 #creditContainer {
     width: 100%;
+    
     >p { margin: 0; }
+    
+    button {
+        transition: all .35s ease-in-out;
+        background: transparent;
+        border: 1px solid #ffffff;
+        color: #ffffff;
+        letter-spacing: .05vw;
+        padding: 5px 10px;
+        text-transform: uppercase;
+        &:hover, &:focus, &:active {
+            background: #ffffff;
+            color: #000000;
+        }
+    }
 }
 
 #creditsCardBody {
@@ -703,6 +717,7 @@ footer {
     font-size: 14px;
     list-style: none;
     padding: 25px 0 5px;
+
     li { line-height: 30px; }
 }
 

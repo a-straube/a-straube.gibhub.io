@@ -650,8 +650,13 @@ footer {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
+@media (min-width: 760px) {
+  footer {
+    padding: 15px 100px;
+  }
+}
 footer > span {
-  padding-top: 8px;
+  padding-top: 5px;
   position: absolute;
   right: 10px;
 }
@@ -660,16 +665,26 @@ footer > span {
     right: 100px;
   }
 }
-@media (min-width: 760px) {
-  footer {
-    padding: 15px 100px;
-  }
-}
 #creditContainer {
   width: 100%;
 }
 #creditContainer > p {
   margin: 0;
+}
+#creditContainer button {
+  transition: all 0.35s ease-in-out;
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  letter-spacing: 0.05vw;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+#creditContainer button:hover,
+#creditContainer button:focus,
+#creditContainer button:active {
+  background: #ffffff;
+  color: #000000;
 }
 #creditsCardBody video,
 #creditsCardBody img {
