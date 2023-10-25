@@ -159,16 +159,15 @@ h3 { text-transform: uppercase; }
 }
 
 #bottomPalmsLeft {
-    // animation-duration: 10s;
-    // animation-direction: alternate;
-    // animation-iteration-count: infinite;
-    // animation-timing-function: ease-in-out;
-    // animation-name: topLeftPalmSwing;
+    animation-name: bottomPalmsLeft;
+    
+    filter: hue-rotate(25deg) brightness(0.2);
     position: absolute;
         bottom: 2vh;
         left: -10px;
-    transform: rotate(168deg);
+    transform: rotate(191deg);
     width: 44vw;
+    z-index: 1;
 }
 
 .leaf-wrapper {
@@ -223,7 +222,7 @@ h3 { text-transform: uppercase; }
     animation-timing-function: ease-in-out;
     position: absolute;
         top: 0;
-        left: -41vw;
+        left: -46vw;
     transform-origin: bottom;
 }
 

@@ -154,11 +154,14 @@ h3 {
   z-index: 2;
 }
 #bottomPalmsLeft {
+  animation-name: bottomPalmsLeft;
+  filter: hue-rotate(25deg) brightness(0.2);
   position: absolute;
   bottom: 2vh;
   left: -10px;
-  transform: rotate(168deg);
+  transform: rotate(191deg);
   width: 44vw;
+  z-index: 1;
 }
 .leaf-wrapper {
   perspective: 780px;
@@ -207,7 +210,7 @@ h3 {
   animation-timing-function: ease-in-out;
   position: absolute;
   top: 0;
-  left: -41vw;
+  left: -46vw;
   transform-origin: bottom;
 }
 #aboutMeSection {
