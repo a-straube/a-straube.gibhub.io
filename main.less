@@ -24,7 +24,7 @@ section {
     background: beige url('img/wesley-tingey-ZdOW9Qd8mQo-unsplash.jpg') no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
-    padding: 100px 120px;
+    padding: 100px 15px;
     position: relative;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -32,6 +32,7 @@ section {
         min-height: 20vh;
         &--top { background: #fffec6; }
     }
+    @media(min-width: @screen-sm) { padding: 100px 120px; }
 }
 
 h1 {
@@ -662,7 +663,7 @@ footer {
         justify-content: space-between;
     font-weight: 300;
     min-height: 50px;
-    padding: 5px 10px;
+    padding: 15px;
     position: relative;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -674,9 +675,9 @@ footer {
 }
 
 #copyrightLine {
-    padding-top: 5px;
+    font-size: 13px;
+    padding-bottom: 10px;
     @media(min-width: @screen-md) {
-        font-size: 13px;
         padding-top: 7px;
         position: absolute;
             right: 100px;
@@ -709,6 +710,7 @@ footer {
         letter-spacing: .05vw;
         padding: 5px 10px;
         text-transform: uppercase;
+        @media(max-width: @screen-md) { font-size: 14px; }
         &:hover, &:focus, &:active {
             background: #ffffff;
             color: #000000;
