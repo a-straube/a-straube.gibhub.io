@@ -86,9 +86,6 @@ h1.hide {
   letter-spacing: -15vw;
 }
 h2 {
-  background: linear-gradient(180deg, #032c50 0%, rgba(255, 255, 255, 0.01) 100%);
-  background: linear-gradient(180deg, rgba(3, 44, 80, 0.8) 0%, #fffec6 70%, #fffec6 100%);
-  border-top: 2px solid rgba(244, 244, 244, 0.72);
   color: #ffffff;
   font-size: 2vw;
   font-weight: 100;
@@ -123,12 +120,14 @@ h2:before {
   background: url('img/Pngtree-mountain-landscape_8807747.png') repeat-x;
   background-position: bottom;
   background-size: auto 100%;
-  height: 20vh;
+  filter: hue-rotate(336deg);
+  height: 32vh;
   width: 100%;
   opacity: 0.8;
   position: absolute;
-  top: -3vh;
+  bottom: 39vh;
   left: 0;
+  z-index: -2;
 }
 h2:after {
   content: '';
@@ -138,8 +137,9 @@ h2:after {
   height: 70vh;
   width: 100%;
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
+  z-index: -1;
 }
 h3 {
   text-transform: uppercase;
@@ -154,6 +154,18 @@ h3 {
 #topSection {
   min-height: 100%;
   padding: 0;
+}
+#topSection:before {
+  content: '';
+  background: url('img/Pngtree-mountain-landscape_8807747.png') repeat-x;
+  background-position: bottom;
+  background-size: auto 100%;
+  height: 30vh;
+  width: 100%;
+  position: absolute;
+  bottom: 39vh;
+  left: 0;
+  z-index: -2;
 }
 .intro-top-front-palms {
   position: absolute;
@@ -246,7 +258,7 @@ h3 {
   background: linear-gradient(180deg, rgba(255, 254, 198, 0.01) 0%, #fffec6 48%, #fffec6 100%);
   padding: 280px 120px;
   position: absolute;
-  top: 92vh;
+  top: 142vh;
   transform: translateZ(4px) scale(0.74);
   width: 100vw;
   z-index: 1;
@@ -299,7 +311,7 @@ h3 {
   height: 296px;
   width: 384px;
   position: absolute;
-  top: 101vh;
+  top: 145vh;
   right: 5%;
 }
 #window img {
