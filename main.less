@@ -62,6 +62,7 @@ section {
             }
         }
         &--top { background: #fffec6; }
+        &--transparent { background: transparent; }
     }
     @media(min-width: @screen-sm) { padding: 100px 120px; }
 }
@@ -495,12 +496,8 @@ h3 { text-transform: uppercase; }
 }
 
 #projectExamplesSection {
-    background: url(img/Pngtree-3917103-texture.png) no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    border-top: 3px solid #202020;
-    border-bottom: 9px solid #202020;
-    box-shadow: 0 0 12px rgba(0,1,2,0.9);
+    background: transparent;
+    border-bottom: 4px solid #202020;
     min-height: 150vh;
 
     h3 {
@@ -550,12 +547,27 @@ h3#fruitsOfMyLaborH3 {
     >span { display: block; }
 }
 
-#projectExamplesBGVid {
+#videoContainer {
     position: fixed;
+    min-height: 100%;
+    min-width: 100%;
+    &:before {
+        content: '';
+        background: url(img/Pngtree-3917103-texture.png) no-repeat;
+        height: 100%;
+            width: 100%;
+        position: absolute;
+        z-index: 1;
+    }
+}
+
+#projectExamplesBGVid {
+    position: absolute;
         bottom: 0;
         right: 0;
     min-width: 100%;
     min-height: 100%;
+    z-index: 0;
 }
 
 .fruit {
