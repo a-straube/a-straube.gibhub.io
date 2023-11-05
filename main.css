@@ -97,7 +97,7 @@ h1 {
   padding: 4vh 9vw;
   pointer-events: none;
   position: absolute;
-  top: -11vh;
+  top: -4vh;
   left: -75vw;
   text-align: right;
   transform: translateY(-34%) translateZ(-20px) scale(0.9);
@@ -120,7 +120,7 @@ h1.hide {
   letter-spacing: -15vw;
 }
 h2 {
-  background: linear-gradient(180deg, rgba(3, 44, 80, 0.8) 0%, #fffec6 70%, #fffec6 100%);
+  background: linear-gradient(180deg, rgba(3, 14, 20, 0.01) 0%, #030e14 25%);
   color: #ffffff;
   font-size: 2vw;
   font-weight: 100;
@@ -249,10 +249,10 @@ h3 {
   animation-name: bottomPalmsLeft;
   filter: hue-rotate(25deg) brightness(0.2);
   position: absolute;
-  bottom: 2vh;
-  left: -10px;
+  bottom: -5vh;
+  left: -110px;
   transform: rotate(191deg);
-  width: 44vw;
+  width: 30vw;
   z-index: 1;
 }
 .leaf-wrapper {
