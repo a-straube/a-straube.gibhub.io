@@ -274,29 +274,13 @@
 </body>
 
 <script>
-    // Fade out h1 when scrolling to 'Fruits of my Labor' section
+    // Hide h1 when scrolling down
     const parallaxBody = document.querySelector('.parallax');
     parallaxBody.onscroll = function() {
         let parallaxBodyScrollTop = this.scrollTop;
-        if(parallaxBodyScrollTop >= 950) {
-            // document.getElementById('introSectionBottomRightLeaves').style.opacity = "0";
-            document.getElementById('h1Name').style.opacity = "0";
-        } else if(parallaxBodyScrollTop >= 850) {
-            document.getElementById('h1Name').style.opacity = "0";
-        } else if(parallaxBodyScrollTop < 850 && parallaxBodyScrollTop > 800) { 
-            document.getElementById('h1Name').style.opacity = "0.5";
-        } else if(parallaxBodyScrollTop <= 800 && parallaxBodyScrollTop > 750) {
-            document.getElementById('h1Name').style.opacity = "0.6";
-        } else if(parallaxBodyScrollTop <= 750 && parallaxBodyScrollTop > 700) {
-            document.getElementById('h1Name').style.opacity = "0.7";
-        } else if(parallaxBodyScrollTop <= 700 && parallaxBodyScrollTop > 650) {
-            document.getElementById('h1Name').style.opacity = "0.8";
-        } else if(parallaxBodyScrollTop <= 650 && parallaxBodyScrollTop > 600) {
-            document.getElementById('h1Name').style.opacity = "0.9";
-        } else {
-            document.getElementById('h1Name').style.opacity = "1";
-            // document.getElementById('introSectionBottomRightLeaves').style.opacity = "1";
-        }
+        const h1 = document.getElementById('h1Name');
+        if(parallaxBodyScrollTop >= 1450) { h1.style.opacity = "0"; }
+        else { h1.style.opacity = "1"; }
     };
     // Slow down bg vid playback for 'Fruits of my Labor' section
     document.querySelector('video').playbackRate = 0.5;
