@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div id="videoContainer"></div>
+    <div id="videoContainer">
+        <video autoplay muted loop id="projectExamplesBGVid" src="img/pexels-taryn-elliott-6473354.mp4"></video>
+    </div>
     <div class="parallax">
         
         <section id="topSection">
@@ -24,37 +26,14 @@
             </div>
             <img src="img/top-right-palms.png" alt="Palm leaves" class="top-palms top-palms--right">
             <img id="bottomPalmsLeft" src="img/pexels-daian-gan-1581363.png" alt="Decorative leaves"> -->
-            <h2>
-                <span>
-                    <span>
-                        <span>F</span>
-                        <span>r</span>
-                        <span>o</span>
-                        <span>n</span>
-                        <span>t</span>
-                        <span>.</span>
-                        <span>e</span>
-                        <span>n</span>
-                        <span>d</span>
-                    </span>
-                    <span>
-                        <span>d</span>
-                        <span>e</span>
-                        <span>v</span>
-                        <span>e</span>
-                        <span>l</span>
-                        <span>o</span>
-                        <span>p</span>
-                        <span>e</span>
-                        <span>r</span>
-                    </span>
-                </span>
-            </h2>
+            <div id="sun"></div>
         </section>
         <div class="mountainscape" id="mountainscape1"></div>
         <div class="mountainscape" id="mountainscape2"></div>
         <div class="mountainscape" id="mountainscape3"></div>
         <h1 id="h1Name"><span><span id="h1LetterA">a</span>xel </span><span>Straube</span></h1>
+        <div class="text-cloud" id="titleCloud1">Front-End</div>
+        <div class="text-cloud" id="titleCloud2">Developer</div>
         <img src="img/chris-lee-70l1tDAI6rM-unsplash-min.png" alt="Plant leaves" class="plant-left">
         <img src="img/chris-lee-70l1tDAI6rM-unsplash-min.png" alt="Plant leaves" class="about-me-section-plant-right">
         <section class="buffer-section buffer-section--top-1"></section>
@@ -66,7 +45,7 @@
             <img src="img/Pngtree-5615760.png" alt="Window with view of clouds passing by">
         </div>
         <section id="aboutMeSection">
-            <img src="img/dark-palm-leaves-2.png" alt="Palm leaves" class="intro-palm-bottom-left">
+            <!-- <img src="img/dark-palm-leaves-2.png" alt="Palm leaves" class="intro-palm-bottom-left"> -->
             <div class="section-content">
                 <div>
                     <div id="book" class="carousel slide" data-bs-interval="false">
@@ -225,11 +204,12 @@
                                 <span>Video by Kindel Media: https://www.pexels.com/video/video-of-the-sea-8214976/</span>
                             </li>
                             <li>
-                                <span><a href='https://pngtree.com/freepng/watercolor-clouds-blue-cloud-sky_6409065.html'>png image from pngtree.com/</a></span>
+                                <img src="img/watercolor-cloud-1.png" alt="png image from pngtree.com">
+                                <span><a href='https://pngtree.com/freepng/watercolor-clouds-blue-cloud-sky_6409065.html' target="_blank">png image from pngtree.com/</a></span>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <span><a href='https://pngtree.com/freepng/modern-colorful-watercolor-background_3541867.html'>png image from pngtree.com/</a></span>
-                            </li>
+                            </li> -->
                             <li>
                                 <img src="img/pexels-iconcom-479333.jpg" alt="Photo by icon0 com from Pexels">
                                 <span>Photo by icon0 com from Pexels: https://www.pexels.com/photo/white-clouds-479333/</span>
@@ -264,9 +244,11 @@
                             </li>
                             <!-- <li>Photo by SHVETS production from Pexels: https://www.pexels.com/photo/crop-person-demonstrating-yummy-fresh-pineapple-halves-7194898/</li> -->
                             <!-- <li>Photo by SHVETS production from Pexels: https://www.pexels.com/photo/ripe-pineapple-with-sunglasses-in-studio-7194786/</li> -->
-                            <!-- <li><a href=https://www.pngmart.com/image/136395 title="PNG Mart - Green Palm Leaves PNG Pic" target="_blank">Green Palm Leaves PNG Pic</a></li> -->
                             <li>
                                 <span>leaf clipart PNG Designed By YUNduoshao from https://pngtree.com/freepng/green-watercolor-palm-leaf-illustration-elements_4248623.html?sol=downref&id=bef</span>
+                            </li>
+                            <li>
+                                <span>Video by Taryn Elliott: https://www.pexels.com/video/coconut-trees-in-the-beach-6473354/</span>
                             </li>
                         </ul>
                     </div>
@@ -289,7 +271,7 @@
         else { h1.style.opacity = "1"; }
     };
     // Slow down bg vid playback for 'Fruits of my Labor' section
-    document.querySelector('video').playbackRate = 0.5;
+    document.querySelector('video').playbackRate = 0.95;
     // Add year to copyright
     let year = new Date().getFullYear();
     const copyrightYear = document.getElementById('copyrightYear');
