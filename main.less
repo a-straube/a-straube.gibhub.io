@@ -4,6 +4,11 @@
 @screen-md: 992px;
 @screen-lg: 1200px;
 
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    from {transform: rotate(360deg);}
+}
+
 ::-webkit-scrollbar { width: 20px; }
 ::-webkit-scrollbar-track { background: linear-gradient(0deg, #018899 0%, rgba(238,245,220,1) 50%, #018899 100%); }
 ::-webkit-scrollbar-thumb {
@@ -261,6 +266,45 @@ h2 {
     filter: hue-rotate(340deg) drop-shadow(2px 4px 6px #000000);
     height: 44vh;
     transform: translateZ(-10px) scale(2);
+}
+
+.rolling-clouds {
+    position: absolute;
+        bottom: 50vh;
+        left: 40vw;
+    transform: rotate(80deg);
+}
+
+.cloud {
+    background-color: #5b5bd7;
+    border-radius: 43%;
+    height: 400vh;
+        width: 100vw;
+    opacity: 0.4;
+    position: absolute;
+    &-1 {
+        animation: rotate 6000ms infinite linear;
+        opacity: 30%;
+        margin-left: -250px;
+    } 
+    &-2 {
+        animation: rotate 10000ms infinite linear;
+        opacity: 11%;
+        margin-left: 50px;
+    } 
+    &-3 {
+        animation: rotate 8000ms infinite linear;
+        opacity: 8%;
+    } 
+    &-4 {
+        animation: rotate 6000ms infinite linear;
+        opacity: 22%;
+        margin-left: 255px;
+    } 
+    &-5 {
+        opacity: 5%;
+        animation: rotate 6000ms infinite linear;
+    } 
 }
 
 h3 { text-transform: uppercase; }
