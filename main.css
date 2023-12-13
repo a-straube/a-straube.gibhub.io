@@ -212,9 +212,9 @@ h2 > span > span > span {
 }
 #mountainscape1 {
   animation-duration: 2000s;
-  bottom: 25vh;
+  bottom: 20vh;
   filter: hue-rotate(180deg) drop-shadow(2px 4px 6px #000000) brightness(0.6);
-  height: 25vh;
+  height: 32vh;
   width: 200%;
   transform: translateZ(-30px) scale(2);
 }
@@ -233,26 +233,29 @@ h2 > span > span > span {
 .rolling-clouds {
   position: absolute;
   bottom: 50vh;
-  left: 40vw;
+  left: 0;
+  transform: translateZ(-30px) scale(2);
 }
 .cloud {
-  background-color: #5b5bd7;
+  background: #95c1df;
+  background: radial-gradient(circle, #95c1df 0%, rgba(149, 193, 223, 0.0001) 100%);
   border-radius: 43%;
-  height: 400vh;
-  width: 100vw;
+  filter: blur(2px) drop-shadow(0px 0px 8px #ffffff);
+  height: 90vh;
+  width: 90vh;
   opacity: 0.4;
   position: absolute;
 }
 .cloud-1 {
-  animation: rotate 16000ms infinite linear;
+  animation: rotate 26000ms infinite linear;
   opacity: 70%;
-  margin-left: -250px;
+  margin-left: -50vw;
 }
 .cloud-2 {
-  animation: rotate 10000ms infinite linear;
+  animation: rotate 20000ms infinite linear;
   border-radius: 39%;
   opacity: 61%;
-  margin-left: 50px;
+  margin-left: 5vw;
 }
 .cloud-3 {
   animation: rotate 18000ms infinite linear;
@@ -261,12 +264,13 @@ h2 > span > span > span {
 .cloud-4 {
   animation: rotate 16000ms infinite linear;
   opacity: 52%;
-  margin-left: 255px;
+  margin-left: -40vw;
 }
 .cloud-5 {
+  animation: rotate 26000ms infinite linear;
   border-radius: 40%;
+  margin-left: 50vw;
   opacity: 65%;
-  animation: rotate 16000ms infinite linear;
 }
 h3 {
   text-transform: uppercase;
