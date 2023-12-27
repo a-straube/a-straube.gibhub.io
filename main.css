@@ -134,20 +134,29 @@ h1.hide {
 .text-cloud {
   font-family: 'Beth Ellen', sans-serif;
   font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   min-height: 120px;
-  min-width: 300px;
+  min-width: 240px;
+  transform: translateZ(-20px) scale(3.2);
+}
+.text-cloud > span {
+  color: #dfecff;
+  filter: drop-shadow(1px 2px 3px black);
 }
 #titleCloud1 {
-  background: url('img/watercolor-cloud-1.png') no-repeat;
-  background-size: auto 100%;
-  right: 20vw;
-  top: 50vh;
+  background: url('img/watercolor-cloud-2.png') no-repeat;
+  background-size: 100% auto;
+  left: 100vw;
+  top: 38vh;
+  z-index: 1;
 }
 #titleCloud2 {
-  background: url('img/watercolor-cloud-2.png') no-repeat;
-  background-size: auto 100%;
-  right: 14vw;
+  background: url('img/watercolor-cloud-1.png') no-repeat;
+  background-size: 100% auto;
+  left: 125vw;
   top: 60vh;
 }
 #sun {
