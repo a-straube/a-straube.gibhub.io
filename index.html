@@ -27,14 +27,18 @@
             <div id="sun"></div>
         </section>
         <div class="mountainscape" id="mountainscape1"></div>
-        <div class="rolling-clouds">
+        <!-- <div class="rolling-clouds">
             <div class="cloud cloud-1"></div>
             <div class="cloud cloud-2"></div>
             <div class="cloud cloud-3"></div>
             <div class="cloud cloud-4"></div>
             <div class="cloud cloud-5"></div>
-        </div>
+        </div> -->
         <div class="mountainscape" id="mountainscape2"></div>
+        <div id="water">
+            <span class="moving-waves-row moving-waves-row--1"></span>
+            <span class="moving-waves-row moving-waves-row--2"></span>
+        </div>
         <div class="mountainscape" id="mountainscape3"></div>
         <h1 id="h1Name"><span><span id="h1LetterA">a</span>xel </span><span>Straube</span></h1>
         <div class="text-cloud" id="titleCloud1"><span>Front-End</span></div>
@@ -45,7 +49,6 @@
         <section class="buffer-section buffer-section--top"></section>
         <section class="buffer-section buffer-section--top"></section>
         <section class="buffer-section buffer-section--top"></section>
-        <section class="buffer-section buffer-section--transparent"></section>
         <div id="window">
             <img src="img/Pngtree-5615760.png" alt="Window with view of clouds passing by">
         </div>
@@ -122,6 +125,8 @@
                         <div id="lampLight"><img src="img/Pngtree-8910691-light.png" alt=""></div>
                     </div>
                 </div>
+                <img src="img/Pngtree-houseplant-pot-6015944-1.png" id="deskPlant1" alt="">
+                <img src="img/Pngtree-houseplant-pot-6015944-2.png" id="deskPlant" alt="">
                 <div id="imgFrameContainer">
                     <span class="about-me__img-frame"><img src="img/index-axel-piano.jpg" alt=""></span>
                 </div>
@@ -129,7 +134,6 @@
         </section>
         <!-- <img id="introSectionTopLeaves" src="img/pexels-daian-gan-1581363.png" alt="Decorative leaves"> -->
         <!-- <img id="introSectionBottomRightLeaves" src="img/pexels-daian-gan-1581363.png" alt="Decorative leaves" class="dark-leaves-bottom"> -->
-        <section class="buffer-section buffer-section--transparent"></section>
         <section id="projectExamplesSection">
             <h3 id="fruitsOfMyLaborH3">
                 <span>Fruits</span>
@@ -258,6 +262,15 @@
                             <li>
                                 <span>green plants PNG Designed By chen from https://pngtree.com/freepng/houseplant-pot_6015944.html?sol=downref&id=bef</span>
                             </li>
+                            <li>
+                                <span>wave clipart PNG Designed By 588ku from https://pngtree.com/freepng/featured-blue-ocean-wave-illustration_4569758.html?sol=downref&id=bef</span>
+                            </li>
+                            <li>
+                                <span>https://www.onlygfx.com/6-watercolor-ocean-wave-png-transparent-vol-2/</span>
+                            </li>
+                            <li>
+                                <span>https://www.onlygfx.com/10-ocean-wave-paint-brush-stroke-png-transparent/</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -278,8 +291,6 @@
         if(parallaxBodyScrollTop >= 1450) { h1.style.opacity = "0"; }
         else { h1.style.opacity = "1"; }
     };
-    // Slow down bg vid playback for 'Fruits of my Labor' section
-    document.querySelector('video').playbackRate = 0.95;
     // Add year to copyright
     let year = new Date().getFullYear();
     const copyrightYear = document.getElementById('copyrightYear');
