@@ -28,11 +28,6 @@ a {
   text-decoration: none;
 }
 section {
-  background: #ffc5b2;
-  background: linear-gradient(0deg, #BC2909 38%, #BA6D09, #71A8EE, #3072EB, #1552C6, #0542A8 100%);
-  background: linear-gradient(to bottom, #108dc7, #ef8e38 58%);
-  background-size: cover;
-  background-attachment: fixed;
   min-height: 100vh;
   padding: 100px 15px;
   position: relative;
@@ -101,9 +96,9 @@ h1 {
   background-size: auto 100%;
   background-attachment: unset;
   background-position: 0%;
-  filter: drop-shadow(3px 3px 5px rgba(0, 2, 5, 0.99));
+  filter: drop-shadow(-4px -5px 0px rgba(230, 242, 255, 0.9)) drop-shadow(3px 5px 1px rgba(10, 12, 15, 0.9));
   font-family: 'Beth Ellen', sans-serif;
-  font-size: 21vw;
+  font-size: 20vw;
   letter-spacing: -1.2vw;
   margin: 0;
   padding: 4vh 9vw;
@@ -123,13 +118,13 @@ h1 > span:first-child {
   font-size: 60vw;
 }
 h1 > span:last-child {
-  margin-top: -5vh;
+  margin-top: -12vh;
 }
 h1.hide {
   display: none;
 }
 #h1LetterA {
-  letter-spacing: -9vw;
+  letter-spacing: -11vw;
 }
 .text-cloud {
   font-family: 'Beth Ellen', sans-serif;
@@ -137,6 +132,7 @@ h1.hide {
   display: flex;
   align-items: center;
   justify-content: center;
+  filter: drop-shadow(1px 2px 7px rgba(0, 2, 4, 0.75));
   position: absolute;
   min-height: 120px;
   min-width: 240px;
@@ -165,8 +161,8 @@ h1.hide {
   border-radius: 50%;
   box-shadow: 0 0 40px #ffbc59;
   position: absolute;
-  top: 40%;
-  right: 28vw;
+  top: 54%;
+  right: 26vw;
   height: 300px;
   width: 300px;
 }
@@ -201,16 +197,6 @@ h2 > span > span > span {
   width: 50px;
 }
 .mountainscape {
-  content: '';
-  -webkit-animation-name: clouds;
-  -webkit-animation-duration: 680s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-text-fill-color: transparent;
-  animation-name: clouds;
-  animation-duration: 580s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
   background: url('img/Pngtree-mountain-landscape_8807747.png') repeat-x;
   background-position: bottom;
   background-size: auto 100%;
@@ -220,8 +206,7 @@ h2 > span > span > span {
   z-index: 0;
 }
 #mountainscape1 {
-  animation-duration: 2000s;
-  bottom: 19vh;
+  bottom: -8vh;
   filter: hue-rotate(180deg) drop-shadow(2px 4px 6px #000000) brightness(0.4);
   height: 36vh;
   width: 200%;
@@ -229,55 +214,106 @@ h2 > span > span > span {
   transform: translateZ(-30px) scale(2);
 }
 #mountainscape2 {
-  bottom: -6vh;
+  bottom: -25vh;
   filter: hue-rotate(300deg) drop-shadow(2px 4px 6px #000000) brightness(0.8);
   height: 28vh;
   transform: translateZ(-20px) scale(3);
 }
+#water {
+  background: url('img/ocean-wave-paint-brush-stroke-1.png') #0f6291 repeat-x;
+  background-position: 0 -45px;
+  background-size: auto 168%;
+  height: 12vh;
+  width: 120%;
+  position: absolute;
+  bottom: -32vh;
+  transform: translateZ(-15px) scale(2);
+}
+.moving-waves-row {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.moving-waves-row--2 {
+  top: 50%;
+}
+.moving-waves-row:before,
+.moving-waves-row:after {
+  content: '';
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  background: url('img/ocean-wave-paint-brush-stroke-1.png') repeat-x;
+  background-size: auto 100%;
+  opacity: 0.88;
+  position: absolute;
+  width: 100%;
+}
+.moving-waves-row:before {
+  -webkit-animation-name: clouds;
+  -webkit-animation-duration: 1680s;
+  animation-name: clouds;
+  animation-duration: 1680s;
+  bottom: 28%;
+  height: 100%;
+}
+.moving-waves-row:after {
+  -webkit-animation-name: forwardMovement;
+  -webkit-animation-duration: 980s;
+  animation-name: forwardMovement;
+  animation-duration: 980s;
+  bottom: -15%;
+  height: 110%;
+  filter: hue-rotate(344deg);
+}
 #mountainscape3 {
-  bottom: -52vh;
+  bottom: -55vh;
   filter: hue-rotate(340deg) drop-shadow(2px 4px 6px #000000);
+  filter: hue-rotate(180deg) drop-shadow(2px 4px 6px #000000);
   height: 44vh;
   transform: translateZ(-10px) scale(2);
 }
 .rolling-clouds {
   position: absolute;
-  bottom: 50vh;
-  left: 0;
+  bottom: 22vh;
+  left: -22vw;
   transform: translateZ(-30px) scale(2);
 }
 .cloud {
   background: #95c1df;
   background: radial-gradient(circle, #95c1df 0%, rgba(149, 193, 223, 0.0001) 100%);
   border-radius: 43%;
-  filter: blur(2px) drop-shadow(0px 0px 8px #ffffff);
-  height: 90vh;
-  width: 90vh;
+  filter: blur(4px) drop-shadow(0px 0px 8px #ffffff);
+  height: 150vh;
+  width: 150vh;
   opacity: 0.4;
   position: absolute;
 }
 .cloud-1 {
-  animation: rotate 26000ms infinite linear;
+  animation: rotate 56000ms infinite linear;
   opacity: 70%;
   margin-left: -50vw;
 }
 .cloud-2 {
-  animation: rotate 20000ms infinite linear;
+  animation: rotate 40000ms infinite linear;
   border-radius: 39%;
   opacity: 61%;
-  margin-left: 5vw;
+  margin-left: 16vw;
 }
 .cloud-3 {
-  animation: rotate 18000ms infinite linear;
+  animation: rotate 48000ms infinite linear;
+  border-radius: 39%;
   opacity: 47%;
 }
 .cloud-4 {
-  animation: rotate 16000ms infinite linear;
+  animation: rotate 46000ms infinite linear;
   opacity: 52%;
-  margin-left: -40vw;
+  margin-left: -30vw;
 }
 .cloud-5 {
-  animation: rotate 26000ms infinite linear;
+  animation: rotate 39000ms infinite linear;
   border-radius: 40%;
   margin-left: 50vw;
   opacity: 65%;
@@ -295,14 +331,6 @@ h3 {
 #topSection {
   min-height: 100%;
   padding: 0;
-}
-#topSection:after {
-  content: '';
-  background: #2a8db6;
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  bottom: -100vh;
 }
 .intro-top-front-palms {
   position: absolute;
@@ -392,7 +420,7 @@ h3 {
 }
 #aboutMeSection {
   background: #fffec6;
-  background: linear-gradient(180deg, rgba(255, 254, 198, 0.01) 0%, #fffec6 48%, #fffec6 100%);
+  background: linear-gradient(180deg, rgba(255, 254, 198, 0.01) 0%, #fffec6 80%, #fffec6 100%);
   padding: 280px 120px;
   position: absolute;
   top: 142vh;
@@ -401,9 +429,14 @@ h3 {
   z-index: 1;
 }
 #aboutMeSection:before {
-  content: url(img/wood.jpg);
+  content: '';
+  background: url('img/wood.jpg');
+  background-position: bottom;
+  background-size: cover;
+  height: 38vh;
+  width: 100%;
   position: absolute;
-  top: 50%;
+  bottom: 0;
   left: 0;
   filter: brightness(0.44) contrast(0.95);
 }
@@ -448,7 +481,7 @@ h3 {
   height: 296px;
   width: 384px;
   position: absolute;
-  top: 145vh;
+  top: 158vh;
   right: 5%;
 }
 #window img {
@@ -457,12 +490,13 @@ h3 {
 #book {
   background: url('img/Pngtree-8910691-book.png') center no-repeat;
   background-size: 104% 104%;
-  height: 151%;
-  width: 43vw;
+  height: 134%;
+  width: 38vw;
   padding: 0 3vw;
   position: absolute;
   top: -3vh;
-  left: 14vw;
+  left: 12vw;
+  z-index: 2;
 }
 .carousel-control-prev {
   top: -6%;
@@ -509,9 +543,21 @@ h3 {
 #calbert {
   max-width: 182px;
 }
+#deskPlant1 {
+  max-width: 256px;
+  position: absolute;
+  bottom: 1vh;
+  right: 23vw;
+  z-index: 1;
+}
+#deskPlant {
+  max-width: 280px;
+  position: absolute;
+  right: 22vw;
+}
 #imgFrameContainer {
   position: relative;
-  bottom: 5vh;
+  bottom: 1vh;
   right: 5vw;
   width: 27%;
 }
@@ -621,13 +667,15 @@ h3#fruitsOfMyLaborH3 > span {
   display: block;
 }
 #videoContainer {
+  background: linear-gradient(to bottom, #108dc7, #ef8e38 74%);
+  background-size: cover;
+  background-attachment: fixed;
   position: fixed;
   min-height: 100%;
   min-width: 100%;
 }
 #videoContainer:before {
   content: '';
-  background: url(img/Pngtree-3917103-texture.png) no-repeat;
   height: 100%;
   width: 100%;
   position: absolute;
