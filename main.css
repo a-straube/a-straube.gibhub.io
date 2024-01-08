@@ -428,11 +428,11 @@ h3 {
   background-attachment: unset;
   background-position: 0%;
   background-size: auto 100%;
-  height: 296px;
-  width: 384px;
+  height: 40vh;
+  width: 25vw;
   position: absolute;
-  top: 158vh;
-  right: 5%;
+  top: 160vh;
+  right: 7vw;
 }
 #window img {
   width: 100%;
