@@ -71,6 +71,7 @@ section.buffer-section--top-1 > div:after {
 }
 section.buffer-section--top {
   background: #fffec6;
+  height: 28vh;
 }
 section.buffer-section--transparent {
   background: transparent;
@@ -423,7 +424,7 @@ h3 {
   background: linear-gradient(180deg, rgba(255, 254, 198, 0.01) 0%, #fffec6 80%, #fffec6 100%);
   padding: 280px 120px;
   position: absolute;
-  top: 142vh;
+  top: 156vh;
   transform: translateZ(4px) scale(0.74);
   width: 100vw;
   z-index: 1;
