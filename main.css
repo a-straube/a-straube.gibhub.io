@@ -827,6 +827,25 @@ h3#fruitsOfMyLaborH3 > span:nth-child(2) {
   right: -93vw;
   transform: translateZ(-50px) scale(3.5) rotateY(180deg);
 }
+#waterBottom,
+#waterBottom0,
+#waterBottom2 {
+  background: url('img/ocean-wave-paint-brush-stroke-1.png') #0f6291 repeat-x;
+  background-position: 0 -45px;
+  background-size: auto 168%;
+  height: 12vh;
+  width: 120%;
+  position: absolute;
+  bottom: -78vh;
+  transform: translateZ(-45px) scale(4.2);
+  z-index: -1;
+}
+#waterBottom0 {
+  bottom: -70vh;
+}
+#waterBottom2 {
+  bottom: -90vh;
+}
 section#connectSection {
   min-height: 0;
 }
