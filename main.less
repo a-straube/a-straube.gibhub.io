@@ -94,19 +94,25 @@ h1 {
     pointer-events: none;
     position: absolute;
         top: 0;
-        right: 78vw;
+        right: 275vw;
     text-align: right;
-    transform: translateY(-54%) translateZ(-90px) scale(2.6);
+    transform: translateY(-206%) translateZ(-280px) scale(9);
     transition: 0.1s opacity ease-in-out;
     z-index: 1;
     
     >span { display: block; }
-    >span:first-child { font-size: 60vw; }
-    >span:last-child { margin-top: -12vh; }
+    >span:first-child {
+        font-size: 42vw;
+        padding-right: 25vw;
+    }
+    >span:last-child { margin-top: -11.5vh; }
     &.hide { display: none; }
 }
 
-#h1LetterA { letter-spacing: -11vw; }
+#h1LetterA {
+    font-size: 52vw;
+    letter-spacing: -9vw;
+}
 
 .text-cloud {
     font-family: 'Beth Ellen', sans-serif;
