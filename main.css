@@ -130,24 +130,23 @@ h1.hide {
   position: absolute;
   min-height: 120px;
   min-width: 240px;
-  transform: translateZ(-20px) scale(3.2);
+  transform: translateZ(-40px) scale(6);
 }
 .text-cloud > span {
-  color: #dfecff;
-  filter: drop-shadow(1px 2px 3px black);
-}
-#titleCloud1 {
-  background: url('img/watercolor-cloud-2.png') no-repeat;
-  background-size: 100% auto;
-  left: 100vw;
-  top: 38vh;
-  z-index: 1;
+  color: #e9e0d7;
+  filter: drop-shadow(1px 2px 2px black);
 }
 #titleCloud2 {
+  background: url('img/watercolor-cloud-3.png') no-repeat;
+  background-size: 100% auto;
+  right: -72vw;
+  top: 69vh;
+}
+#titleCloud1 {
   background: url('img/watercolor-cloud-1.png') no-repeat;
   background-size: 100% auto;
-  left: 125vw;
-  top: 60vh;
+  right: -50vw;
+  top: 20vh;
 }
 #sun {
   background-color: #ef8e38;
