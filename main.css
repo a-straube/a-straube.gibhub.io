@@ -30,36 +30,8 @@ section.buffer-section {
   min-height: 20vh;
 }
 section.buffer-section--top-1 {
-  background: linear-gradient(180deg, #12364f 0%, #fffec6 100%);
-  background: linear-gradient(180deg, transparent 0%, #fffec6 100%);
+  background: linear-gradient(180deg, transparent 5%, rgba(255, 254, 198, 0.98) 100%);
   min-height: 45vh;
-}
-section.buffer-section--top-1 > div {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-section.buffer-section--top-1 > div:after {
-  content: '';
-  -webkit-animation-name: clouds;
-  -webkit-animation-duration: 11680s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-text-fill-color: transparent;
-  animation-name: clouds;
-  animation-duration: 11680s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  background: url('img/Pngtree-mountain-landscape_8807747.png') repeat-x;
-  background-position: bottom;
-  background-size: auto 100%;
-  height: 50vh;
-  width: 100%;
-  position: absolute;
-  bottom: 6vh;
-  left: 0;
-  z-index: -1;
-  transform: scaleX(-1);
 }
 section.buffer-section--top {
   background: #fffec6;
