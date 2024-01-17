@@ -191,9 +191,6 @@ h2 {
 }
 
 #water {
-    background: url('img/ocean-wave-paint-brush-stroke-1.png') #0f6291 repeat-x;
-    background-position: 0 -45px;
-    background-size: auto 168%;
     height: 12vh;
         width: 120%;
     position: absolute;
@@ -202,9 +199,11 @@ h2 {
 }
 
 .moving-waves-row {
+    background: url('img/ocean-wave-paint-brush-stroke-1.png') #0f6291 repeat-x;
+    background-position: 0 -45px;
+    background-size: auto 168%;
     display: block;
-    height: 100%;
-        width: 100%;
+    height: 100%; width: 100%;
     position: absolute;
     &--2 { top: 50%; }
     &:before, &:after {
@@ -588,11 +587,7 @@ h3 { text-transform: uppercase; }
     min-width: 100%;
     &:before {
         content: '';
-        // background: url(img/Pngtree-3917103-texture.png) no-repeat;
-        // background: url('img/Pngtreegreen-watercolor-palm-leaf-illustration_4248623.png') #ffcd95 center;
-        // background-size: 22%;
-        height: 100%;
-            width: 100%;
+        height: 100%; width: 100%;
         position: absolute;
         z-index: 1;
     }
@@ -611,8 +606,7 @@ h3 { text-transform: uppercase; }
     position: relative;
     >img {
         transition: all 0.8s ease-in-out;
-        position: absolute;
-            left: 0vw;
+        position: absolute; left: 0vw;
     }
 }
 
@@ -647,19 +641,14 @@ h3 { text-transform: uppercase; }
     border-radius: 49%;
     box-shadow: 0 6px 18px #4f4b42;
     display: block;
-    height: 100%;
-        width: 100%;
-    position: absolute;
-        top: -5px;
-        left: 0;
+    height: 100%; width: 100%;
+    position: absolute; top: -5px; left: 0;
     z-index: -1;
 }
 
 #mahindraProject {
     height: 70vh;
-    position: absolute;
-        right: 0;
-        top: 5px;
+    position: absolute; top: 5px; right: 0;
 
     .fruit {
         >img {
@@ -668,10 +657,7 @@ h3 { text-transform: uppercase; }
                 top: 9vh;
                 z-index: 1;
             }
-            &:last-child {
-                top: 70vh;
-                    left: 3px;
-            }
+            &:last-child { top: 70vh; left: 3px; }
         }
 
         &:hover, &:focus, &:active {
@@ -687,8 +673,7 @@ h3 { text-transform: uppercase; }
 }
 
 #trelloProject {
-    bottom: -3vh;
-    left: 54vw;
+    bottom: -3vh; left: 54vw;
     height: 42vh;
 
     .fruit {
@@ -713,11 +698,9 @@ h3 { text-transform: uppercase; }
 }
 
 #codeSchoolProjects {
-    bottom: 12vh;
-    left: 0;
+    bottom: 12vh; left: 0;
 
     img { max-height: 69vh; }
-
     h3 {
         font-size: 26px;
         >span { font-size: 18px;}
@@ -774,24 +757,20 @@ h3 { text-transform: uppercase; }
 }
     
 #ptbs1 {
-    bottom: -232vh;
-        left: -36vw;
+    bottom: -232vh; left: -36vw;
     filter: brightness(0.6);
     transform: translateZ(-15px) scale(1.5);
 }
 
 #ptbs2 {
-    bottom: -270vh;
-        right: -35vw;
+    bottom: -270vh; right: -35vw;
     filter: brightness(0.62);
     transform: translateZ(-15px) scale(1.5) rotateY(180deg);
 }
 
 #waterBottom0, #waterBottom1, #waterBottom2 {
-    height: 12vh;
-    width: 90%;
-    position: absolute;
-    left: 5vw;
+    height: 12vh; width: 90%;
+    position: absolute; left: 5vw;
     z-index: -1;
     >span {
         background: url('img/ocean-wave-paint-brush-stroke-1.png') #0f6291 repeat-x;
@@ -976,7 +955,7 @@ footer {
 }
 
 #creditsCardBody {
-    video, img {
+    img {
         max-height: 30px;
         width: 30px;
         margin-right: 10px;
@@ -994,9 +973,7 @@ footer {
 #footerPlant {
     -webkit-transform: translateZ(200px);
     transform: translateZ(200px);
-    position: absolute;
-        bottom: 186px;
-        right: 501px;
+    position: absolute; bottom: 186px; right: 501px;
     width: 11%;
     z-index: 2;
 }

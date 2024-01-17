@@ -194,9 +194,6 @@ h2 > span > span > span {
   transform: translateZ(-6px) scale(2);
 }
 #water {
-  background: url('img/ocean-wave-paint-brush-stroke-1.png') #0f6291 repeat-x;
-  background-position: 0 -45px;
-  background-size: auto 168%;
   height: 12vh;
   width: 120%;
   position: absolute;
@@ -204,6 +201,9 @@ h2 > span > span > span {
   transform: translateZ(-15px) scale(2);
 }
 .moving-waves-row {
+  background: url('img/ocean-wave-paint-brush-stroke-1.png') #0f6291 repeat-x;
+  background-position: 0 -45px;
+  background-size: auto 168%;
   display: block;
   height: 100%;
   width: 100%;
@@ -632,8 +632,8 @@ h3 {
 #mahindraProject {
   height: 70vh;
   position: absolute;
-  right: 0;
   top: 5px;
+  right: 0;
 }
 #mahindraProject .fruit > img {
   width: 100%;
@@ -978,7 +978,6 @@ footer {
   background: #ffffff;
   color: #000000;
 }
-#creditsCardBody video,
 #creditsCardBody img {
   max-height: 30px;
   width: 30px;
