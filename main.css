@@ -187,11 +187,11 @@ h2 > span > span > span {
   transform: translateZ(-20px) scale(3);
 }
 #mountainscape3 {
-  bottom: -55vh;
+  bottom: -46vh;
   left: 11vw;
-  filter: invert(1) hue-rotate(180deg) drop-shadow(2px 4px 6px #000000);
+  filter: invert(1) hue-rotate(180deg) drop-shadow(0px -11px 0px #e2e9eb) drop-shadow(0px -2px 4px rgba(30, 28, 26, 0.75));
   height: 44vh;
-  transform: translateZ(-10px) scale(2);
+  transform: translateZ(-6px) scale(2);
 }
 #water {
   background: url('img/ocean-wave-paint-brush-stroke-1.png') #0f6291 repeat-x;
