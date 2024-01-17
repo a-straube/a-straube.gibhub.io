@@ -174,7 +174,7 @@ h2 > span > span > span {
 #mountainscape1 {
   bottom: -8vh;
   left: -14vw;
-  filter: invert(1) hue-rotate(8deg) drop-shadow(2px 4px 6px #000000) brightness(0.6);
+  filter: invert(1) hue-rotate(8deg) drop-shadow(0px -1px 0px #e2e9eb) drop-shadow(2px 4px 6px #000000) brightness(0.6);
   height: 36vh;
   width: 200%;
   transform: translateZ(-30px) scale(2);
@@ -182,7 +182,7 @@ h2 > span > span > span {
 #mountainscape2 {
   bottom: -25vh;
   left: 23vw;
-  filter: invert(1) hue-rotate(102deg) drop-shadow(2px 4px 6px #000000) brightness(0.95);
+  filter: invert(1) hue-rotate(102deg) drop-shadow(0px -1px 0px #e2e9eb) drop-shadow(2px 4px 6px #000000) brightness(0.95);
   height: 28vh;
   transform: translateZ(-20px) scale(3);
 }
