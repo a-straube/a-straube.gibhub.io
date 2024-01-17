@@ -275,15 +275,8 @@
     parallaxBody.onscroll = function() {
         let parallaxBodyScrollTop = this.scrollTop;
         const h1 = document.getElementById('h1Name');
-        const fruitsOfMyLaborH3 = document.getElementById('fruitsOfMyLaborH3');
-        if(parallaxBodyScrollTop >= 1500) {
-            h1.style.opacity = "0";
-            fruitsOfMyLaborH3.style.opacity = "1";
-        }
-        else {
-            h1.style.opacity = "1";
-            fruitsOfMyLaborH3.style.opacity = "0";
-        }
+        if(parallaxBodyScrollTop >= 1560) { h1.style.opacity = "0"; }
+        else { h1.style.opacity = "1"; }
     };
     // Add year to copyright
     let year = new Date().getFullYear();
