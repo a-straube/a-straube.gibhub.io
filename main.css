@@ -734,6 +734,16 @@ h3 {
   left: 32%;
   max-width: 170px;
 }
+#sunSetSky {
+  background: linear-gradient(180deg, #000006 20%, rgba(4, 4, 58, 0.7) 60%, transparent 100%);
+  height: 42vh;
+  width: 600vw;
+  position: absolute;
+  bottom: 76vh;
+  right: -80vw;
+  transform: translateZ(-150px) scale(13.1);
+  z-index: -3;
+}
 #sunSet {
   position: absolute;
   bottom: -275vh;
