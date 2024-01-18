@@ -120,17 +120,19 @@ h1.hide {
   right: -50vw;
   top: 20vh;
 }
-#sun {
-  background-color: #ef8e38;
+.sun {
+  background: radial-gradient(circle, #efb938 33%, #ef8e38 100%);
   border: 1px solid #ffbc59;
   border-radius: 50%;
   box-shadow: 0 0 40px #ffbc59;
   filter: blur(2px);
-  height: 300px;
-  width: 300px;
+  height: 280px;
+  width: 280px;
+}
+#sunRise {
   position: absolute;
   top: 54%;
-  right: 29vw;
+  right: 30vw;
 }
 h2 {
   color: #ffffff;
@@ -733,15 +735,9 @@ h3 {
   max-width: 170px;
 }
 #sunSet {
-  background-color: #ef8e38;
-  border: 1px solid #ffbc59;
-  border-radius: 50%;
-  box-shadow: 0 0 40px #ffbc59;
   position: absolute;
   bottom: -275vh;
-  right: -120vw;
-  height: 300px;
-  width: 300px;
+  right: -80vw;
   transform: translateZ(-150px) scale(13.1);
   z-index: -2;
 }
