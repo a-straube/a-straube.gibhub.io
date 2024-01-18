@@ -562,7 +562,7 @@ h3 {
   position: absolute;
 }
 #videoContainer {
-  background: linear-gradient(to bottom, #108dc7, #ef8e38 74%);
+  background: linear-gradient(to bottom, #108dc7, #ef8e38 62%);
   background-size: cover;
   background-attachment: fixed;
   position: fixed;
@@ -747,7 +747,7 @@ h3 {
 }
 #sunSet {
   position: absolute;
-  bottom: -275vh;
+  bottom: -240vh;
   right: -80vw;
   transform: translateZ(-150px) scale(13.1);
   z-index: -2;
