@@ -207,7 +207,7 @@ h2 > span > span > span {
   background-position: 0 -45px;
   background-size: auto 168%;
   display: block;
-  height: 100%;
+  height: 70%;
   width: 100%;
   position: absolute;
 }
@@ -788,7 +788,7 @@ h3 {
 #boat {
   max-width: 550px;
   position: absolute;
-  bottom: -280vh;
+  bottom: -248vh;
   left: 23vw;
   transform: translateZ(-20px) scale(3.25);
   z-index: -1;
@@ -849,8 +849,9 @@ h3 {
   padding-left: 4vw;
 }
 #waterBottom0 {
-  bottom: -246vh;
-  transform: translateZ(-16px) scale(2.25);
+  bottom: -250vh;
+  height: 13vh;
+  transform: translateZ(-25px) scale(3.25);
 }
 #waterBottom0:after {
   content: '';
@@ -859,12 +860,14 @@ h3 {
   width: 100%;
 }
 #waterBottom1 {
-  bottom: -273vh;
-  transform: translateZ(-15px) scale(2.25);
+  bottom: -265vh;
+  height: 15vh;
+  transform: translateZ(-16px) scale(2.5);
 }
 #waterBottom2 {
-  bottom: -305vh;
-  transform: translateZ(-12px) scale(2.25);
+  bottom: -287vh;
+  height: 17vh;
+  transform: translateZ(-8px) scale(2.5);
 }
 section#connectSection {
   min-height: 0;
@@ -1006,4 +1009,10 @@ footer {
   right: 501px;
   width: 11%;
   z-index: 2;
+}
+#bottomWater {
+  position: absolute;
+  bottom: 0;
+  height: 20vh;
+  width: 100%;
 }
