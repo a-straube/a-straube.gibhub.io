@@ -745,6 +745,13 @@ h3 {
   opacity: 0;
   z-index: -3;
 }
+#sunSetSky:before {
+  content: '';
+  background: url('img/Pngtree-white-star_5648675.png');
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
 #sunSet {
   position: absolute;
   bottom: -240vh;
