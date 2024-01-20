@@ -8,6 +8,18 @@
     to { background-position: 1000% }
 }
 
+@keyframes rockTheBoat {
+    0% { transform: translateZ(-20px) scale(3) rotate(-2deg); }
+    50% { transform: translateZ(-20px) scale(3) rotate(2deg); }
+    100% { transform: translateZ(-20px) scale(3) rotate(-2deg); }
+}
+
+@keyframes sailFlap {
+    0% { transform: skewY(-2deg); }
+    50% { transform: skewY(2deg); }
+    100% { transform: skewY(-2deg); }
+}
+
 @keyframes introDarkPalmTop {
     0% { transform: rotate(150deg) scaleX(-1) rotateY(6deg) rotateX(8deg); }
     20% { transform: rotate(150deg) scaleX(-1) rotateY(-5deg) rotateX(12deg); }
