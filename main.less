@@ -65,39 +65,61 @@ h1 {
     pointer-events: none;
     position: absolute;
         top: 0;
-        right: 275vw;
+        right: 0;
     text-align: right;
     transform: translateY(-206%) translateZ(-280px) scale(9);
     z-index: 1;
-    
+    @media(min-width: @screen-sm) { right: 275vw; }
     >span { display: block; }
     >span:first-child {
-        font-size: 42vw;
+        font-size: 77vw;
         padding-right: 21vw;
+        @media(min-width: @screen-sm) {
+            font-size: 42vw;
+        }
     }
     >span:last-child {
-        font-size: 18vw;
-        margin-top: -10.5vh;
+        font-size: 34vw;
+        @media(min-width: @screen-sm) {
+            margin-top: -3.5vh;
+            font-size: 18vw;
+        }
+        @media(min-width: @screen-lg) {
+            margin-top: -10.5vh;
+        }
     }
     &.hide { display: none; }
 }
 
 #h1LetterA {
-    font-size: 52vw;
-    letter-spacing: -9vw;
+    font-size: 94vw;
+    letter-spacing: -17vw;
+    @media(min-width: @screen-sm) {
+        font-size: 52vw;
+        letter-spacing: -9vw;
+    }
 }
 
 .text-cloud {
     font-family: 'Beth Ellen', sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     display: flex;
         align-items: center;
         justify-content: center;
     filter: drop-shadow(1px 2px 7px rgba(0,2,4,0.75));
     position: absolute;
-    min-height: 120px;
-    min-width: 240px;
+    min-height: 60px;
+    min-width: 120px;
     transform: translateZ(-40px) scale(6);
+    @media(min-width: @screen-sm) {
+        min-height: 90px;
+        min-width: 180px;
+    }
+    @media(min-width: @screen-lg) {
+        font-size: 30px;
+        min-height: 120px;
+        min-width: 240px;
+    }
     >span {
         color: #e9e0d7;
         filter: drop-shadow(1px 2px 2px black);
@@ -115,7 +137,8 @@ h1 {
     background: url('img/watercolor-cloud-1.png') no-repeat;
     background-size: 100% auto;
     right: -50vw;
-    top: 20vh;
+    top: 41vh;
+    @media(min-width: @screen-lg) { top: 20vh; }
 }
 
 .sun {
