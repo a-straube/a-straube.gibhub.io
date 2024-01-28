@@ -4,7 +4,7 @@
 @screen-md: 992px;
 @screen-lg: 1200px;
 
-::-webkit-scrollbar { width: 20px; }
+::-webkit-scrollbar { width: 0; }
 ::-webkit-scrollbar-track { background: linear-gradient(0deg, #018899 0%, rgba(238,245,220,1) 50%, #018899 100%); }
 ::-webkit-scrollbar-thumb {
     background: transparent;
@@ -60,17 +60,20 @@ h1 {
     filter: drop-shadow(1px 2px rgba(10, 12, 15, 0.9));
     font-family: 'Beth Ellen', sans-serif;
     letter-spacing: -1.2vw;
-    margin: 0;
-    padding-right: 11vw;
+    margin: 0 auto;
+    padding: 0 10vw 1vh 0;
     pointer-events: none;
-    position: absolute; top: 0; right: 0;
+    position: absolute; top: 0; left: 0; right: 0;
     text-align: right;
+    width: 90%;
     z-index: 1;
+    @media(min-width: 550px) { top: -5vh; }
     @media(min-width: @screen-sm) {
         filter: drop-shadow(-4px -5px 0px rgba(230, 242, 255, 0.9)) drop-shadow(3px 5px 1px rgba(10, 12, 15, 0.9));
         padding: 4vh 9vw;
-        right: 275vw;
+        top: 0; left: auto; right: 275vw;
         transform: translateY(-206%) translateZ(-280px) scale(9);
+        width: auto;
     }
     >span { display: block; }
     >span:first-child {
@@ -104,7 +107,7 @@ h1 {
 
 .text-cloud {
     font-family: 'Beth Ellen', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
         align-items: center;
         justify-content: center;
@@ -114,6 +117,7 @@ h1 {
     min-width: 120px;
     transform: translateZ(-40px) scale(6);
     @media(min-width: @screen-sm) {
+        font-size: 20px;
         min-height: 90px;
         min-width: 180px;
     }
@@ -131,23 +135,17 @@ h1 {
 #titleCloud2 {
     background: url('img/watercolor-cloud-3.png') no-repeat;
     background-size: 100% auto;
-    right: -8vw;
-    top: 44vh;
-    @media(min-width: @screen-sm) {
-        right: -72vw;
-        top: 69vh;
-    }
+    top: 44vh; right: -8vw;
+    @media(min-width: 550px) { top: 78vh; right: -3vw; }
+    @media(min-width: @screen-sm) { top: 69vh; right: -72vw; }
 }
 
 #titleCloud1 {
     background: url('img/watercolor-cloud-1.png') no-repeat;
     background-size: 100% auto;
-    right: 62vw;
-    top: 15vh;
-    @media(min-width: @screen-sm) {
-        right: -50vw;
-        top: 41vh;
-    }
+    top: 15vh; right: 62vw;
+    @media(min-width: 550px) { top: 64vh; right: 80vw; }
+    @media(min-width: @screen-sm) { top: 30vh; right: -50vw; }
     @media(min-width: @screen-lg) { top: 20vh; }
 }
 
@@ -450,9 +448,10 @@ h3 { text-transform: uppercase; }
     height: 140px; width: 182px;
     position: absolute; top: 160vh; right: 11vw;
     @media(min-width: @screen-sm) {
-        height: 40vh; width: 25vw;
+        height: 230px; width: 300px;
         right: 7vw;
     }
+    @media(min-width: @screen-lg) { height: 380px; width: 480px; }
     img { width: 100%; }
 }
 
