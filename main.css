@@ -2,6 +2,11 @@
 ::-webkit-scrollbar {
   width: 0;
 }
+@media (min-width: 760px) {
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
+}
 ::-webkit-scrollbar-track {
   background: linear-gradient(0deg, #018899 0%, #eef5dc 50%, #018899 100%);
 }
@@ -428,24 +433,34 @@ h3 {
 #aboutMeSection {
   background: #fffec6;
   background: linear-gradient(180deg, rgba(255, 254, 198, 0.01) 50%, #fffec6 80%, #fffec6 100%);
-  padding: 280px 120px;
+  padding: 10vh 15px;
   position: absolute;
   top: 156vh;
   transform: translateZ(4px) scale(0.74);
   width: 100vw;
   z-index: 1;
 }
+@media (min-width: 760px) {
+  #aboutMeSection {
+    padding: 280px 120px;
+  }
+}
 #aboutMeSection:before {
   content: '';
   background: url('img/wood.jpg');
   background-position: bottom;
   background-size: cover;
-  height: 38vh;
+  height: 30vh;
   width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
   filter: brightness(0.44) contrast(0.95);
+}
+@media (min-width: 760px) {
+  #aboutMeSection:before {
+    height: 38vh;
+  }
 }
 #aboutMeSection .section-content {
   display: flex;
