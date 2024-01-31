@@ -504,6 +504,7 @@ h3 {
   top: 155vh;
   right: 11vw;
   scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 @media (min-width: 760px) {
   #window {
@@ -662,6 +663,7 @@ h3 {
 }
 #projectExamplesSection {
   scroll-snap-align: center;
+  scroll-snap-stop: always;
 }
 #projectExamplesSection h3 {
   color: #07074f;
@@ -1069,6 +1071,7 @@ footer {
   position: relative;
   scroll-margin-block-end: 30px;
   scroll-snap-align: end;
+  scroll-snap-stop: always;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
