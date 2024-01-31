@@ -277,17 +277,20 @@
 </body>
 
 <script>
-    // Scroll opacity toggle
+    // Element opacity scroll toggle
     const parallaxBody = document.querySelector('.parallax');
     parallaxBody.onscroll = function() {
         let parallaxBodyScrollTop = this.scrollTop;
         const h1 = document.getElementById('h1Name');
+        const titleCloud2 = document.getElementById('titleCloud2');
         const sunSetSky = document.getElementById('sunSetSky');
         if(parallaxBodyScrollTop >= 1720) {
             h1.style.opacity = "0";
+            titleCloud2.style.opacity = "0";
             sunSetSky.style.opacity = "1";
         } else {
             h1.style.opacity = "1";
+            titleCloud2.style.opacity = "1";
             sunSetSky.style.opacity = "0";
         }
     };
