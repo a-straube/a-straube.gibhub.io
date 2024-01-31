@@ -662,7 +662,7 @@ h3 {
   width: 100%;
 }
 #projectExamplesSection {
-  scroll-snap-align: center;
+  scroll-snap-align: start;
   scroll-snap-stop: always;
 }
 #projectExamplesSection h3 {
