@@ -6,7 +6,7 @@
 
 ::-webkit-scrollbar {
     width: 0;
-    @media(min-width: @screen-sm) { width: 20px; }
+    // @media(min-width: @screen-sm) { width: 20px; }
 }
 ::-webkit-scrollbar-track { background: linear-gradient(0deg, #018899 0%, rgba(238,245,220,1) 50%, #018899 100%); }
 ::-webkit-scrollbar-thumb {
@@ -280,11 +280,13 @@ h3 { text-transform: uppercase; }
     overflow-y: auto;
     -webkit-perspective: 300px;
     perspective: 15px;
+    scroll-snap-type: y mandatory;
 }
 
 #topSection {
     min-height: 100%;
     padding: 0;
+    scroll-snap-align: start;
 }
 
 .intro-top-front-palms {
@@ -451,13 +453,21 @@ h3 { text-transform: uppercase; }
 	background-position: 0%;
     background-size: auto 100%;
     height: 140px; width: 182px;
-    position: absolute; top: 160vh; right: 11vw;
+    padding-top: 6vh;
+    position: absolute; top: 155vh; right: 11vw;
+    scroll-snap-align: start;
     @media(min-width: @screen-sm) {
         height: 230px; width: 300px;
         right: 7vw;
     }
     @media(min-width: @screen-lg) { height: 380px; width: 480px; }
     img { width: 100%; }
+    &:before {
+        content: '';
+        background-color: #fffec6;
+        height: 6vh; width: 100%;
+        position: absolute; top: 0;
+    }
 }
 
 #book {
@@ -597,7 +607,7 @@ h3 { text-transform: uppercase; }
 }
 
 #projectExamplesSection {
-    min-height: 150vh;
+    scroll-snap-align: center;
     h3 {
         color: #07074f;
         font-family: 'Beth Ellen', sans-serif;
@@ -976,12 +986,19 @@ footer {
     overflow: hidden;
     padding: 15px;
     position: relative;
+    scroll-margin-block-end: 30px;
+    scroll-snap-align: end;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     @media(min-width: @screen-sm) { padding: 15px 100px; }
     @media(min-width: @screen-md) {
         flex-direction: row;
         flex-wrap: nowrap;
+    }
+    &:after {
+        content: '';
+        height: 30px;
+        position: absolute; bottom: 0;
     }
 }
 

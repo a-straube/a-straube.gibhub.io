@@ -2,11 +2,6 @@
 ::-webkit-scrollbar {
   width: 0;
 }
-@media (min-width: 760px) {
-  ::-webkit-scrollbar {
-    width: 20px;
-  }
-}
 ::-webkit-scrollbar-track {
   background: linear-gradient(0deg, #018899 0%, #eef5dc 50%, #018899 100%);
 }
@@ -339,10 +334,12 @@ h3 {
   overflow-y: auto;
   -webkit-perspective: 300px;
   perspective: 15px;
+  scroll-snap-type: y mandatory;
 }
 #topSection {
   min-height: 100%;
   padding: 0;
+  scroll-snap-align: start;
 }
 .intro-top-front-palms {
   position: absolute;
@@ -502,9 +499,11 @@ h3 {
   background-size: auto 100%;
   height: 140px;
   width: 182px;
+  padding-top: 6vh;
   position: absolute;
-  top: 160vh;
+  top: 155vh;
   right: 11vw;
+  scroll-snap-align: start;
 }
 @media (min-width: 760px) {
   #window {
@@ -521,6 +520,14 @@ h3 {
 }
 #window img {
   width: 100%;
+}
+#window:before {
+  content: '';
+  background-color: #fffec6;
+  height: 6vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
 }
 #book {
   background: url('img/Pngtree-8910691-book.png') center no-repeat;
@@ -654,7 +661,7 @@ h3 {
   width: 100%;
 }
 #projectExamplesSection {
-  min-height: 150vh;
+  scroll-snap-align: center;
 }
 #projectExamplesSection h3 {
   color: #07074f;
@@ -1060,6 +1067,8 @@ footer {
   overflow: hidden;
   padding: 15px;
   position: relative;
+  scroll-margin-block-end: 30px;
+  scroll-snap-align: end;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
@@ -1073,6 +1082,12 @@ footer {
     flex-direction: row;
     flex-wrap: nowrap;
   }
+}
+footer:after {
+  content: '';
+  height: 30px;
+  position: absolute;
+  bottom: 0;
 }
 #copyrightLine {
   font-size: 13px;
