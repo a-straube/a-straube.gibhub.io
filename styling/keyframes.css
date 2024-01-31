@@ -1,17 +1,17 @@
-@keyframes clouds {
-  from {
-    background-position: 0%;
-  }
-  to {
-    background-position: -1000%;
-  }
-}
 @keyframes forwardMovement {
   from {
     background-position: 0%;
   }
   to {
     background-position: 1000%;
+  }
+}
+@keyframes backwardMovement {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: -1000%;
   }
 }
 @keyframes rockTheBoat {
