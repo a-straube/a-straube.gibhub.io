@@ -858,6 +858,8 @@ h3 {
 #sunSetSky:before {
   content: '';
   background: url('img/Pngtree-white-star_5648675.png');
+  background-position: 0px -48px;
+  background-size: auto 158%;
   height: 100%;
   width: 100%;
   position: absolute;
