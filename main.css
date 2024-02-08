@@ -86,8 +86,8 @@ h1 {
     padding: 4vh 9vw;
     top: 0;
     left: auto;
-    right: 275vw;
-    transform: translateY(-206%) translateZ(-280px) scale(9);
+    right: 33vw;
+    transform: translateY(-77%) translateZ(-70px) scale(2.75) rotateY(1deg) rotate(-3deg);
     width: auto;
   }
 }
