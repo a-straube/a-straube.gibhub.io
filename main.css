@@ -717,6 +717,9 @@ h3 {
 .inside-fruit img {
   width: 70%;
 }
+.fruit {
+  height: 100%;
+}
 .fruit .inside-fruit {
   transition: 0.6s all ease-in-out;
   opacity: 0;
@@ -742,9 +745,10 @@ h3 {
   z-index: -1;
 }
 #mahindraProject {
-  height: 70vh;
+  height: 60vh;
+  width: 21vw;
   position: absolute;
-  top: 5px;
+  top: 20vh;
   right: 0;
 }
 #mahindraProject .fruit > img {
