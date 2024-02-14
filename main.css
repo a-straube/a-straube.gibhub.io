@@ -86,8 +86,8 @@ h1 {
     padding: 4vh 9vw;
     top: 0;
     left: auto;
-    right: 33vw;
-    transform: translateY(-77%) translateZ(-70px) scale(2.75) rotateY(1deg) rotate(-3deg);
+    right: 88vw;
+    transform: translateY(-68%) translateZ(-90px) scale(3.35) rotateY(1deg) rotate(-3deg);
     width: auto;
   }
 }
@@ -99,8 +99,8 @@ h1 > span:first-child {
 }
 @media (min-width: 760px) {
   h1 > span:first-child {
-    font-size: 42vw;
-    padding-right: 21vw;
+    font-size: 36vw;
+    padding-right: 25vw;
   }
 }
 h1 > span:last-child {
@@ -122,12 +122,13 @@ h1.hide {
 }
 #h1LetterA {
   font-size: 42vw;
+  font-weight: 700;
   letter-spacing: -7vw;
 }
 @media (min-width: 760px) {
   #h1LetterA {
-    font-size: 52vw;
-    letter-spacing: -9vw;
+    font-size: 29vw;
+    letter-spacing: -6vw;
   }
 }
 .text-cloud {
