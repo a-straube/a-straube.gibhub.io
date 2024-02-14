@@ -434,7 +434,6 @@ h3 {
   padding: 10vh 15px;
   position: absolute;
   top: 156vh;
-  transform: translateZ(4px) scale(0.74);
   width: 100vw;
   z-index: 1;
 }
