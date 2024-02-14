@@ -28,6 +28,7 @@ section {
 }
 section.buffer-section {
   min-height: 20vh;
+  z-index: 2;
 }
 section.buffer-section--top-1 {
   background: linear-gradient(180deg, transparent 5%, rgba(255, 254, 198, 0.98) 100%);
@@ -276,6 +277,7 @@ h2 > span > span > span {
   filter: invert(1) hue-rotate(180deg) drop-shadow(0px -1px 0px #e2e9eb) drop-shadow(0px -2px 4px rgba(30, 28, 26, 0.75));
   height: 44vh;
   transform: translateZ(-6px) scale(2);
+  z-index: 2;
 }
 #water {
   height: 12vh;
@@ -295,6 +297,12 @@ h2 > span > span > span {
 }
 .moving-waves-row--2 {
   top: 50%;
+}
+.moving-waves-row--3 {
+  top: 100%;
+}
+.moving-waves-row--4 {
+  top: 150%;
 }
 .moving-waves-row:before,
 .moving-waves-row:after {
@@ -430,10 +438,9 @@ h3 {
 }
 #aboutMeSection {
   background: #fffec6;
-  background: linear-gradient(180deg, rgba(255, 254, 198, 0.01) 50%, #fffec6 80%, #fffec6 100%);
   padding: 10vh 15px;
-  position: absolute;
-  top: 156vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
   width: 100vw;
   z-index: 1;
 }
@@ -502,9 +509,6 @@ h3 {
   position: absolute;
   top: 164vh;
   right: 11vw;
-  scroll-snap-align: start;
-  scroll-margin-block-start: 10vh;
-  scroll-snap-stop: always;
 }
 @media (min-width: 760px) {
   #window {
@@ -888,10 +892,10 @@ h3 {
   transform: translateZ(-15px) scale(1.1);
 }
 #ptbs2 {
-  bottom: -250vh;
-  right: -104vw;
+  bottom: -278vh;
+  right: -97vw;
   filter: brightness(0.4) blur(4px);
-  transform: translateZ(-25px) scale(0.5) rotateY(180deg);
+  transform: translateZ(-24px) scale(0.5) rotateY(180deg);
 }
 #waterBottom0,
 #waterBottom1,
@@ -920,7 +924,7 @@ h3 {
   animation-iteration-count: infinite;
   max-width: 550px;
   position: absolute;
-  bottom: -248vh;
+  bottom: -284vh;
   left: 23vw;
   z-index: -1;
 }
@@ -1000,9 +1004,11 @@ h3 {
   padding-left: 4vw;
 }
 #waterBottom0 {
-  bottom: -250vh;
-  height: 13vh;
-  transform: translateZ(-25px) scale(3.25);
+  bottom: -269vh;
+  height: 15vh;
+  left: -25vw;
+  transform: translateZ(-22px) scale(1.5);
+  width: 200vw;
 }
 #waterBottom0:after {
   content: '';
@@ -1011,12 +1017,13 @@ h3 {
   width: 100%;
 }
 #waterBottom1 {
-  bottom: -265vh;
+  bottom: -283vh;
   height: 15vh;
-  transform: translateZ(-16px) scale(2.5);
+  transform: translateZ(-12px) scale(1.85);
+  width: 110vw;
 }
 #waterBottom2 {
-  bottom: -287vh;
+  bottom: -310vh;
   height: 17vh;
   transform: translateZ(-8px) scale(2.5);
 }
