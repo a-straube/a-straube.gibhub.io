@@ -924,8 +924,8 @@ h3 {
   animation-iteration-count: infinite;
   max-width: 550px;
   position: absolute;
-  bottom: -284vh;
-  left: 23vw;
+  bottom: -304vh;
+  left: 17vw;
   z-index: -1;
 }
 #boat img {
