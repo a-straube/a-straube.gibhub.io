@@ -279,12 +279,15 @@ h2 > span > span > span {
   transform: translateZ(-6px) scale(2);
   z-index: 2;
 }
-#water {
+#waterTop {
   height: 12vh;
   width: 120%;
   position: absolute;
   bottom: -32vh;
   transform: translateZ(-15px) scale(2);
+}
+#waterTop .moving-waves-row--2 {
+  height: 90%;
 }
 .moving-waves-row {
   background: url('img/ocean-wave-paint-brush-stroke-1.png') #0f6291 repeat-x;
