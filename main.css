@@ -750,36 +750,36 @@ h3 {
   left: 0;
   z-index: -1;
 }
-#mahindraProject {
+#comingSoon-Right1 {
   height: 60vh;
   width: 21vw;
   position: absolute;
   top: 20vh;
   right: 0;
 }
-#mahindraProject .fruit > img {
+#comingSoon-Right1 .fruit > img {
   width: 100%;
 }
-#mahindraProject .fruit > img:first-child {
-  top: 9vh;
+#comingSoon-Right1 .fruit > img:first-child {
+  top: -18vh;
   z-index: 1;
 }
-#mahindraProject .fruit > img:last-child {
-  top: 70vh;
+#comingSoon-Right1 .fruit > img:last-child {
+  top: 29vh;
   left: 3px;
 }
-#mahindraProject .fruit:hover > img:first-child,
-#mahindraProject .fruit:focus > img:first-child,
-#mahindraProject .fruit:active > img:first-child {
-  top: -15vh;
+#comingSoon-Right1 .fruit:hover > img:first-child,
+#comingSoon-Right1 .fruit:focus > img:first-child,
+#comingSoon-Right1 .fruit:active > img:first-child {
+  top: -30vh;
 }
-#mahindraProject .fruit:hover > img:last-child,
-#mahindraProject .fruit:focus > img:last-child,
-#mahindraProject .fruit:active > img:last-child {
-  top: 80vh;
+#comingSoon-Right1 .fruit:hover > img:last-child,
+#comingSoon-Right1 .fruit:focus > img:last-child,
+#comingSoon-Right1 .fruit:active > img:last-child {
+  top: 35vh;
 }
-#mahindraProject .inside-fruit {
-  top: 57vh;
+#comingSoon-Right1 .inside-fruit {
+  top: 19vh;
   left: -32px;
 }
 #trelloProject {
