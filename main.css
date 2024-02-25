@@ -1010,7 +1010,22 @@ h3 {
   transform: translateZ(-8px) scale(2.5);
 }
 section#connectSection {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   min-height: 0;
+  padding: 12vh 0;
+}
+@media (min-width: 760px) {
+  section#connectSection {
+    padding: 20vh 120px;
+  }
+}
+@media (min-width: 1200px) {
+  section#connectSection {
+    flex-direction: row;
+  }
 }
 section#connectSection:after {
   content: '';
@@ -1024,8 +1039,73 @@ section#connectSection:after {
   transform: skewY(355deg);
   z-index: -1;
 }
+section#connectSection h3 {
+  font-size: 40px;
+  font-weight: 100;
+  letter-spacing: 6px;
+  padding-right: 6vw;
+}
+@media (min-width: 760px) {
+  section#connectSection h3 {
+    font-size: 62px;
+  }
+}
+@media (min-width: 1200px) {
+  section#connectSection h3 {
+    font-size: 82px;
+  }
+}
+@media (min-width: 1500px) {
+  section#connectSection h3 {
+    font-size: 106px;
+  }
+}
+section#connectSection > div {
+  border-top: 2px solid black;
+  padding: 3vh 25px;
+  position: relative;
+}
+@media (min-width: 760px) {
+  section#connectSection > div {
+    padding: 4vh 0;
+  }
+}
+@media (min-width: 1200px) {
+  section#connectSection > div {
+    border-top: none;
+    border-left: 2px solid black;
+    padding: 6vh 0 6vh 6vw;
+  }
+}
+section#connectSection > div:after {
+  content: '';
+  background: url('img/Axel.png') no-repeat;
+  background-size: auto 100%;
+  height: 150px;
+  width: 275px;
+  position: absolute;
+  bottom: -11h;
+  right: -1vw;
+}
+section#connectSection span {
+  font-family: 'Waiting for the Sunrise', cursive;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  padding-right: 30px;
+}
+@media (min-width: 760px) {
+  section#connectSection span {
+    font-size: 26px;
+    line-height: 2.5;
+  }
+}
+.new-line-span {
+  display: block;
+}
 #connectList {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   font-size: 48px;
   list-style: none;
