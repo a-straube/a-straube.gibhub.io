@@ -1221,11 +1221,6 @@ footer:after {
   background: #ffffff;
   color: #000000;
 }
-#creditsCardBody img {
-  max-height: 30px;
-  width: 30px;
-  margin-right: 10px;
-}
 #credits {
   font-size: 14px;
   list-style: none;
@@ -1234,12 +1229,8 @@ footer:after {
 #credits li {
   line-height: 30px;
 }
-#footerPlant {
-  -webkit-transform: translateZ(200px);
-  transform: translateZ(200px);
-  position: absolute;
-  bottom: 186px;
-  right: 501px;
-  width: 11%;
-  z-index: 2;
+#credits img {
+  max-height: 30px;
+  width: 30px;
+  margin-right: 10px;
 }
