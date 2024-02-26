@@ -1149,6 +1149,7 @@ footer {
 @media (min-width: 760px) {
   footer {
     padding: 15px 100px;
+    top: -36px;
   }
 }
 @media (min-width: 992px) {
