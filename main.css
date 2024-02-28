@@ -58,6 +58,11 @@ h1 {
   -webkit-animation-iteration-count: infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  position: absolute;
+  top: 0;
+  bottom: auto;
+  left: 0;
+  right: 0;
   animation-name: backwardMovement;
   animation-duration: 1100s;
   animation-timing-function: linear;
@@ -73,10 +78,6 @@ h1 {
   margin: 0 auto;
   padding: 0 10vw 1vh 0;
   pointer-events: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   text-align: right;
   width: 90%;
   z-index: 1;
