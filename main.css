@@ -828,7 +828,7 @@ h3 {
 #boat {
   position: absolute;
   top: auto;
-  bottom: -304vh;
+  bottom: -254vh;
   left: 17vw;
   right: auto;
   -webkit-animation-name: rockTheBoat;
@@ -926,7 +926,7 @@ h3 {
   padding-left: 4vw;
 }
 #waterBottom0 {
-  bottom: -300vh;
+  bottom: -244vh;
   height: 9vh;
   left: -25vw;
   transform: translateZ(-22px) scale(1.5);
@@ -939,13 +939,13 @@ h3 {
   width: 100%;
 }
 #waterBottom1 {
-  bottom: -300vh;
+  bottom: -248vh;
   height: 10vh;
   transform: translateZ(-12px) scale(1.85);
   width: 110vw;
 }
 #waterBottom2 {
-  bottom: -316vh;
+  bottom: -264vh;
   height: 11vh;
   transform: translateZ(-8px) scale(2.5);
 }
