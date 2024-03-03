@@ -221,37 +221,9 @@ h1.hide {
 #sunRise {
   position: absolute;
   top: 54%;
+  bottom: auto;
+  left: auto;
   right: 30vw;
-}
-h2 {
-  color: #ffffff;
-  font-size: 2vw;
-  font-weight: 100;
-  letter-spacing: 0.5vw;
-  line-height: 1.5;
-  padding: 21vh 50px 44vh 67vw;
-  position: absolute;
-  top: 41%;
-  text-shadow: 1px 2px #27282d;
-  text-transform: lowercase;
-  transform: translateY(-20%);
-  width: 100%;
-}
-h2 > span {
-  background-color: rgba(55, 97, 147, 0.6);
-  border: 1px solid #dfdfdf;
-  display: block;
-  padding: 30px;
-  transform: translateZ(-10px);
-}
-h2 > span > span {
-  display: flex;
-  justify-content: space-between;
-}
-h2 > span > span > span {
-  display: inline-block;
-  text-align: center;
-  width: 50px;
 }
 .mountainscape {
   background: url('img/Pngtree-mountain-landscape_8807747.png') repeat-x;
@@ -286,10 +258,13 @@ h2 > span > span > span {
   z-index: 1;
 }
 #waterTop {
+  position: absolute;
+  top: auto;
+  bottom: -32vh;
+  left: auto;
+  right: auto;
   height: 12vh;
   width: 120%;
-  position: absolute;
-  bottom: -32vh;
   transform: translateZ(-15px) scale(2);
 }
 #waterTop .moving-waves-row--2 {
@@ -359,92 +334,6 @@ h3 {
   padding: 0;
   scroll-snap-align: start;
 }
-.intro-top-front-palms {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.top-palms {
-  animation-duration: 10s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  position: absolute;
-  top: -20px;
-}
-.top-palms--left {
-  animation-name: topLeftPalmSwing;
-  filter: hue-rotate(346deg) brightness(0.35);
-  left: -10px;
-  transform-origin: top left;
-}
-.top-palms--right {
-  animation-name: topRightPalmSwing;
-  filter: hue-rotate(340deg) brightness(0.5);
-  right: -10px;
-  transform-origin: top right;
-  z-index: 2;
-}
-#bottomPalmsLeft {
-  animation-name: bottomPalmsLeft;
-  filter: hue-rotate(25deg) brightness(0.2);
-  position: absolute;
-  bottom: -5vh;
-  left: -110px;
-  transform: rotate(191deg);
-  width: 30vw;
-  z-index: 1;
-}
-.leaf-wrapper {
-  perspective: 780px;
-  perspective-origin: top;
-  position: absolute;
-  top: -75px;
-  left: 48%;
-}
-.dark-leaves-top {
-  animation-name: introDarkPalmTop;
-  animation-duration: 10s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-#introSectionTopLeaves {
-  animation-name: introSectionTopLeaves;
-  animation-duration: 15s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  filter: brightness(0.85) hue-rotate(24deg);
-  position: absolute;
-  top: -38vh;
-  left: 18vw;
-  transform-origin: top;
-}
-.dark-leaves-bottom {
-  animation-name: darkPalmLeafSwingBottom;
-  animation-duration: 20s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  filter: brightness(0.75) hue-rotate(11deg) blur(1px);
-  position: absolute;
-  top: 88vh;
-  right: -64vw;
-  transform-origin: top;
-  z-index: 1;
-}
-.intro-palm-bottom-left {
-  animation-name: darkPalmLeafSwingBottomLeft;
-  animation-duration: 24s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  position: absolute;
-  top: 0;
-  left: -46vw;
-  transform-origin: bottom;
-}
 #aboutMeSection {
   background: #fffec6;
   padding: 10vh 15px;
@@ -460,14 +349,16 @@ h3 {
 }
 #aboutMeSection:before {
   content: '';
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  right: auto;
   background: url('img/wood.jpg');
   background-position: bottom;
   background-size: cover;
   height: 30vh;
   width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
   filter: brightness(0.44) contrast(0.95);
 }
 @media (min-width: 760px) {
@@ -484,22 +375,31 @@ h3 {
   transform: translateZ(0);
 }
 .plant-left {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: -156px;
+  right: auto;
   -webkit-transform: translateZ(78px) scale(0.2) scaleX(-1);
   transform: translateZ(78px) scale(0.2) scaleX(-1);
   filter: blur(2px);
-  position: absolute;
-  bottom: 0;
-  left: -156px;
 }
 .about-me-section-plant-right {
+  position: absolute;
+  top: auto;
+  bottom: 80px;
+  left: auto;
+  right: -354px;
   -webkit-transform: translateZ(40px) scale(0.35);
   transform: translateZ(40px) scale(0.35);
   filter: hue-rotate(347deg);
-  position: absolute;
-  bottom: 80px;
-  right: -354px;
 }
 #window {
+  position: absolute;
+  top: 6vh;
+  bottom: auto;
+  left: auto;
+  right: 11vw;
   -webkit-animation-name: backwardMovement;
   -webkit-animation-duration: 680s;
   -webkit-animation-timing-function: linear;
@@ -515,9 +415,6 @@ h3 {
   background-size: auto 100%;
   height: 140px;
   width: 182px;
-  position: absolute;
-  top: 6vh;
-  right: 11vw;
 }
 @media (min-width: 760px) {
   #window {
@@ -536,14 +433,16 @@ h3 {
   width: 100%;
 }
 #book {
+  position: absolute;
+  top: -3vh;
+  bottom: auto;
+  left: 12vw;
+  right: auto;
   background: url('img/Pngtree-8910691-book.png') center no-repeat;
   background-size: 104% 104%;
   height: 134%;
   width: 38vw;
   padding: 0 3vw;
-  position: absolute;
-  top: -3vh;
-  left: 12vw;
   z-index: 2;
 }
 .carousel-control-prev {
@@ -592,22 +491,28 @@ h3 {
   max-width: 182px;
 }
 #deskPlant1 {
-  max-width: 266px;
   position: absolute;
+  top: auto;
   bottom: -6vh;
+  left: auto;
   right: -3vw;
+  max-width: 266px;
   z-index: 1;
 }
 #deskPlant {
-  max-width: 248px;
   position: absolute;
+  top: auto;
   bottom: 2vh;
+  left: auto;
   right: 23vw;
+  max-width: 248px;
   z-index: 1;
 }
 #imgFrameContainer {
   position: relative;
+  top: auto;
   bottom: 1vh;
+  left: auto;
   right: 5vw;
   width: 27%;
 }
@@ -621,12 +526,14 @@ h3 {
 }
 .about-me__img-frame:after {
   content: '';
+  position: absolute;
+  top: 0;
+  bottom: auto;
+  left: auto;
+  right: 0;
   background-color: #42342f;
   height: 100%;
   width: 5px;
-  position: absolute;
-  top: 0;
-  right: 0;
   transform: rotate3d(3deg);
 }
 .about-me__img-frame img {
@@ -647,10 +554,12 @@ h3 {
   font-size: 30px;
 }
 #lamp {
-  height: 182%;
   position: absolute;
+  top: auto;
   bottom: -6vh;
   left: 0;
+  right: auto;
+  height: 182%;
   transform: scaleX(-1);
   z-index: -1;
 }
@@ -660,7 +569,9 @@ h3 {
 #lampLight {
   position: absolute;
   top: 25%;
+  bottom: auto;
   left: -7%;
+  right: auto;
   width: 40%;
 }
 #lampLight > img {
@@ -688,7 +599,9 @@ h3 {
 }
 #projectExamplesBGVid {
   position: absolute;
+  top: auto;
   bottom: 0;
+  left: auto;
   right: 0;
   min-width: 100%;
   min-height: 100%;
@@ -698,9 +611,12 @@ h3 {
   position: relative;
 }
 .fruit > img {
-  transition: all 0.8s ease-in-out;
   position: absolute;
-  left: 0vw;
+  top: auto;
+  bottom: auto;
+  left: 0;
+  right: auto;
+  transition: all 0.8s ease-in-out;
 }
 .inside-fruit {
   left: -25%;
@@ -730,23 +646,27 @@ h3 {
 }
 .inside-fruit:after {
   content: '';
+  position: absolute;
+  top: -5px;
+  bottom: auto;
+  left: 0;
+  right: auto;
   background-color: rgba(227, 200, 203, 0.95);
   border-radius: 49%;
   box-shadow: 0 6px 18px #4f4b42;
   display: block;
   height: 100%;
   width: 100%;
-  position: absolute;
-  top: -5px;
-  left: 0;
   z-index: -1;
 }
 #comingSoon-Right1 {
-  height: 60vh;
-  width: 21vw;
   position: absolute;
   top: 20vh;
+  bottom: auto;
+  left: auto;
   right: 0;
+  height: 60vh;
+  width: 21vw;
 }
 #comingSoon-Right1 .fruit > img {
   width: 100%;
@@ -804,7 +724,9 @@ h3 {
 #trelloProject .inside-fruit {
   position: absolute;
   top: 0;
+  bottom: auto;
   left: 18%;
+  right: auto;
 }
 #codeSchoolProjects {
   bottom: 12vh;
@@ -846,19 +768,23 @@ h3 {
   max-width: 170px;
 }
 #sunSetSky {
+  position: absolute;
+  top: auto;
+  bottom: 76vh;
+  left: auto;
+  right: 80vw;
   background: linear-gradient(180deg, #000006 20%, rgba(4, 4, 58, 0.7) 60%, transparent 100%);
   height: 42vh;
   width: 600vw;
-  position: absolute;
-  bottom: 76vh;
-  right: -80vw;
   transform: translateZ(-150px) scale(13.1);
   opacity: 0;
   z-index: -3;
 }
 #sunSet {
   position: absolute;
+  top: auto;
   bottom: -320vh;
+  left: auto;
   right: -175vw;
   transform: translateZ(-150px) scale(13.1);
   z-index: -2;
@@ -883,10 +809,13 @@ h3 {
 #waterBottom0,
 #waterBottom1,
 #waterBottom2 {
+  position: absolute;
+  top: auto;
+  bottom: auto;
+  left: 5vw;
+  right: auto;
   height: 12vh;
   width: 90%;
-  position: absolute;
-  left: 5vw;
   z-index: -1;
 }
 #waterBottom0 > span,
@@ -897,6 +826,11 @@ h3 {
   background-size: auto 168%;
 }
 #boat {
+  position: absolute;
+  top: auto;
+  bottom: -304vh;
+  left: 17vw;
+  right: auto;
   -webkit-animation-name: rockTheBoat;
   -webkit-animation-duration: 4s;
   -webkit-animation-timing-function: linear;
@@ -906,9 +840,6 @@ h3 {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   max-width: 550px;
-  position: absolute;
-  bottom: -304vh;
-  left: 17vw;
   z-index: -1;
 }
 #boat img {
@@ -916,6 +847,11 @@ h3 {
   width: 100%;
 }
 #sail {
+  position: absolute;
+  top: -37vh;
+  bottom: auto;
+  left: 7vw;
+  right: auto;
   -webkit-animation-name: sailFlap;
   -webkit-animation-duration: 4s;
   -webkit-animation-timing-function: linear;
@@ -929,35 +865,41 @@ h3 {
   border-radius: 5px;
   height: 0;
   width: 0;
-  position: absolute;
-  top: -37vh;
-  left: 7vw;
   transform-origin: left;
   z-index: 1;
 }
 #sail:before {
   content: '';
+  position: absolute;
+  top: 0;
+  bottom: auto;
+  left: -12px;
+  right: auto;
   background-color: #541313;
   border-top: 5px solid #646464;
   border-radius: 4px;
   height: 50vh;
   width: 10px;
-  position: absolute;
-  top: 0;
-  left: -12px;
   z-index: 1;
 }
 #sail:after {
   content: '';
+  position: absolute;
+  top: 45.5vh;
+  bottom: auto;
+  left: -1px;
+  right: auto;
   background-color: #541313;
   border-radius: 3px;
   height: 5px;
   width: 18vw;
-  position: absolute;
-  top: 45.5vh;
-  left: -1px;
 }
 #sailText {
+  position: absolute;
+  top: -8vh;
+  bottom: auto;
+  left: 8.5vw;
+  right: auto;
   -webkit-animation-name: sailFlap;
   -webkit-animation-duration: 4s;
   -webkit-animation-timing-function: linear;
@@ -969,9 +911,6 @@ h3 {
   font-family: 'Beth Ellen';
   font-size: 2.5vw;
   line-height: 1.3;
-  position: absolute;
-  top: -8vh;
-  left: 8.5vw;
   transform-origin: left;
   z-index: 1;
 }
@@ -1171,9 +1110,12 @@ footer:after {
 }
 @media (min-width: 992px) {
   #copyrightLine {
-    padding-top: 7px;
     position: absolute;
+    top: auto;
+    bottom: auto;
+    left: auto;
     right: 100px;
+    padding-top: 7px;
   }
 }
 @media (min-width: 1200px) {

@@ -169,38 +169,7 @@ h1 {
     height: 280px; width: 280px;
 }
 
-#sunRise { position: absolute; top: 54%; right: 30vw; }
-
-h2 {
-    color: #ffffff;
-    font-size: 2vw;
-    font-weight: 100;
-    letter-spacing: .5vw;
-    line-height: 1.5;
-    padding: 21vh 50px 44vh 67vw;
-    position: absolute;
-        top: 41%;
-    text-shadow: 1px 2px #27282d;
-    text-transform: lowercase;
-    transform: translateY(-20%);
-    width: 100%;
-    >span {
-        background-color: rgb(55 97 147 / 60%);
-        border: 1px solid #dfdfdf;
-        display: block;
-        padding: 30px;
-        transform: translateZ(-10px);
-        >span {
-            display: flex;
-            justify-content: space-between;
-            >span {
-                display: inline-block;
-                text-align: center;
-                width: 50px;
-            }
-        }
-    }
-}
+#sunRise { .pos(absolute,54%,auto,auto,30vw); }
 
 .mountainscape {
     background: url('img/Pngtree-mountain-landscape_8807747.png') repeat-x;
@@ -235,10 +204,9 @@ h2 {
 }
 
 #waterTop {
+    .pos(absolute,auto,-32vh);
     height: 12vh;
         width: 120%;
-    position: absolute;
-        bottom: -32vh;
     transform: translateZ(-15px) scale(2);
     .moving-waves-row--2 { height: 90%; }
 }
@@ -301,101 +269,6 @@ h3 { text-transform: uppercase; }
     scroll-snap-align: start;
 }
 
-.intro-top-front-palms {
-    position: absolute;
-        top: 0;
-        left: 0;
-}
-
-.top-palms {
-    animation-duration: 10s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    position: absolute;
-        top: -20px;
-    &--left {
-        animation-name: topLeftPalmSwing;
-        filter: hue-rotate(346deg) brightness(0.35);
-        left: -10px;
-        transform-origin: top left;
-    }
-    &--right {
-        animation-name: topRightPalmSwing;
-        filter: hue-rotate(340deg) brightness(0.5);
-        right: -10px;
-        transform-origin: top right;
-        z-index: 2;
-    }
-}
-
-#bottomPalmsLeft {
-    animation-name: bottomPalmsLeft;
-    filter: hue-rotate(25deg) brightness(0.2);
-    position: absolute;
-        bottom: -5vh;
-        left: -110px;
-    transform: rotate(191deg);
-    width: 30vw;
-    z-index: 1;
-}
-
-.leaf-wrapper {
-    perspective: 780px;
-    perspective-origin: top;
-    position: absolute;
-        top: -75px;
-        left: 48%;
-
-}
-
-.dark-leaves-top {
-    animation-name: introDarkPalmTop;
-    animation-duration: 10s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-}
-
-#introSectionTopLeaves {
-    animation-name: introSectionTopLeaves;
-    animation-duration: 15s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    filter: brightness(0.85) hue-rotate(24deg);
-    position: absolute;
-        top: -38vh;
-        left: 18vw;
-    transform-origin: top;
-}
-
-.dark-leaves-bottom {
-    animation-name: darkPalmLeafSwingBottom;
-    animation-duration: 20s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    filter: brightness(0.75) hue-rotate(11deg) blur(1px);
-    position: absolute;
-        top: 88vh;
-        right: -64vw;
-    transform-origin: top;
-    z-index: 1;
-}
-
-.intro-palm-bottom-left {
-    animation-name: darkPalmLeafSwingBottomLeft;
-    animation-duration: 24s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    position: absolute;
-        top: 0;
-        left: -46vw;
-    transform-origin: bottom;
-}
-
 #aboutMeSection {
     background: #fffec6;
     padding: 10vh 15px;
@@ -406,14 +279,12 @@ h3 { text-transform: uppercase; }
     @media(min-width: @screen-sm) { padding: 280px 120px; }
     &:before {
         content: '';
+        .pos(absolute,auto,0,0);
         background: url('img/wood.jpg');
         background-position: bottom;
         background-size: cover;
         height: 30vh;
             width: 100%;
-        position: absolute;
-            bottom: 0;
-            left: 0;
         filter: brightness(0.44) contrast(0.95);
         @media(min-width: @screen-sm) { height: 38vh; }
     }
@@ -429,24 +300,21 @@ h3 { text-transform: uppercase; }
 }
 
 .plant-left {
+    .pos(absolute,auto,0,-156px);
     -webkit-transform: translateZ(78px) scale(0.2) scaleX(-1);
     transform: translateZ(78px) scale(0.2) scaleX(-1);
     filter: blur(2px);
-    position: absolute;
-        bottom: 0;
-        left: -156px;
 }
 
 .about-me-section-plant-right {
+    .pos(absolute,auto,80px,auto,-354px);
     -webkit-transform: translateZ(40px) scale(0.35);
     transform: translateZ(40px) scale(0.35);
     filter: hue-rotate(347deg);
-    position: absolute;
-        bottom: 80px;
-        right: -354px;
 }
 
 #window {
+    .pos(absolute,6vh,auto,auto,11vw);
     -webkit-animation-name: backwardMovement;
     -webkit-animation-duration: 680s;
     -webkit-animation-timing-function: linear;
@@ -461,7 +329,6 @@ h3 { text-transform: uppercase; }
 	background-position: 0%;
     background-size: auto 100%;
     height: 140px; width: 182px;
-    position: absolute; top: 6vh; right: 11vw;
     @media(min-width: @screen-sm) {
         height: 230px; width: 300px;
         right: 7vw;
@@ -471,13 +338,12 @@ h3 { text-transform: uppercase; }
 }
 
 #book {
+    .pos(absolute,-3vh,auto,12vw);
     background: url('img/Pngtree-8910691-book.png') center no-repeat;
     background-size: 104% 104%;
     height: 134%;
         width: 38vw;
     padding: 0 3vw;
-    position: absolute; top: -3vh;
-        left: 12vw;
     z-index: 2;
 }
 
@@ -526,20 +392,19 @@ h3 { text-transform: uppercase; }
 #calbert { max-width: 182px;}
 
 #deskPlant1 {
+    .pos(absolute,auto,-6vh,auto,-3vw);
     max-width: 266px;
-    position: absolute; bottom: -6vh;
-        right: -3vw;
     z-index: 1;
 }
 
 #deskPlant {
+    .pos(absolute,auto,2vh,auto,23vw);
     max-width: 248px;
-    position: absolute; bottom: 2vh; right: 23vw;
     z-index: 1;
 }
 
 #imgFrameContainer {
-    position: relative; bottom: 1vh; right: 5vw;
+    .pos(relative,auto,1vh,auto,5vw);
     width: 27%;
 }
 
@@ -552,9 +417,9 @@ h3 { text-transform: uppercase; }
     transform: perspective(100vh) rotateY(-32deg) rotateX(9deg);
     &:after {
         content: '';
+        .pos(absolute,0,auto,auto,0);
         background-color: #42342f;
         height: 100%; width: 5px;
-        position: absolute; top: 0; right: 0;
         transform: rotate3d(3deg);
     }
     img {
@@ -574,17 +439,15 @@ h3 { text-transform: uppercase; }
 }
 
 #lamp {
+    .pos(absolute,auto,-6vh,0);
     height: 182%;
-    position: absolute;
-        bottom: -6vh;
-        left: 0;
     transform: scaleX(-1);
     z-index: -1;
     >img { height: 100%; }
 }
 
 #lampLight {
-    position: absolute; top: 25%; left: -7%;
+    .pos(absolute,25%,auto,-7%);
     width: 40%;
     >img { width: 100%; }
 }
@@ -611,7 +474,7 @@ h3 { text-transform: uppercase; }
 }
 
 #projectExamplesBGVid {
-    position: absolute; bottom: 0; right: 0;
+    .pos(absolute,auto,0,auto,0);
     min-width: 100%;
     min-height: 100%;
     z-index: 0;
@@ -620,8 +483,8 @@ h3 { text-transform: uppercase; }
 .fruit {
     position: relative;
     >img {
+        .pos(absolute,auto,auto,0);
         transition: all 0.8s ease-in-out;
-        position: absolute; left: 0vw;
     }
 }
 
@@ -651,18 +514,18 @@ h3 { text-transform: uppercase; }
 
 .inside-fruit:after {
     content: '';
+    .pos(absolute,-5px,auto,0);
     background-color: rgb(227 200 203 / 95%);
     border-radius: 49%;
     box-shadow: 0 6px 18px #4f4b42;
     display: block;
     height: 100%; width: 100%;
-    position: absolute; top: -5px; left: 0;
     z-index: -1;
 }
 
 #comingSoon-Right1 {
+    .pos(absolute,20vh,auto,auto,0);
     height: 60vh; width: 21vw;
-    position: absolute; top: 20vh; right: 0;
     .fruit {
         >img {
             width: 100%;
@@ -699,11 +562,7 @@ h3 { text-transform: uppercase; }
             >img:last-child { left: 59%; }
         }
     }
-    .inside-fruit {
-        position: absolute;
-        top: 0;
-        left: 18%;
-    }
+    .inside-fruit { .pos(absolute,0,auto,18%); }
 }
 
 #codeSchoolProjects {
@@ -742,16 +601,16 @@ h3 { text-transform: uppercase; }
 }
 
 #sunSetSky {
+    .pos(absolute,auto,76vh,auto,80vw);
     background: linear-gradient(180deg, #000006 20%, rgb(4 4 58 / 70%) 60%, transparent 100%);
     height: 42vh; width: 600vw;
-    position: absolute; bottom: 76vh; right: -80vw;
     transform: translateZ(-150px) scale(13.1);
     opacity: 0;
     z-index: -3;
 }
 
 #sunSet {
-    position: absolute; bottom: -320vh; right: -175vw;
+    .pos(absolute,auto,-320vh,auto,-175vw);
     transform: translateZ(-150px) scale(13.1);
     z-index: -2;
 }
@@ -775,8 +634,8 @@ h3 { text-transform: uppercase; }
 }
 
 #waterBottom0, #waterBottom1, #waterBottom2 {
+    .pos(absolute,auto,auto,5vw);
     height: 12vh; width: 90%;
-    position: absolute; left: 5vw;
     z-index: -1;
     >span {
         background: url('img/ocean-wave-paint-brush-stroke-1.png') #0f6291 repeat-x;
@@ -786,6 +645,7 @@ h3 { text-transform: uppercase; }
 }
 
 #boat {
+    .pos(absolute,auto,-304vh,17vw);
     -webkit-animation-name: rockTheBoat;
     -webkit-animation-duration: 4s;
     -webkit-animation-timing-function: linear;
@@ -795,7 +655,6 @@ h3 { text-transform: uppercase; }
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     max-width: 550px;
-    position: absolute; bottom: -304vh; left: 17vw;
     z-index: -1;
     img {
         transform: rotate(-5deg) rotateX(61deg);
@@ -804,6 +663,7 @@ h3 { text-transform: uppercase; }
 }
 
 #sail {
+    .pos(absolute,-37vh,auto,7vw);
     -webkit-animation-name: sailFlap;
     -webkit-animation-duration: 4s;
     -webkit-animation-timing-function: linear;
@@ -816,29 +676,29 @@ h3 { text-transform: uppercase; }
     border-right: 18vw solid transparent;
     border-radius: 5px;
     height: 0; width: 0;
-    position: absolute; top: -37vh; left: 7vw;
     transform-origin: left;
     z-index: 1;
     &:before { // MAST
         content: '';
+        .pos(absolute,0,auto,-12px);
         background-color: rgb(84, 19, 19);
         border-top: 5px solid #646464;
         border-radius: 4px;
         height: 50vh; width: 10px;
-        position: absolute; top: 0; left: -12px;
         z-index: 1;
     }
     &:after { // BOOM
         content: '';
+        .pos(absolute,45.5vh,auto,-1px);
         background-color: rgb(84, 19, 19);
         border-radius: 3px;
         height: 5px;
         width: 18vw;
-        position: absolute; top: 45.5vh; left: -1px;
     }
 }
 
 #sailText {
+    .pos(absolute,-8vh,auto,8.5vw);
     -webkit-animation-name: sailFlap;
     -webkit-animation-duration: 4s;
     -webkit-animation-timing-function: linear;
@@ -850,7 +710,6 @@ h3 { text-transform: uppercase; }
     font-family: 'Beth Ellen';
     font-size: 2.5vw;
     line-height: 1.3;
-    position: absolute; top: -8vh; left: 8.5vw;
     transform-origin: left;
     z-index: 1;
     >span {
@@ -1016,9 +875,8 @@ footer {
     font-size: 13px;
     padding-bottom: 10px;
     @media(min-width: @screen-md) {
+        .pos(absolute,auto,auto,auto,100px);
         padding-top: 7px;
-        position: absolute;
-            right: 100px;
     }
     @media(min-width: @screen-lg) {
         font-size: 16px;
