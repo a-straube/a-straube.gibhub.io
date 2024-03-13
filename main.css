@@ -208,6 +208,7 @@ h1.hide {
   filter: blur(2px);
   height: 280px;
   width: 280px;
+  z-index: -1;
 }
 #sunRise {
   position: absolute;
