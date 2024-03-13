@@ -306,18 +306,14 @@ h3 {
   overflow-y: auto;
   -webkit-perspective: 300px;
   perspective: 15px;
-  scroll-snap-type: y mandatory;
 }
 #topSection {
   min-height: 100%;
   padding: 0;
-  scroll-snap-align: start;
 }
 #aboutMeSection {
   background: #fffec6;
   padding: 10vh 15px;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
   width: 100vw;
   z-index: 2;
 }
@@ -547,10 +543,6 @@ h3 {
 }
 #lampLight > img {
   width: 100%;
-}
-#projectExamplesSection {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
 }
 #projectExamplesSection h3 {
   background: #ffbc58;
@@ -903,8 +895,6 @@ section#connectSection {
   flex-wrap: nowrap;
   min-height: 0;
   padding: 12vh 0;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
 }
 @media (min-width: 760px) {
   section#connectSection {
@@ -1028,8 +1018,6 @@ footer {
   padding: 15px;
   position: relative;
   scroll-margin-block-end: 30px;
-  scroll-snap-align: end;
-  scroll-snap-stop: always;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
