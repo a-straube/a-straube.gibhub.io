@@ -215,7 +215,8 @@ h1.hide {
   top: 54%;
   bottom: auto;
   left: auto;
-  right: 30vw;
+  right: 27vw;
+  transform: translateZ(-3px) scale(1);
 }
 .mountainscape {
   background: url('img/Pngtree-mountain-landscape_8807747.png') repeat-x;
