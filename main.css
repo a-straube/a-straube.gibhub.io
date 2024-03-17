@@ -216,7 +216,7 @@ h1.hide {
   bottom: auto;
   left: auto;
   right: 27vw;
-  transform: translateZ(-3px) scale(1);
+  transform: translateZ(5px) scale(1);
   z-index: -100;
 }
 .mountainscape {
