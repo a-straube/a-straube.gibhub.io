@@ -303,6 +303,7 @@ h1.hide {
   background-size: auto 100%;
   opacity: 0.88;
   position: absolute;
+  transform: translateZ(0);
   width: 100%;
 }
 .moving-waves-row:before {
