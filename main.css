@@ -1,3 +1,4 @@
+@import 'styling/keyframes.css';
 ::-webkit-scrollbar {
   width: 0;
 }
@@ -285,6 +286,10 @@ h1.hide {
 .moving-waves-row:before,
 .moving-waves-row:after {
   content: '';
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
   background: url('img/ocean-wave-paint-brush-stroke-1.png') repeat-x;
   background-size: auto 100%;
   opacity: 0.88;
@@ -292,10 +297,18 @@ h1.hide {
   width: 100%;
 }
 .moving-waves-row:before {
+  -webkit-animation-name: backwardMovement;
+  -webkit-animation-duration: 1680s;
+  animation-name: backwardMovement;
+  animation-duration: 1680s;
   bottom: 28%;
   height: 100%;
 }
 .moving-waves-row:after {
+  -webkit-animation-name: forwardMovement;
+  -webkit-animation-duration: 980s;
+  animation-name: forwardMovement;
+  animation-duration: 980s;
   bottom: -15%;
   height: 110%;
   filter: hue-rotate(344deg);

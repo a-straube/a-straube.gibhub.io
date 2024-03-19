@@ -1,5 +1,5 @@
 @import 'styling/mixins.less';
-// @import 'styling/keyframes.css';
+@import 'styling/keyframes.css';
 
 @screen-sm: 760px;
 @screen-md: 992px;
@@ -228,10 +228,10 @@ h1 {
     &--4 { top: 150%; }
     &:before, &:after {
         content: '';
-        // -webkit-animation-timing-function: linear;
-        // -webkit-animation-iteration-count: infinite;
-        // animation-timing-function: linear;
-        // animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
         background: url('img/ocean-wave-paint-brush-stroke-1.png') repeat-x;
         background-size: auto 100%;
         opacity: 0.88;
@@ -239,18 +239,18 @@ h1 {
         width: 100%;
     }
     &:before {
-        // -webkit-animation-name: backwardMovement;
-        // -webkit-animation-duration: 1680s;
-        // animation-name: backwardMovement;
-        // animation-duration: 1680s;
+        -webkit-animation-name: backwardMovement;
+        -webkit-animation-duration: 1680s;
+        animation-name: backwardMovement;
+        animation-duration: 1680s;
         bottom: 28%;
         height: 100%;
     }
     &:after {
-        // -webkit-animation-name: forwardMovement;
-        // -webkit-animation-duration: 980s;
-        // animation-name: forwardMovement;
-        // animation-duration: 980s;
+        -webkit-animation-name: forwardMovement;
+        -webkit-animation-duration: 980s;
+        animation-name: forwardMovement;
+        animation-duration: 980s;
         bottom: -15%;
         height: 110%;
         filter: hue-rotate(344deg);
