@@ -820,6 +820,14 @@ h3 {
   bottom: -254vh;
   left: 17vw;
   right: auto;
+  -webkit-animation-name: rockTheBoat;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: rockTheBoat;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
   max-width: 550px;
   z-index: -1;
 }
@@ -833,6 +841,14 @@ h3 {
   bottom: auto;
   left: 7vw;
   right: auto;
+  -webkit-animation-name: sailFlap;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: sailFlap;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
   border-bottom: 46vh solid #efe8de;
   border-right: 18vw solid transparent;
   border-radius: 5px;
@@ -873,6 +889,14 @@ h3 {
   bottom: auto;
   left: 8.5vw;
   right: auto;
+  -webkit-animation-name: sailFlap;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: sailFlap;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
   font-family: 'Beth Ellen';
   font-size: 2.5vw;
   line-height: 1.3;
