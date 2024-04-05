@@ -426,8 +426,6 @@ h3 {
   bottom: auto;
   left: 10%;
   right: auto;
-  background: url('img/Pngtree-8910691-book.png') center no-repeat;
-  background-size: 104% 104%;
   min-height: 55vh;
   padding: 0 3vw;
   width: 80%;
@@ -435,15 +433,17 @@ h3 {
 }
 #book:after {
   position: absolute;
-  top: 0;
+  top: -17vh;
   bottom: auto;
-  left: auto;
+  left: -4vw;
   right: auto;
   content: '';
-  background: url('img/Pngtree-book-open-clipart-7903102.png');
-  background-size: cover;
-  height: 100%;
-  width: 100%;
+  background: url('img/Pngtree-book-open-clipart-7903102.png') no-repeat;
+  background-size: contain;
+  height: 166%;
+  width: 117%;
+  transform: rotate(-19deg) skewY(-4deg);
+  z-index: -1;
 }
 @media (min-width: 760px) {
   #book {
