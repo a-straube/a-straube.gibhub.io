@@ -401,7 +401,15 @@ h3 {
   bottom: auto;
   left: auto;
   right: 11vw;
+  -webkit-animation-name: backwardMovement;
+  -webkit-animation-duration: 1880s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
   -webkit-text-fill-color: transparent;
+  animation-name: backwardMovement;
+  animation-duration: 1880s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
   background-image: url('img/pexels-pixabay-46160.jpeg');
   background-attachment: unset;
   background-position: 0%;
@@ -418,11 +426,12 @@ h3 {
 }
 @media (min-width: 1200px) {
   #window {
-    height: 380px;
-    width: 480px;
+    height: 450px;
+    width: 630px;
   }
 }
 #window img {
+  height: 100%;
   width: 100%;
 }
 #book {
