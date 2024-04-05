@@ -338,15 +338,10 @@ h3 {
   padding: 0;
 }
 #aboutMeSection {
+  align-items: flex-end;
   background: #fffec6;
-  padding: 10vh 15px;
-  width: 100vw;
+  display: flex;
   z-index: 2;
-}
-@media (min-width: 760px) {
-  #aboutMeSection {
-    padding: 280px 120px;
-  }
 }
 #aboutMeSection:before {
   content: '';
@@ -368,12 +363,12 @@ h3 {
   }
 }
 #aboutMeSection .section-content {
+  align-items: flex-end;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   position: relative;
-  top: 13vh;
-  transform: translateZ(0);
+  width: 100%;
 }
 .plant-left {
   position: absolute;
@@ -427,16 +422,39 @@ h3 {
 }
 #book {
   position: absolute;
-  top: -3vh;
+  top: auto;
   bottom: auto;
-  left: 12vw;
+  left: 10%;
   right: auto;
   background: url('img/Pngtree-8910691-book.png') center no-repeat;
   background-size: 104% 104%;
-  height: 134%;
-  width: 38vw;
+  min-height: 55vh;
   padding: 0 3vw;
+  width: 80%;
   z-index: 2;
+}
+#book:after {
+  position: absolute;
+  top: 0;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  content: '';
+  background: url('img/Pngtree-book-open-clipart-7903102.png');
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+@media (min-width: 760px) {
+  #book {
+    left: 14%;
+    width: 600px;
+  }
+}
+@media (min-width: 1200px) {
+  #book {
+    width: 800px;
+  }
 }
 .carousel-control-prev {
   top: -6%;
@@ -480,8 +498,19 @@ h3 {
   font-weight: 700;
   padding: 0.1vw 1vw;
 }
-#calbert {
-  max-width: 182px;
+#deskPlant {
+  position: absolute;
+  top: auto;
+  bottom: 2vh;
+  left: auto;
+  right: 23vw;
+  max-width: 248px;
+  z-index: 1;
+}
+@media (max-width: 1200px) {
+  #deskPlant {
+    display: none;
+  }
 }
 #deskPlant1 {
   position: absolute;
@@ -492,15 +521,6 @@ h3 {
   max-width: 266px;
   z-index: 1;
 }
-#deskPlant {
-  position: absolute;
-  top: auto;
-  bottom: 2vh;
-  left: auto;
-  right: 23vw;
-  max-width: 248px;
-  z-index: 1;
-}
 #imgFrameContainer {
   position: relative;
   top: auto;
@@ -508,6 +528,11 @@ h3 {
   left: auto;
   right: 5vw;
   width: 27%;
+}
+@media (max-width: 992px) {
+  #imgFrameContainer {
+    display: none;
+  }
 }
 .about-me__img-frame {
   background-color: #ebe7db;
@@ -547,17 +572,33 @@ h3 {
   font-size: 30px;
 }
 #lamp {
-  position: absolute;
+  position: relative;
   top: auto;
-  bottom: -6vh;
-  left: 0;
+  bottom: 15vh;
+  left: -20vw;
   right: auto;
-  height: 182%;
+  height: 60vh;
+  max-height: 780px;
   transform: scaleX(-1);
-  z-index: -1;
 }
 #lamp > img {
   height: 100%;
+}
+@media (max-width: 400px) {
+  #lamp {
+    left: -30vw;
+  }
+}
+@media (min-width: 760px) {
+  #lamp {
+    bottom: 2vh;
+    height: 80vh;
+  }
+}
+@media (min-width: 1200px) {
+  #lamp {
+    left: -4vw;
+  }
 }
 #lampLight {
   position: absolute;
