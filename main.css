@@ -449,29 +449,27 @@ h3 {
 }
 #book:after {
   position: absolute;
-  top: -17vh;
+  top: -23vh;
   bottom: auto;
   left: -6vw;
   right: auto;
   content: '';
   background: url('img/Pngtree-book-open-clipart-7903102.png') center no-repeat;
   background-size: contain;
-  display: none;
   height: 166%;
   width: 117%;
   transform: rotate(-9deg) skewY(-6deg);
   z-index: -1;
 }
-@media (min-width: 760px) {
+@media (max-width: 760px) {
   #book:after {
-    display: block;
-    top: -17vh;
+    display: none;
   }
 }
 @media (min-width: 760px) {
   #book {
-    left: 14%;
-    width: 500px;
+    left: 6%;
+    width: 550px;
   }
 }
 @media (min-width: 992px) {
@@ -481,6 +479,7 @@ h3 {
 }
 @media (min-width: 1200px) {
   #book {
+    left: 14%;
     width: 800px;
   }
 }
@@ -523,7 +522,7 @@ h3 {
   transform: rotate(35deg);
 }
 .book-page {
-  background-color: rgba(140, 170, 170, 0.75);
+  background-color: rgba(140, 170, 170, 0.84);
   float: left;
   font-family: 'Waiting for the Sunrise', cursive;
   font-size: 20px;
@@ -535,7 +534,7 @@ h3 {
 @media (min-width: 760px) {
   .book-page {
     background-color: transparent;
-    padding: 7vh 0 13vh;
+    padding: 7vh 1.5vw 13vh;
     transform: rotate(-6deg);
     width: 50%;
   }
